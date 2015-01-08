@@ -1,0 +1,32 @@
+﻿default: []
+
+default:
+  - 'bower'
+  - 'connect:server'
+  - 'watch:dev'
+
+dev:
+  - 'bower'
+  - 'connect:server'
+  - 'watch:dev'
+
+build:
+  - 'bower'
+  - 'jshint'
+  - 'html2js:dist'
+  - 'concat:dist'
+  - 'clean:temp'
+
+minified:
+  - 'bower'
+  - 'connect:server'
+  - 'watch:min'
+
+package:
+  - 'bower'
+  - 'jshint'
+  - 'html2js:dist'
+  - 'concat:dist'
+  - 'uglify:dist'
+  - 'clean:temp'
+  - 'compress:dist'

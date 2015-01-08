@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="myapp">
+<head>
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Kaitlyn Sparks</title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+    <body>
+
+        <div ng-include src="'../app/templates/nav.html'"></div>
+
+        <div ui-view="">
+        </div>
+       
+        <div ng-include src="'../app/templates/footer.html'"></div>
+       
+        <script src="Scripts/jquery-1.11.1.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/angular.min.js"></script>
+        <script src="Scripts/angular-ui-router.min.js"></script>
+
+        <script src="scripts/angular-local-storage.min.js"></script>
+        <script src="scripts/loading-bar.min.js"></script>
+        
+        <!-- Load app main script -->
+        <script type="text/javascript" src="dist/app.js"></script>
+        
+    </body>
+</html>
