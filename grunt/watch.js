@@ -9,7 +9,7 @@
         }
     },
     min: {
-        files: ['Gruntfile.js', 'app/*.js', '*.html'],
+        files: ['Gruntfile.js', 'app/*/**.js', 'app/**/*.html'],
         //tasks: ['jshint', 'karma:unit', 'html2js:dist', 'concat:dist', 'clean:temp', 'uglify:dist'],
         tasks: ['jshint', 'html2js:dist', 'concat:dist', 'clean:temp', 'uglify:dist'],
         options: {

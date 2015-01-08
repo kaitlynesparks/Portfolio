@@ -51,7 +51,66 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "../app/views/distractionfreecoding.html",
             controller: "distractionfreecodingController"
         });
-});;angular.module('templates-dist', ['../app/templates/footer.html', '../app/templates/nav.html', '../app/views/about.html', '../app/views/accelerate.html', '../app/views/contact.html', '../app/views/distractionfreecoding.html', '../app/views/hackathon.html', '../app/views/home.html', '../app/views/peanuts.html', '../app/views/wakeup.html', '../app/views/webdesign.html']);
+});;angular.module('templates-dist', ['../app/templates/accelerate_carousel.html', '../app/templates/footer.html', '../app/templates/nav.html', '../app/views/about.html', '../app/views/accelerate.html', '../app/views/contact.html', '../app/views/distractionfreecoding.html', '../app/views/hackathon.html', '../app/views/home.html', '../app/views/peanuts.html', '../app/views/wakeup.html', '../app/views/webdesign.html']);
+
+angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../app/templates/accelerate_carousel.html",
+    "<link href=\"../Content/accelerate_carousel.css\" rel=\"stylesheet\" />\n" +
+    "<div id=\"thumbnail-preview-indicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
+    "          <!-- Indicators -->\n" +
+    "          <ol class=\"carousel-indicators\">\n" +
+    "            <li data-target=\"#thumbnail-preview-indicators\" data-slide-to=\"0\" class=\"active\">\n" +
+    "              <div class=\"thumbnail\">\n" +
+    "                <img class=\"img-responsive\" src=\"https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg\">\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li data-target=\"#thumbnail-preview-indicators\" data-slide-to=\"1\">\n" +
+    "            <div class=\"thumbnail\">\n" +
+    "                <img class=\"img-responsive\" src=\"https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg\">\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "            <li data-target=\"#thumbnail-preview-indicators\" data-slide-to=\"2\">\n" +
+    "            <div class=\"thumbnail\">\n" +
+    "                <img class=\"img-responsive\" src=\"https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg\">\n" +
+    "              </div>\n" +
+    "            </li>\n" +
+    "          </ol>\n" +
+    "          <div class=\"carousel-inner\">\n" +
+    "            <div class=\"item slides active\">\n" +
+    "              <div class=\"slide-1\"></div>\n" +
+    "              <div class=\"container\">\n" +
+    "                <div class=\"carousel-caption\">\n" +
+    "                  <h1>New carousel layout</h1>\n" +
+    "                  <p>Responsive thumbnail preview in carousel indicators.</p>\n" +
+    "                  <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Sign up today</a></p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"item slides\">\n" +
+    "              <div class=\"slide-2\"></div>\n" +
+    "              <div class=\"container\">\n" +
+    "                <div class=\"carousel-caption\">\n" +
+    "                  <h1>Another example headline.</h1>\n" +
+    "                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>\n" +
+    "                  <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Learn more</a></p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"item slides\">\n" +
+    "              <div class=\"slide-3\"></div>\n" +
+    "              <div class=\"container\">\n" +
+    "                <div class=\"carousel-caption\">\n" +
+    "                  <h1>One more for good measure.</h1>\n" +
+    "                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>\n" +
+    "                  <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Browse gallery</a></p>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "          <a class=\"left carousel-control\" href=\"#thumbnail-preview-indicators\" role=\"button\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span></a>\n" +
+    "          <a class=\"right carousel-control\" href=\"#thumbnail-preview-indicators\" role=\"button\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span></a>\n" +
+    "      </div> ");
+}]);
 
 angular.module("../app/templates/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/templates/footer.html",
@@ -166,8 +225,42 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
 angular.module("../app/views/accelerate.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/accelerate.html",
     "<div class=\"container\">\n" +
-    "<h3>accelerate</h3>\n" +
-    "<img src=\"../images/Accelerate Final Designs.png\" style=\"width: 800px;\">\n" +
+    "<h1>Accelerate</h1>\n" +
+    "<h4>A mobile training application for emergency medical personnel.</h4>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-4\">\n" +
+    "        <img src=\"../images/Accelerate/Icon.png\" style=\"width: 300px;\">\n" +
+    "	</div>\n" +
+    "	<div class=\"col col-md-8\">\n" +
+    "		<p><strong>Contributions:</strong> Affinity Diagrams, Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Tools Used:</strong> Adobe Illustrator, Adobe InDesign\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Team Members:</strong> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Duration:</strong> October 2014 - December 2014</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p><strong>Assignment:</strong> Conceive of an original mobile service that provides tools and/or information to an ambulance driver accessing information while on the job.\n" +
+    "		<br/><br/>	\n" +
+    "		<strong>Opportunity:</strong> EMS workers have a uniquely stressful job and do not have a lot of opportunity or encouragement to learn life skills or additional job skills. However, they have a lot of downtime that can be used more effectively.\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Solution:</strong> An app that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"container\">\n" +
+    "			<div ng-include src=\"'../app/templates/accelerate_carousel.html'\"></div>\n" +
+    "		</div>	\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<img src=\"../images/Accelerate/Accelerate Final Designs.png\" style=\"width: 800px;\">\n" +
     "</div>");
 }]);
 
