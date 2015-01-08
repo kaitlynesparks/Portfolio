@@ -412,7 +412,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
   $templateCache.put("../app/views/distractionfreecoding.html",
     "<div class=\"container\">\n" +
     "<h1>Distraction Free Coding</h1>\n" +
-    "<h4>Contextual Design methodology used to research students working on coding assignments to come up with a vision to solve one of their problems.</h4>\n" +
+    "<h4>Research student developer problems using Contextual Design methodology.</h4>\n" +
     "<hr/>\n" +
     "\n" +
     "<div class=\"row\">\n" +
@@ -605,7 +605,139 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
 
 angular.module("../app/views/webdesign.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/webdesign.html",
-    "<h3>web design</h3>");
+    "<div class=\"container\">\n" +
+    "<h1>Personal Website</h1>\n" +
+    "<h4>Design a personal website for mobile and desktop.</h4>\n" +
+    "<hr/>\n" +
+    "\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-4\">\n" +
+    "        <img src=\"../images/PersonalWebsite/icon.png\" style=\"width: 300px;\">\n" +
+    "	</div>\n" +
+    "	<div class=\"col col-md-8\">\n" +
+    "		<p><strong>Contributions:</strong> sketch wireframes, digital sketches, low fidelity mockup, high fidelity mockup\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Tools Used:</strong> Adobe InDesign\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Duration:</strong> August 2014 - September 2014 (2.5 weeks)\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Class:</strong> Interaction Design Fundamentals, CMU</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p><strong>Assignment:</strong> Design a personal website home page for desktop and mobile platforms. \n" +
+    "		<br/><br/>	\n" +
+    "		<strong>Design Overview:</strong> The focus of this design was to create a webpage and a mobile page with a cohesive look and feel across the two mediums. First, I focused on finding appropriate content for a professional, personal webpage. I chose to keep the design very simple so that all of the important elements were easy to find and consume. Additionally, to create consistency, I paid attention creating the information heirachy the same across the two screens.</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h3>Process</h3>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Sketch Wireframes</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	The first step was to determine what types of content were needed for this type of website and make sketch wireframes. While making these sketches, I focused on making the heirarchy consistent across the mobile and desktop versions of the website. I also concentrated on making the most important aspects of the website higher in the heirarchy.  I wanted it to be clearly apparent the person the website is about, the essential information about them, and how to contact them. I also wanted it to be easy to look through examples of work and see a summary about the person. I created 5 sketches of possible layouts and then picked the best ones to create a final sketch and use in furture iterations.\n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/webpage_sketch1.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/webpage_sketch2.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/webpage_sketch3.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "				<div class=\"row\">\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/webpage_sketch4.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/webpage_sketch5.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/webpage_sketch_final.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Digital Sketch and Low Fidelity Mock Up</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	After getting feedback from the class on the sketches, I moved to a digital sketch that was exactly the same as the final sketch.  After getting my idea into a digital version and seeing it at a more realistic size and ratio, I was able to iterate to a low fidelity black and white mock up.\n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-6\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/digital_sketch.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-6\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/low_fidelity_mockup.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">High Fidelity Mock Ups</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	The next step I took was to convert the black and white mock up into a color mock up. I played with a few color schemes based on the low fidelity mock up.  However, once I added color, I realized it felt very heavy.  So I removed a lot of the color in favor of a very simple final design.\n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-8 col-md-offset-2\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/high_fidelity_mockup.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Final Design</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	The next step I took was to convert the black and white mock up into a color mock up. I played with a few color schemes based on the low fidelity mock up.  However, once I added color, I realized it felt very heavy.  So I removed a lot of the color in favor of a very simple final design. \n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-8 col-md-offset-2\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/final_design.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "</div>");
 }]);
 ;(function () {
     'use strict';
@@ -654,10 +786,10 @@ app.controller('homeController', ['$scope', function ($scope) {
 
 $scope.projects = [];
 
-$scope.projects = [{Title: "Accelerate", Description: "Something about accelerate", Thumbnail: "http://lorempixel.com/400/300/sports/1/", Nav: "accelerate"},
-				   {Title: "Distraction Free Coding", Description: "Something about distration free coding", Thumbnail: "http://lorempixel.com/400/300/sports/2/", Nav: "distractionfreecoding"},
+$scope.projects = [{Title: "Accelerate", Description: "Designing a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Icon.png", Nav: "accelerate"},
+				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/icon.png", Nav: "distractionfreecoding"},
 				   {Title: "Peanuts", Description: "something about Peanuts", Thumbnail: "http://lorempixel.com/400/300/sports/3/", Nav: "peanuts"},
-				   {Title: "Web Design", Description: "something web design", Thumbnail: "http://lorempixel.com/400/300/sports/4/", Nav: "webdesign"},
+				   {Title: "Web Design", Description: "something web design", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign"},
 				   {Title: "Wake Up", Description: "Wake Up", Thumbnail: "http://lorempixel.com/400/300/sports/5/", Nav: "wakeup"},
 				   {Title: "Hackathon", Description: "something about hackathon", Thumbnail: "http://lorempixel.com/400/300/sports/6/", Nav: "hackathon"}];
 
