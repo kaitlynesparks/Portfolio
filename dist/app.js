@@ -595,7 +595,139 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
 
 angular.module("../app/views/peanuts.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/peanuts.html",
-    "<h3>peanuts</h3>");
+    "<div class=\"container\">\n" +
+    "<h1>Peanuts</h1>\n" +
+    "<h4>Research to understand how reciprocity and trust can impact microcharitable giving online</h4>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-4\">\n" +
+    "        <img src=\"../images/Peanuts/Icon.png\" style=\"width: 300px;\">\n" +
+    "	</div>\n" +
+    "	<div class=\"col col-md-8\">\n" +
+    "		<p><strong>Contributions:</strong> Survey Design and Analysis\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Team Members:</strong> eff Harris, Jim Martin, Katie Ramp\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Duration:</strong> November 2014 - December 2014\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Class:</strong> Social Web, CMU</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p><strong>Assignment:</strong> Pick any topic related to social web and explore it with design, research, and/or development.\n" +
+    "		<br/><br/>	\n" +
+    "		<strong>Opportunity:</strong> When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People are giving frequently seek validation of who the requestor is and whether they are an active member of the group they are requesting in and whether they have given money in the past. However, there is no good way for requestors to prove their previous donations or for those planning to give to see that activity.\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Solution:</strong> We wanted to build a website that would give requestors the ability to track their reciprocity. We also wanted potential donors to be able see the reciprocity of requestors. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating. We wanted to test the ways that reciprocity can be shown and how that impacts donors.</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Literature Review and Initial Research</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was in indepth look at the aspects of a request on the subreddit r/RAOP to determine the most effective way to write a request. From there, we noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to see common themes. After reviewing this subreddit as well as other request websites, we decided to look at how showing reciprocity impacts people’s donations.\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Literature Review and Initial Research</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was in indepth look at the aspects of a request on the subreddit r/RAOP to determine the most effective way to write a request. From there, we noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to see common themes. After reviewing this subreddit as well as other request websites, we decided to look at how showing reciprocity impacts people’s donations.\n" +
+    "		    	<br/><br/>\n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-4 col-md-offset-2\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/survey1example.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-4\">\n" +
+    "						<table class=\"table\">\n" +
+    "							<tr>\n" +
+    "								<th>Reciprocity Statement</th>\n" +
+    "								<th>Votes</th>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan helped Susan pay her rent last week.</td>\n" +
+    "								<td>18</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan has given to 100 people and has received donations from 50 people.</td>\n" +
+    "								<td>12</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan has given more than he has received since joining.</td>\n" +
+    "								<td>11</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan has given to about 15 causes in the past.</td>\n" +
+    "								<td>11</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan has given about twice as much as he has received.</td>\n" +
+    "								<td>9</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan gives to causes almost every week.</td>\n" +
+    "								<td>8</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan has given 150% as much as he has received.</td>\n" +
+    "								<td>8</td>\n" +
+    "							</tr>\n" +
+    "							<tr>\n" +
+    "								<td>Jonathan has given $60 and received $40.</td>\n" +
+    "								<td>6</td>\n" +
+    "							</tr>\n" +
+    "						</table>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Final Survey</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	After analyzing the results of the first survey and the interview responses, we decided to use the two of the top four statements to test with visuals.  We also wanted to test whether people were more likely to give to people that had given more than they had received or to people that had received more than they had given. We created a survey to test this and got 276 responses on Mechanical Turk.  We randomly showed one each Turk worker the request and then a visualization of reciprocity. We then asked how much they would donate. We also recorded the amount of time it took them to answer. The only statistically significant result that we found was that those who donated spent longer thinking about their decision and as time increases, dollar amount increased as well.\n" +
+    "		    	<br/><br/>\n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_less.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_more.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_received_more.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_given_more.jpg\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "</div>");
 }]);
 
 angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($templateCache) {
@@ -788,7 +920,7 @@ $scope.projects = [];
 
 $scope.projects = [{Title: "Accelerate", Description: "Designing a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Icon.png", Nav: "accelerate"},
 				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/icon.png", Nav: "distractionfreecoding"},
-				   {Title: "Peanuts", Description: "something about Peanuts", Thumbnail: "http://lorempixel.com/400/300/sports/3/", Nav: "peanuts"},
+				   {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online.", Thumbnail: "../images/Peanuts/Icon.png", Nav: "peanuts"},
 				   {Title: "Web Design", Description: "something web design", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign"},
 				   {Title: "Wake Up", Description: "Wake Up", Thumbnail: "http://lorempixel.com/400/300/sports/5/", Nav: "wakeup"},
 				   {Title: "Hackathon", Description: "something about hackathon", Thumbnail: "http://lorempixel.com/400/300/sports/6/", Nav: "hackathon"}];
