@@ -16,6 +16,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "../app/views/about.html",
             controller: "aboutController"
         })
+        .state('resume', {
+            url: "/resume",
+            templateUrl: "../app/views/resume.html",
+            controller: "resumeController"
+        })
         .state('contact', {
             url: "/contat",
             templateUrl: "../app/views/contact.html",
@@ -51,7 +56,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "../app/views/distractionfreecoding.html",
             controller: "distractionfreecodingController"
         });
-});;angular.module('templates-dist', ['../app/templates/accelerate_carousel.html', '../app/templates/footer.html', '../app/templates/nav.html', '../app/views/about.html', '../app/views/accelerate.html', '../app/views/contact.html', '../app/views/distractionfreecoding.html', '../app/views/hackathon.html', '../app/views/home.html', '../app/views/peanuts.html', '../app/views/wakeup.html', '../app/views/webdesign.html']);
+});;angular.module('templates-dist', ['../app/templates/accelerate_carousel.html', '../app/templates/footer.html', '../app/templates/nav.html', '../app/views/about.html', '../app/views/accelerate.html', '../app/views/contact.html', '../app/views/distractionfreecoding.html', '../app/views/hackathon.html', '../app/views/home.html', '../app/views/peanuts.html', '../app/views/resume.html', '../app/views/wakeup.html', '../app/views/webdesign.html']);
 
 angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/templates/accelerate_carousel.html",
@@ -152,6 +157,7 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "  <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
     "    <ul class=\"nav navbar-nav navbar-right\">\n" +
     "      <li><a ui-sref=\"about\">About</a></li>\n" +
+    "      <li><a ui-sref=\"resume\">Resume</a></li>\n" +
     "      <li class=\"dropdown\">\n" +
     "        <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
     "        <ul class=\"dropdown-menu\">\n" +
@@ -798,12 +804,12 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "\n" +
     "          <div class=\"col-xs-12 col-sm-6 col-md-4\">            \n" +
     "              <div class=\"thumbnail\">\n" +
+    "                <a ui-sref=\"{{project.Nav}}\">\n" +
     "                  <div class=\"caption\">\n" +
     "                      <h4>{{project.Title}}</h4>\n" +
     "                      <p>{{project.Description}}</p>\n" +
-    "                      <p>\n" +
-    "                      <a ui-sref=\"{{project.Nav}}\" class=\"label label-default\">Learn More</a></p>\n" +
     "                  </div>\n" +
+    "                </a>\n" +
     "                  <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
     "              </div>\n" +
     "          </div>\n" +
@@ -1007,6 +1013,11 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "	</div>\n" +
     "</div>\n" +
     "</div>");
+}]);
+
+angular.module("../app/views/resume.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../app/views/resume.html",
+    "");
 }]);
 
 angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($templateCache) {
@@ -1344,6 +1355,14 @@ app.controller('indexController', ['$scope', function ($scope) {
 }());;(function () {
     'use strict';
 app.controller('peanutsController', ['$scope', function ($scope) {
+
+    
+
+}]);
+
+}());;(function () {
+    'use strict';
+app.controller('resumeController', ['$scope', function ($scope) {
 
     
 
