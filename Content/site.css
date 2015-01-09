@@ -70,3 +70,16 @@ body {
     font-size: .8em;
     margin-bottom: 20px;
 }
+
+/*caption text under thumbnails */
+.thumbnail_caption_text {
+    margin-top: -15px;
+    font-style: italic;
+    font-size: .8em;
+    margin-bottom: 15px;
+}
+
+.process {
+    margin-top: -15px;
+    margin-bottom: 5px;
+}

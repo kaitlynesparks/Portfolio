@@ -1,10 +1,14 @@
 h1 {
-	color: #8bc53e;
+	color: #7A12A3;
 }
 .category {
 	font-size: 1.2em;
-	color: #8bc53e;
+	color: #7A12A3;
 }
 .panel-title {
 	font-size: 1.4em;
+}
+
+.upward-adjust {
+	margin-top: -10px;
 }
