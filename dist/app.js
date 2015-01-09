@@ -61,7 +61,7 @@ angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateC
     "          <ol class=\"carousel-indicators\">\n" +
     "            <li data-target=\"#thumbnail-preview-indicators\" data-slide-to=\"0\" class=\"active\">\n" +
     "              <div class=\"thumbnail\">\n" +
-    "                <img class=\"img-responsive\" src=\"https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg\">\n" +
+    "                <img class=\"img-responsive\" src=\"../images/Accelerate/Screens/Accelerate_Screen1_Login.png\">\n" +
     "              </div>\n" +
     "            </li>\n" +
     "            <li data-target=\"#thumbnail-preview-indicators\" data-slide-to=\"1\">\n" +
@@ -158,9 +158,9 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "          <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
     "          <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
     "          <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
-    "          <li><a ui-sref=\"webdesign\">Web Design</a></li>\n" +
+    "          <li><a ui-sref=\"webdesign\">Personal Website Design</a></li>\n" +
     "          <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
-    "          <li><a ui-sref=\"hackathon\">Hackathon</a></li>         \n" +
+    "          <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>         \n" +
     "        </ul>\n" +
     "      </li>\n" +
     "      <li>&emsp;</li>\n" +
@@ -224,6 +224,7 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
 
 angular.module("../app/views/accelerate.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/accelerate.html",
+    "<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />\n" +
     "<div class=\"container\">\n" +
     "<h1>Accelerate</h1>\n" +
     "<h4>A mobile training application for emergency medical personnel.</h4>\n" +
@@ -233,39 +234,32 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "        <img src=\"../images/Accelerate/Icon.png\" style=\"width: 300px;\">\n" +
     "	</div>\n" +
     "	<div class=\"col col-md-8\">\n" +
-    "		<p><strong>Contributions:</strong> Affinity Diagrams, Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
+    "		<p><span class=\"category\">Contributions:</span> Affinity Diagrams, Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
     "		<br/><br/>\n" +
-    "		<strong>Tools Used:</strong> Adobe Illustrator, Adobe InDesign\n" +
+    "		<span class=\"category\">Tools Used:</span> Adobe Illustrator, Adobe InDesign\n" +
     "		<br/><br/>\n" +
-    "		<strong>Team Members:</strong> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
+    "		<span class=\"category\">Team Members:</span> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
     "		<br/><br/>\n" +
-    "		<strong>Duration:</strong> October 2014 - December 2014\n" +
+    "		<span class=\"category\">Duration:</span> October 2014 - December 2014\n" +
     "		<br/><br/>\n" +
-    "		<strong>Class:</strong> Interaction Design Fundamentals, CMU</p>\n" +
+    "		<span class=\"category\">Class:</span> Interaction Design Fundamentals, CMU</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<hr/>\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<p><strong>Assignment:</strong> Conceive of an original mobile service that provides tools and/or information to an ambulance driver accessing information while on the job.\n" +
+    "		<p><span class=\"category\">Assignment:</span> Conceive of an original mobile service that provides tools and/or information to an ambulance driver accessing information while on the job.\n" +
     "		<br/><br/>	\n" +
-    "		<strong>Opportunity:</strong> EMS workers have a uniquely stressful job and do not have a lot of opportunity or encouragement to learn life skills or additional job skills. However, they have a lot of downtime that can be used more effectively.\n" +
+    "		<span class=\"category\">Opportunity:</span> EMS workers have a uniquely stressful job and do not have a lot of opportunity or encouragement to learn life skills or additional job skills. However, they have a lot of downtime that can be used more effectively.\n" +
     "		<br/><br/>\n" +
-    "		<strong>Solution:</strong> An app that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>\n" +
+    "		<span class=\"category\">Solution:</span> An app that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>\n" +
     "	</div>\n" +
-    "</div>\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"container\">\n" +
-    "			<div ng-include src=\"'../app/templates/accelerate_carousel.html'\"></div>\n" +
-    "		</div>	\n" +
-    "	</div>	\n" +
     "</div>\n" +
     "<hr/>\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Process</h3>\n" +
+    "		<h3><span class=\"category\">Process</span></h3>\n" +
     "	</div>\n" +
     "</div>\n" +
     "<div class=\"row\">\n" +
@@ -296,19 +290,25 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "		    	Personas were provided for us.  We used these to determine which ideas to pursue.  We picked the four top choices and composed narratives about their use based on our personas. We used these narratives to make the selection for our final idea, \n" +
     "		    	<br/><br/>\n" +
     "				We also followed up with the EMT that we interviewed initially to ask additional questions to make sure our idea was useful and desirable.\n" +
-    "				<br/>\n" +
+    "				<br/><br/>\n" +
     "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\">\n" +
-    "    					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\" class=\"img-responsive\" >\n" +
+    "    					<div class=\"caption_text\">	\n" +
+    "						Impact-Feasibility Matrix made from design ideas\n" +
+    "						</div>\n" +
     "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/AffinityWithPeople.jpg\">\n" +
-    "    					</div>\n" +
+    "					<div class=\"col col-md-6\">\n" +
+    "						<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.jpg\" class=\"img-responsive\" >\n" +
+    "    					<div class=\"caption_text\">	\n" +
+    "						Determining where to put ideas on Impact-Feasibility Matrix\n" +
+    "						</div>\n" +
     "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/AffinityDiagram.jpg\">\n" +
-    "    					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<img src=\"../images/Accelerate/AffinityDiagram.jpg\" class=\"img-responsive\" >\n" +
+    "    					<div class=\"caption_text\">	\n" +
+    "						Clustered diagram of team's design ideas\n" +
+    "						</div>\n" +
     "					</div>\n" +
     "				</div>\n" +
     "			</div>\n" +
@@ -323,24 +323,30 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "			</div>\n" +
     "			<div class=\"panel-body\">\n" +
     "				We fleshed out our idea using a navigation map.  We used this to think through the functionality of our app and the interaction that would be need to move between different screens. We also determined the appropriate depth and breadth of the navigation. We then created sketched wireframes for our main screens and placed them on our navigation map. We continued to update it as we iterated our designs.\n" +
-    "				<br/>\n" +
+    "				<br/><br/>\n" +
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-4\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/NavigationMap.jpg\"></div>\n" +
+    "						<img src=\"../images/Accelerate/NavigationMap.jpg\" class=\"img-responsive\">\n" +
+    "						<div class=\"caption_text\">	\n" +
+    "						Original navigation map with screen names\n" +
+    "						</div>\n" +
     "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/NavMapWithSketches.JPG\"></div>\n" +
+    "					<div class=\"col col-md-8\">\n" +
+    "						<img src=\"../images/Accelerate/NavMapWithSketches.JPG\" class=\"img-responsive\">\n" +
+    "						<div class=\"caption_text\">	\n" +
+    "						Updated navigation map with sketch wireframes\n" +
+    "						</div>\n" +
     "					</div>	\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/5_NavigationMap_HiFiDesigns.JPG\"></div>\n" +
-    "					</div>\n" +
-    "				</div>  \n" +
+    "				</div> \n" +
     "				<br/>\n" +
     "				For iterations, we did sketches, then we did digital low-fidelity mock ups. We went through multiple iterations of high-fidelity mock-ups. We originally had a color scheme and feel that was inspired by ambulances. We had red and blue as our primary colors and had straight lines. However, we later decided that we wanted a more playful and lighthearted theme. EMTs see ambulances all the time and they are likely a stressful place for them many times, so we didn't want to remind them of that. We wanted to give them an application that was enjoyable for them and would help to lift some of their stress.\n" +
     "				<br/></br/>\n" +
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-12\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/LowFiMockUps.png\"></div>\n" +
+    "						<img src=\"../images/Accelerate/LowFiMockUps.png\" class=\"img-responsive\">\n" +
+    "						<div class=\"caption_text\">	\n" +
+    "						Low-fidelity mockups\n" +
+    "						</div>\n" +
     "					</div>\n" +
     "				</div>		\n" +
     "			</div>\n" +
@@ -358,7 +364,10 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "				<br/></br/>\n" +
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-12\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Accelerate/AccelerateFinalDesignsHorizontal.png\"></div>\n" +
+    "						<img src=\"../images/Accelerate/AccelerateFinalDesignsHorizontal.png\" class=\"img-responsive\">\n" +
+    "						<div class=\"caption_text\">	\n" +
+    "						Final design, high-fidelity mockups \n" +
+    "						</div>\n" +
     "					</div>\n" +
     "				</div>		\n" +
     "			</div>\n" +
@@ -410,6 +419,7 @@ angular.module("../app/views/contact.html", []).run(["$templateCache", function(
 
 angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/distractionfreecoding.html",
+    "<link href=\"../Content/distractionfreecoding.css\" rel=\"stylesheet\" />\n" +
     "<div class=\"container\">\n" +
     "<h1>Distraction Free Coding</h1>\n" +
     "<h4>Research student developer problems using Contextual Design methodology.</h4>\n" +
@@ -420,30 +430,30 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "        <img src=\"../images/DistractionFreeCoding/icon.png\" style=\"width: 300px;\">\n" +
     "	</div>\n" +
     "	<div class=\"col col-md-8\">\n" +
-    "		<p><strong>Contributions:</strong> Contextual Inquiry, Affinity Diagrams, Sequence Models, Flow Models, Visioning\n" +
+    "		<p><span class=\"category\">Contributions:</span> Contextual Inquiry, Affinity Diagrams, Sequence Models, Flow Models, Visioning\n" +
     "		<br/><br/>\n" +
-    "		<strong>Team Members:</strong> Holly Brosnahan, Amalya Henderson, Michael Richardson, Yueying Tang\n" +
+    "		<span class=\"category\">Team Members:</span> Holly Brosnahan, Amalya Henderson, Michael Richardson, Yueying Tang\n" +
     "		<br/><br/>\n" +
-    "		<strong>Duration:</strong> October 2014 - December 2014\n" +
+    "		<span class=\"category\">Duration:</span> October 2014 - December 2014\n" +
     "		<br/><br/>\n" +
-    "		<strong>Class:</strong> User Centered Research and Evaluation, CMU </p>\n" +
+    "		<span class=\"category\">Class:</span> User Centered Research and Evaluation, CMU </p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<hr/>\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<p><strong>Assignment:</strong> This was a series of assignments designed to practice Contextual Design. The prompt was to observe student developers to see the issues that arise. Teams were then allowed to focus on improving any aspect of the student development process that they observed.\n" +
+    "		<p><span class=\"category\">Assignment:</span> This was a series of assignments designed to practice Contextual Design. The prompt was to observe student developers to see the issues that arise. Teams were then allowed to focus on improving any aspect of the student development process that they observed.\n" +
     "		<br/><br/>	\n" +
-    "		<strong>Opportunity:</strong> Student developers are easily distracted when trying to do to their homework. They are required to use a lot of systems to perform their tasks, and they are provided with a variety of resources to reference to learn the material. The need to switch between systems coupled with the constant distraction from social media and friends makes it difficult for students to stay focused on their assignments.\n" +
+    "		<span class=\"category\">Opportunity:</span> Student developers are easily distracted when trying to do to their homework. They are required to use a lot of systems to perform their tasks, and they are provided with a variety of resources to reference to learn the material. The need to switch between systems coupled with the constant distraction from social media and friends makes it difficult for students to stay focused on their assignments.\n" +
     "		<br/><br/>\n" +
-    "		<strong>Solution:</strong> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks for a specific period of time for students to work and then provides break time where it allows messages to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p>\n" +
+    "		<span class=\"category\">Solution:</span> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks for a specific period of time for students to work and then provides break time where it allows messages to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Process</h3>\n" +
+    "		<h3><span class=\"category\">Process</span></h3>\n" +
     "	</div>\n" +
     "</div>\n" +
     "<div class=\"row\">\n" +
@@ -552,7 +562,147 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
 
 angular.module("../app/views/hackathon.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/hackathon.html",
-    "<h3>Hackathon</h3>");
+    "<div class=\"container\">\n" +
+    "<h1>Hackathons and Challenges</h1>\n" +
+    "<h4>I competed in a hackathon and a challenge in order to learn new technologies and keep up my existing development skills.</h4>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h2>iOS App Challenge</h2>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<img src=\"../images/Hackathons/FeedingFriendzy/iOSAppChallenge.png\">\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>About the Challenge</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		This challenge was sponsored by Apple and was designed to teach students Apple’s new language for apps, Swift.  We were given a quick workshop one afternoon on using Swift. Then we had the task of developing an App using Apple’s Sharesheet API which can be used to share content through other apps on the phone, including things like text messaging, email, Facebook, Twitter, etc. \n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>Our Project</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		My team decided to build an application that we called Feeding Friendzy. This app is intended to help busy people, like college students or young professionals, that don’t like to eat alone. This app allows you to choose a time and place to eat and then push that notification to your social feeds so that your friends can join you for a meal. We integrated our app with the Google Maps and Google Places APIs so that users can select eating locations from within the app.  We also integrated the login and sharing features with Facebook so that users did not have to manage a new set of friends just for this application. \n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>My Contribution</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		For this project, my contributions included the Facebook integration and putting together the overall application. For the Facebook integration, I integrated the login and polled the API for your friend network. I was also responsible for the overall flow of the application and integrating all of the pieces that the rest of the team worked on, including server code, database development, Google APIs integration, and image design. \n" +
+    "	</div>\n" +
+    "</div>	\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>Final Application</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"thumbnail\"><img src=\"../images/Hackathons/FeedingFriendzy/FeedingFriendzyFinalDesigns.png\">\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>More Information</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		ChallengePost: <a href=\"http://challengepost.com/software/feeding-friendzy\">http://challengepost.com/software/feeding-friendzy</a>\n" +
+    "		<br/>\n" +
+    "		GitHub: <a href=\"https://github.com/shawnxusy/Feeding-friendzy\">https://github.com/shawnxusy/Feeding-friendzy</a>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h2>MHCI Hackathon</h2>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-3\">\n" +
+    "        <img src=\"../images/Hackathons/MHCIHackathon/MHCI_Hackathon.png\">\n" +
+    "	</div>\n" +
+    "	<div class=\"col col-md-9\">\n" +
+    "		<div class= \"row\">\n" +
+    "			<h4>About The Challenge</h4>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			This challenge was hosted by CMU’s Master’s of Human-Computer Interaction students. Technical support was provided by Microsoft, and the goal of the hackathon was to create a human-centered application with Microsoft technology. This hackathon took place over 20 hours.	\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>Our Project</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		My team decided to use the kinect to create a fully interactive experience called Down Beat. We wanted to create a fun activity that can be used on any big screen by multiple people; we invisioned it being used in a large open area where people are gathered like a festival or amusement park. Down Beat take a song that is broken up into 4 layers. Players use their bodies to control these layers. By moving faster, they speed up the tempo of their layers. By moving closer to the Kinect, they raise the volume of their layers. Additionally, there is a display of Fireworks that is controlled by these same movements. Each player has a different color firework and they change volume and height based on movement. \n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>My Contribution</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		For this project, my contribution was the controller for the music layers. I used C# and the <a href=\"http://www.ambiera.com/irrklang/\">IrrKlang</a> music player library. When movement was detected by the Kinect, an event was sent to the music controller which was responsible for parsing the events and making the appropriate adjustments to the corresponding layers of music.\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>Final Application</h4>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/coding.JPG\">\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/downbeat_demo.jpg\">\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h4>More Information</h4>\n" +
+    "	</div>\n" +
+    "</div>	\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		Hackathon Link: <a href=\"https://www.hackerleague.org/hackathons/mhci-hackathon\">https://www.hackerleague.org/hackathons/mhci-hackathon</a>\n" +
+    "		<br/>\n" +
+    "		GitHub: <a href=\"https://github.com/MasterPie/MHCI_Hackathon\">https://github.com/MasterPie/MHCI_Hackathon</a>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "		\n" +
+    "</div>");
 }]);
 
 angular.module("../app/views/home.html", []).run(["$templateCache", function($templateCache) {
@@ -614,6 +764,11 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h3>Process</h3>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<p><strong>Assignment:</strong> Pick any topic related to social web and explore it with design, research, and/or development.\n" +
@@ -732,7 +887,83 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
 
 angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/wakeup.html",
-    "<h3>wake up</h3>");
+    "<div class=\"container\">\n" +
+    "<h1>Wake Up</h1>\n" +
+    "<h4>Development of an Android application that gives the weather and bus information when an alarm goes off.</h4>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-4\">\n" +
+    "        <img src=\"../images/WakeUp/icon.jpg\" style=\"width: 300px;\">\n" +
+    "	</div>\n" +
+    "	<div class=\"col col-md-8\">\n" +
+    "		<p><strong>Contributions:</strong> Android development\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Tools and Technologies:</strong> Eclipse, Java, Android SDK, Adobe Photoshop\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Duration:</strong> November 2014 - December 2014 (3 weeks)\n" +
+    "		<br/><br/>\n" +
+    "		<strong>Class:</strong> Software Structures for User Interfaces, Mobile Lab, CMU</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p><strong>Assignment:</strong> Design and develop a mobile application to demonstrate Android development.\n" +
+    "		<br/><br/>	\n" +
+    "		<strong>Opportunity:</strong> When my alarm goes off in the morning, the first thing I do is check the weather and the bus information to determine how long I have to get ready and see how I need to dress for the day. \n" +
+    "		<br/><br/>\n" +
+    "		<strong>Solution:</strong> I decided to build an application that is a dedicated morning alarm clock. This alarm clock allows you to set your preferred city, bus route, and bus stop. When the alarm goes off, this information is displayed to the user.</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Final Design</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	<div class=\"row\">\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/home_screen.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/preferences_screen.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/set_alarm_screen.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/alarm_screen.png\">\n" +
+    "    					</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<div class=\"panel panel-default\">\n" +
+    "			<div class=\"panel-heading\">\n" +
+    "		    	<h3 class=\"panel-title\">Final Code</h3>\n" +
+    "			</div>\n" +
+    "			<div class=\"panel-body\">\n" +
+    "		    	GitHub: <a href=\"https://github.com/kaitlynesparks/WakeUp\">https://github.com/kaitlynesparks/WakeUp</a>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "</div>");
 }]);
 
 angular.module("../app/views/webdesign.html", []).run(["$templateCache", function($templateCache) {
@@ -921,9 +1152,9 @@ $scope.projects = [];
 $scope.projects = [{Title: "Accelerate", Description: "Designing a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Icon.png", Nav: "accelerate"},
 				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/icon.png", Nav: "distractionfreecoding"},
 				   {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online.", Thumbnail: "../images/Peanuts/Icon.png", Nav: "peanuts"},
-				   {Title: "Web Design", Description: "something web design", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign"},
-				   {Title: "Wake Up", Description: "Wake Up", Thumbnail: "http://lorempixel.com/400/300/sports/5/", Nav: "wakeup"},
-				   {Title: "Hackathon", Description: "something about hackathon", Thumbnail: "http://lorempixel.com/400/300/sports/6/", Nav: "hackathon"}];
+				   {Title: "Personal Website Design", Description: "something web design", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign"},
+				   {Title: "Wake Up", Description: "Wake Up", Thumbnail: "../images/WakeUp/icon.jpg", Nav: "wakeup"},
+				   {Title: "Hackathons and Challenges", Description: "something about hackathon", Thumbnail: "../images/Hackathons/icon.jpg", Nav: "hackathon"}];
 
 }]);
 

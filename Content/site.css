@@ -62,3 +62,11 @@ body {
 .row-centered {
     text-align:center;
 }
+
+/* caption text */
+.caption_text {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
