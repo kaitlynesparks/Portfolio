@@ -1017,7 +1017,16 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
 
 angular.module("../app/views/resume.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/resume.html",
-    "");
+    "<div class=\"row\">\n" +
+    "	<div class=\"col img-responsive row-centered\">\n" +
+    "		<img src=\"../images/Sparks_Resume.png\"/>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col row-centered\">\n" +
+    "		<a href=\"../images/\" download=\"Sparks_Resume.pdf\" class=\"btn btn-default\">Download <span class=\"glyphicon glyphicon-download-alt\"></span></a>\n" +
+    "	</div>	\n" +
+    "</div>	");
 }]);
 
 angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($templateCache) {
