@@ -773,16 +773,14 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "      <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
     "      <h1>Kaitlyn Sparks</h1>\n" +
     "      <h4>User Researcher and Interaction Designer</h4>\n" +
-    "      <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n" +
-    "      \"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\"</span>   \n" +
+    "      <span><i>I am an Masters of Human-Computer Interaction student at Carnegie Mellon University in Pittsburgh. I\n" +
+    "       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>   \n" +
     "      <br/><br/>\n" +
     "      <div class=\"row\">\n" +
     "        <div class=\"col row-centered \">\n" +
     "\n" +
     "          <a href=\"https://plus.google.com/u/0/106201679513041750453/posts\"><i id=\"social\" class=\"fa fa-google-plus-square fa-3x social-gp\"></i></a>\n" +
-    "\n" +
     "          <a href=\"https://www.linkedin.com/in/kaitlynsparks\"><i id=\"social\" class=\"fa fa-linkedin-square fa-3x social-li\"></i></a>\n" +
-    "\n" +
     "          <a href=\"mailto:kaitlynesparks@gmail.com\"><i id=\"social\" class=\"fa fa-envelope-square fa-3x social-em\"></i></a>\n" +
     "        </div>\n" +
     "        <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
@@ -790,8 +788,12 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  </div>   \n" +
-    "  \n" +
+    "  </div> \n" +
+    "\n" +
+    "  <br/><br/>\n" +
+    "  <h1 style=\"color:#808080;\"> My Work </h1>\n" +
+    "  <hr/>\n" +
+    "\n" +
     "    <div class=\"row\">\n" +
     "      \n" +
     "      <div data-ng-repeat=\"project in projects\">\n" +
@@ -800,7 +802,8 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "            <div class=\"thumbnail\">\n" +
     "                <a ui-sref=\"{{project.Nav}}\">\n" +
     "                  <div class=\"caption\">\n" +
-    "                      <h4>{{project.Title}}</h4>\n" +
+    "                      <h3>{{project.Title}}</h3>\n" +
+    "                      <h5>Project Type: {{project.ProjectType}}</h5>\n" +
     "                      <p>{{project.Description}}</p>\n" +
     "                  </div>\n" +
     "                </a>\n" +

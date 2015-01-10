@@ -16,16 +16,14 @@
       <br class="hidden-md hidden-lg hidden-sm"/>
       <h1>Kaitlyn Sparks</h1>
       <h4>User Researcher and Interaction Designer</h4>
-      <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>   
+      <span><i>I am an Masters of Human-Computer Interaction student at Carnegie Mellon University in Pittsburgh. I
+       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>   
       <br/><br/>
       <div class="row">
         <div class="col row-centered ">
 
           <a href="https://plus.google.com/u/0/106201679513041750453/posts"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
-
           <a href="https://www.linkedin.com/in/kaitlynsparks"><i id="social" class="fa fa-linkedin-square fa-3x social-li"></i></a>
-
           <a href="mailto:kaitlynesparks@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
         </div>
         <br class="hidden-md hidden-lg hidden-sm"/>
@@ -33,8 +31,12 @@
       </div>
     </div>
   </div>
-  </div>   
-  
+  </div> 
+
+  <br/><br/>
+  <h1 style="color:#808080;"> My Work </h1>
+  <hr/>
+
     <div class="row">
       
       <div data-ng-repeat="project in projects">
@@ -43,7 +45,8 @@
             <div class="thumbnail">
                 <a ui-sref="{{project.Nav}}">
                   <div class="caption">
-                      <h4>{{project.Title}}</h4>
+                      <h3>{{project.Title}}</h3>
+                      <h5>Project Type: {{project.ProjectType}}</h5>
                       <p>{{project.Description}}</p>
                   </div>
                 </a>
