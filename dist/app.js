@@ -178,54 +178,24 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
 
 angular.module("../app/views/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/about.html",
-    "<div class=\"jumbotron\">\n" +
-    "  <div class=\"container\">\n" +
-    "    <ul class=\"media-list\">\n" +
-    "      <li class=\"media\">\n" +
-    "        <a class=\"media-left\" href=\"#\">\n" +
-    "            <img src=\"http://az679163.vo.msecnd.net/public/social-media-logos.png\" alt=\"Your Breaking content is valuable\" style=\"height:150px; width: 150px\">\n" +
-    "        </a>\n" +
-    "        <div class=\"media-body\">\n" +
-    "          \n" +
-    "          <h4 class=\"media-heading\">About</h4>\n" +
-    "          Bacon ipsum dolor amet andouille brisket kielbasa cupim, prosciutto short loin filet mignon fatback ham shoulder rump ground round turducken shankle. Turducken jowl spare ribs hamburger chuck, ham rump meatball t-bone strip steak tail meatloaf. Pork loin sausage venison turducken strip steak. Jowl tri-tip short ribs pastrami t-bone pork belly pork loin doner salami ribeye shankle.\n" +
-    "        \n" +
-    "        </div>\n" +
-    "      </li>\n" +
-    "    </ul>\n" +
+    "<div class= \"container\">\n" +
+    "  <div class=\"row\">\n" +
+    "    <h1>About Me</h1>\n" +
+    "  </div>\n" +
+    "  <div class = \"col col-md-8 col-md-offset-2\">\n" +
+    "    <div class=\"row\">\n" +
+    "      <h3>Get to know me professionally</h3>\n" +
+    "      <span class=\"about-text\">I went to Vanderbilt and double majored in psychology and computer science. I grew up in a rural community and didn't know much about the job market, but I knew I cared about solving complex problems for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at as a program manager and a developer. Then I found Human-Computer Interaction and knew that's what I wanted to study. So, I went to CMU to pursue my Masters in HCI. </span>\n" +
+    "      <br/><br/>\n" +
+    "      <span class=\"about-text\">My passion is to figure out complicated systems and understand how to make them simple for users. I also enjoy learning about people's motivations for what they do; I think that's key to knowing what to design for them and also for working harmoniously with others. Having studied computer science, psychology, and now HCI, I have a wide range of knowledge that helps me to work well in diverse teams.</span>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <h3>Get to know me personally</h3>\n" +
+    "      <span class=\"about-text\">I am originally from a small town in south Georgia called Vidalia. It is home to the famous Vidalia sweet onion. In high school I played softball, tennis, and did competitive cheerleading. I moved to Nashville for college and lived there for a few years after graduation. I was a cheerleader at Vanderbilt cheering for men's and women's basketball and football. I love sports, especially SEC football and Atlanta Braves baseball! I also really like dogs, sweet tea, diet coke, and outdoor activities. </span>\n" +
+    "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
-    "\n" +
-    "<div class=\"container\">\n" +
-    "<h3>Skills:</h3>\n" +
-    "\n" +
-    "<div class=\"well\">\n" +
-    "  C#:\n" +
-    "  <div class=\"progress progress-striped active\">\n" +
-    "    <div class=\"progress-bar\" style=\"width: 85%\"></div>\n" +
-    "  </div>\n" +
-    "  Java:\n" +
-    "  <div class=\"progress progress-striped active\">\n" +
-    "    <div class=\"progress-bar\" style=\"width: 100%\"></div>\n" +
-    "  </div>\n" +
-    "  HTML 5:\n" +
-    "  <div class=\"progress progress-striped active\">\n" +
-    "    <div class=\"progress-bar\" style=\"width: 80%\"></div>\n" +
-    "  </div>\n" +
-    "  Javascript:\n" +
-    "  <div class=\"progress progress-striped active\">\n" +
-    "    <div class=\"progress-bar progress-bar-danger\" style=\"width: 20%\"></div>\n" +
-    "  </div>\n" +
-    "  Android:\n" +
-    "  <div class=\"progress progress-striped active\">\n" +
-    "    <div class=\"progress-bar\" style=\"width: 90%\"></div>\n" +
-    "  </div>\n" +
-    "   iPhone:\n" +
-    "  <div class=\"progress progress-striped active\">\n" +
-    "    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n" +
-    "  </div>\n" +
-    "</div>\n" +
-    "</div>");
+    "");
 }]);
 
 angular.module("../app/views/accelerate.html", []).run(["$templateCache", function($templateCache) {
@@ -787,17 +757,7 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
   $templateCache.put("../app/views/home.html",
     "<link href=\"../Content/home.css\" rel=\"stylesheet\" />\n" +
     "\n" +
-    "<div class=\"container\">\n" +
-    "\n" +
-    "  <div class=\"jumbotron\">\n" +
-    "    <h1>Kaitlyn Sparks</h1>\n" +
-    "    <p>Your next human compuater interaction expert?!?!</p>\n" +
-    "    <p><a class=\"btn btn-primary btn-lg\" ui-sref=\"about\">Learn more</a></p>\n" +
-    "  </div>\n" +
-    "\n" +
-    "\n" +
-    "  <div class=\"container\">\n" +
-    "    \n" +
+    "<div class=\"container\"> \n" +
     "      <div class=\"row\">\n" +
     "        \n" +
     "        <div data-ng-repeat=\"project in projects\">\n" +
@@ -806,7 +766,8 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "              <div class=\"thumbnail\">\n" +
     "                <a ui-sref=\"{{project.Nav}}\">\n" +
     "                  <div class=\"caption\">\n" +
-    "                      <h4>{{project.Title}}</h4>\n" +
+    "                      <h3>{{project.Title}}</h3>\n" +
+    "                      <h5>Project Type: {{project.ProjectType}}</h5>\n" +
     "                      <p>{{project.Description}}</p>\n" +
     "                  </div>\n" +
     "                </a>\n" +
@@ -815,9 +776,6 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "          </div>\n" +
     "\n" +
     "      </div>\n" +
-    "\n" +
-    "  </div>\n" +
-    "\n" +
     "</div>");
 }]);
 
@@ -1036,7 +994,7 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "<!--Header-->\n" +
     "<div class=\"container\">\n" +
     "<h1>Wake Up</h1>\n" +
-    "<h4>Development of an Android application that gives the weather and bus information when an alarm goes off.</h4>\n" +
+    "<h4>Development of an Android application that gives the weather and bus information when an alarm goes off</h4>\n" +
     "<hr/>\n" +
     "\n" +
     "<!--Meta Data-->\n" +
@@ -1131,7 +1089,7 @@ angular.module("../app/views/webdesign.html", []).run(["$templateCache", functio
     "<!--Header-->\n" +
     "<div class=\"container\">\n" +
     "<h1>Personal Website</h1>\n" +
-    "<h4>Design a personal website for mobile and desktop.</h4>\n" +
+    "<h4>Design a personal website for mobile and desktop</h4>\n" +
     "<hr/>\n" +
     "\n" +
     "<!--Meta Data -->\n" +
@@ -1344,12 +1302,12 @@ app.controller('homeController', ['$scope', function ($scope) {
 
 $scope.projects = [];
 
-$scope.projects = [{Title: "Accelerate", Description: "Designing a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Icon.png", Nav: "accelerate"},
-				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/icon.png", Nav: "distractionfreecoding"},
-				   {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online.", Thumbnail: "../images/Peanuts/Icon.png", Nav: "peanuts"},
-				   {Title: "Personal Website Design", Description: "something web design", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign"},
-				   {Title: "Wake Up", Description: "Wake Up", Thumbnail: "../images/WakeUp/icon.jpg", Nav: "wakeup"},
-				   {Title: "Hackathons and Challenges", Description: "something about hackathon", Thumbnail: "../images/Hackathons/icon.jpg", Nav: "hackathon"}];
+$scope.projects = [{Title: "Accelerate", Description: "A project to design a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Icon.png", Nav: "accelerate", ProjectType:"Design"},
+				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/icon.png", Nav: "distractionfreecoding", ProjectType:"Research"},
+				   {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", Thumbnail: "../images/Peanuts/Icon.png", Nav: "peanuts", ProjectType:"Research"},
+				   {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign", ProjectType: "Design"},
+				   {Title: "Wake Up", Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", Thumbnail: "../images/WakeUp/icon.jpg", Nav: "wakeup", ProjectType: "Development"},
+				   {Title: "Hackathons and Challenges", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/icon.jpg", Nav: "hackathon", ProjectType: "Development"}];
 
 }]);
 
