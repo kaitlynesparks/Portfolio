@@ -756,26 +756,58 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
 angular.module("../app/views/home.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/home.html",
     "<link href=\"../Content/home.css\" rel=\"stylesheet\" />\n" +
+    "<link href=\"../Content/contact.css\" rel=\"stylesheet\" />\n" +
+    "<link href=\"../Content/font-awesome-4.2.0/css/font-awesome.min.css\" rel=\"stylesheet\">\n" +
     "\n" +
-    "<div class=\"container\"> \n" +
+    "\n" +
+    "<div class=\"container\">\n" +
+    "  <div class=\"row panel\">\n" +
+    "    <div class=\"col-md-4 bg_blur \">\n" +
+    "\n" +
+    "    </div>\n" +
+    "    <div class=\"col-md-8  col-xs-12\">\n" +
+    "      <img src=\"../images/Home/KaitlynSparks.png\" class=\"img-thumbnail picture hidden-xs\" />\n" +
+    "      <img src=\"../images/Home/KaitlynSparks.png\" class=\"img-thumbnail visible-xs picture_mob\" />\n" +
+    "      <div class=\"header\">\n" +
+    "      <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
+    "      <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
+    "      <h1>Kaitlyn Sparks</h1>\n" +
+    "      <h4>User Researcher and Interaction Designer</h4>\n" +
+    "      <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n" +
+    "      \"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\"</span>   \n" +
+    "      <br/><br/>\n" +
     "      <div class=\"row\">\n" +
-    "        \n" +
-    "        <div data-ng-repeat=\"project in projects\">\n" +
+    "        <div class=\"col row-centered \">\n" +
     "\n" +
-    "          <div class=\"col-xs-12 col-sm-6 col-md-4\">            \n" +
-    "              <div class=\"thumbnail\">\n" +
+    "          <a href=\"https://plus.google.com/u/0/106201679513041750453/posts\"><i id=\"social\" class=\"fa fa-google-plus-square fa-3x social-gp\"></i></a>\n" +
+    "\n" +
+    "          <a href=\"https://www.linkedin.com/in/kaitlynsparks\"><i id=\"social\" class=\"fa fa-linkedin-square fa-3x social-li\"></i></a>\n" +
+    "\n" +
+    "          <a href=\"mailto:kaitlynesparks@gmail.com\"><i id=\"social\" class=\"fa fa-envelope-square fa-3x social-em\"></i></a>\n" +
+    "        </div>\n" +
+    "        <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
+    "\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "  </div>   \n" +
+    "  \n" +
+    "    <div class=\"row\">\n" +
+    "      \n" +
+    "      <div data-ng-repeat=\"project in projects\">\n" +
+    "\n" +
+    "        <div class=\"col-xs-12 col-sm-6 col-md-4 row-centered\">            \n" +
+    "            <div class=\"thumbnail\">\n" +
     "                <a ui-sref=\"{{project.Nav}}\">\n" +
     "                  <div class=\"caption\">\n" +
-    "                      <h3>{{project.Title}}</h3>\n" +
-    "                      <h5>Project Type: {{project.ProjectType}}</h5>\n" +
+    "                      <h4>{{project.Title}}</h4>\n" +
     "                      <p>{{project.Description}}</p>\n" +
     "                  </div>\n" +
     "                </a>\n" +
-    "                  <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
-    "              </div>\n" +
-    "          </div>\n" +
-    "\n" +
-    "      </div>\n" +
+    "                <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
     "</div>");
 }]);
 
