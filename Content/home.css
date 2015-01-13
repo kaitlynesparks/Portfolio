@@ -63,11 +63,9 @@ color: #fff;
 background-color: #F1F1F1;
 }
 
-
-
 .bg_blur
 {
-    background-image:url('../images/Home/Pittsburgh.jpg');
+    background-image:url('../images/Home/Pittsburgh.JPG');
     height: 300px;
     background-size: cover;
 }
