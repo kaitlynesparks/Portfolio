@@ -220,19 +220,19 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "\n" +
     "<!--Meta data -->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-4\">\n" +
-    "        <img src=\"../images/Accelerate/Icon.png\" style=\"width: 300px;\">\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "        <img src=\"../images/Accelerate/Icon.png\" >\n" +
     "	</div>\n" +
-    "	<div class=\"col col-md-8\">\n" +
-    "		<p><span class=\"category\">Project Type:</span> Design\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<span class=\"category\">Project Type:</span><br/> Design\n" +
     "		<br/><br/>	\n" +
-    "		<span class=\"category\">Contributions:</span> Affinity Diagrams, Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
+    "		<span class=\"category\">Contributions:</span> <br/> Affinity Diagrams, Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Team Members:</span> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
+    "		<span class=\"category\">Team Members:</span> <br/> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span> October 2014 - December 2014\n" +
+    "		<span class=\"category\">Duration:</span> <br/> October 2014 - December 2014\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> Interaction Design Fundamentals, CMU</p>\n" +
+    "		<span class=\"category\">Class:</span> <br/> Interaction Design Fundamentals, CMU\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -242,7 +242,7 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "	<div class=\"col col-md-12\">\n" +
     "		<p><span class=\"category\">Assignment:</span> Conceive of an original mobile application that provides tools and/or information to an ambulance driver accessing the application while on the job.\n" +
     "		<br/><br/>	\n" +
-    "		<span class=\"category\">Opportunity:</span> EMS workers have a uniquely stressful job and do not have a lot of opportunity or encouragement to learn life skills or additional job skills. However, they have a lot of downtime that can be used more effectively.\n" +
+    "		<span class=\"category\">Opportunity:</span> EMS workers have a uniquely stressful job and do not have much encouragement to learn life skills or additional job skills. However, they have downtime that can be used more effectively.\n" +
     "		<br/><br/>\n" +
     "		<span class=\"category\">Solution:</span> An application that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>\n" +
     "	</div>\n" +
@@ -252,57 +252,45 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "<!--Process Header -->\n" +
     "<div class=\"row process\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<h3><span class=\"category\">Process</span></h3>\n" +
+    "		<h3>Process</h3>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Research -->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Research</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We started this project by researching the experience and needs of emergency medical staff. We read through internet blogs and articles, watched ambulance ride along videos, and interviewed an EMT to get an understanding of the life and work circumstances for a professional in the emergency medical services field.\n" +
-    "		    	<blockquote>\n" +
-    "  					<p>“Myself and many of my co-workers have sought grief counseling, nutrition assistance, and some have even been placed on heavy sleep medications because they never had [targeted information] available to them in a more private medium.”</p>\n" +
-    "  					<small>EMT</small>\n" +
-    "				</blockquote> \n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		<h4>Research</h4>\n" +
+    "		<p>We started this project by researching the experience and needs of emergency medical staff. We read through internet blogs and articles, watched ambulance ride along videos, and interviewed an EMT to get an understanding of the life and work circumstances for a professional in the emergency medical services field.\n" +
+    "    	<blockquote>\n" +
+    "			<p>“Myself and many of my co-workers have sought grief counseling, nutrition assistance, and some have even been placed on heavy sleep medications because they never had [targeted information] available to them in a more private medium.”</p>\n" +
+    "			<small>EMT</small>\n" +
+    "		</blockquote> </p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Idea Generation -->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Idea Generation</h3>\n" +
+    "		<h4>Idea Generation</h4>\n" +
+    "		<p>We generated concept ideas for apps and created an affinity diagram. The process of creating the affinity diagram allowed us to talk about the ideas as a team, and we later used the affinity diagram to to see ideas that we could combine into cohesive, larger concepts. After that, we sorted them into a feasibility-impact matrix showing the potential usefulness of the application against the difficulty of creating it. Personas were provided for us, and we used these to determine which ideas to pursue. We picked our top four choices and composed narratives about their use based on our personas. We used these narratives to make the selection for our final idea. We also followed up with the EMT we interviewed initially, asking additional questions to make sure our idea was useful and desirable.</p>\n" +
+    "		<br/>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<img src=\"../images/Accelerate/AffinityDiagram.jpg\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				We generated 50 design ideas then came together as a team to discuss them and create an affinity diagram that showed larger potential concepts.\n" +
+    "				</div>\n" +
     "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We generated concept ideas for apps and created an affinity diagram. The process of creating the affinity diagram allowed us to talk about the ideas as a team, and we later used the affinity diagram to to see ideas that we could combine into cohesive, larger concepts. After that, we sorted them into an feasibility-impact matrix showing the potential usefulness of the application against the difficulty of creating it. Personas were provided for us, and we used these to determine which ideas to pursue. We picked our top four choices and composed narratives about their use based on our personas. We used these narratives to make the selection for our final idea. We also followed up with the EMT that we interviewed initially to ask additional questions to make sure our idea was useful and desirable.\n" +
-    "				<br/><br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<img src=\"../images/Accelerate/AffinityDiagram.jpg\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						We generated 50 design ideas then came together as a team to discuss them and create an affinity diagram that showed potential larger concepts.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.jpg\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						Our final impact-feasibility matrix, along with our personas and larger concepts from our affinity diagram, was used to narrow down the ideas worth pursuing further.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
+    "			<div class=\"col col-md-6\">\n" +
+    "				<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.jpg\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				Our final impact-feasibility matrix, along with our personas and larger concepts from our affinity diagram, was used to narrow down the ideas worth pursuing further.\n" +
     "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
@@ -312,63 +300,45 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "<!-- Application Design -->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "				<h3 class=\"panel-title\">Application Design</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "				We fleshed out our idea using a navigation map, which we used this to think through the functionality of our app and the interaction that would be need to move between different functions. Through our navigation map, we were able to quickly analyze the breadth and depth of our application. We initially created it using screen names. As we progressed through our design process, we maintained our navigation map and kept checking that breadth and depth was appropriate. In updating, we also replaced key screen with sketches, low-fidelity mockups, and high-fidelity mockups. This was helpful for us because it was natural for the complexity of our application to increase as we thought about it more; however, we wanted to keep it simple. Using the navigation map, we were able to see when we needed to reconsider features and scale back.\n" +
-    "				<br/><br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/Accelerate/NavigationMap.jpg\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						As a team, we created a navigation map with screen names to help us see the full picture of the functionality of our application.\n" +
-    "						</div>\n" +
+    "		<h4>Application Design</h4>\n" +
+    "		<p>We fleshed out our idea using a navigation map, which we used to think through the functionality of our app and the interaction that would be needed to move between different functions. Through our navigation map, we were able to quickly analyze the breadth and depth of our application. We initially created it using screen names. As we progressed through our design process, we maintained our navigation map and kept checking that breadth and depth was appropriate. In updating, we also replaced key screens with sketches, low-fidelity mockups, and high-fidelity mockups. This was helpful for us because it was natural for the complexity of our application to increase as we thought about it more; however, we wanted to keep it simple. Using the navigation map, we were able to see when we needed to reconsider features and scale back.</p>\n" +
+    "		<br/>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-8\">\n" +
+    "				<img src=\"../images/Accelerate/NavMapWithSketches.JPG\" class=\"img-responsive\">\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "					As a team, we created a navigation map to sketch out the flow of our application. As we continued the design process, we updated our navigation map and added sketches for key screens.\n" +
+    "				</div>\n" +
+    "			</div>	\n" +
+    "		</div> \n" +
+    "		<br/>\n" +
+    "		<p>As we went through the design process, we made increasingly more detailed designs. We began with sketches, then created low-fidelity mockups, and finally interated to make high-fidelity mockups. To create mockups, we used Adobe Illustrator. We went through multiple iterations of high-fidelity mock-ups trying to get the right color palette and feel for our application. We originally had a look and feel that was inspired by ambulances. We had red and blue as our primary colors and had straight lines. However, we later decided that we wanted a more playful and lighthearted theme. EMTs see ambulances incessantly and they are likely a stressful place for them, so we didn't want to remind them of that. We wanted to give them an application that was enjoyable for them and would help to alleviate some of their stress.</p>\n" +
+    "		<br/>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<img src=\"../images/Accelerate/LowFiMockUps.png\" class=\"img-responsive\">\n" +
+    "					<div class=\"caption_text\">	\n" +
+    "						After doing sketches, we did an iteration of low-fidelity mockups in black and white. These were used to begin understanding the amount of information and interactivity that would be appropriate per screen.\n" +
     "					</div>\n" +
-    "					<div class=\"col col-md-8\">\n" +
-    "						<img src=\"../images/Accelerate/NavMapWithSketches.JPG\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						As we continued the design process, we updated our navigation map and added sketches for key screens.\n" +
-    "						</div>\n" +
-    "					</div>	\n" +
-    "				</div> \n" +
-    "				<br/>\n" +
-    "				As we went through the design process, we made increasingly more detailed designs. We began with sketches, then did low-fidelity mockups, and finally did high-fidelity mockups. To create mockups, we used Adobe Illustrator. We went through multiple iterations of high-fidelity mock-ups trying to get the right color palette and feel for our application. We originally had a look and feel that was inspired by ambulances. We had red and blue as our primary colors and had straight lines. However, we later decided that we wanted a more playful and lighthearted theme. EMTs see ambulances all the time and they are likely a stressful place for them, so we didn't want to remind them of that. We wanted to give them an application that was enjoyable for them and would help to alleviate some of their stress.\n" +
-    "				<br/></br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<img src=\"../images/Accelerate/LowFiMockUps.png\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						After doing sketches, we did an iteration of low-fidelity mockups in black and white. These were used to begin seeing the amount of information and interactivity that would be appropriate per screen.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>		\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "		</div>		\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Final Deliverables -->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "				<h3 class=\"panel-title\">Final Deliverables</h3>\n" +
+    "		<h4>Final Deliverables</h4>\n" +
+    "		<p>he final deliverables for this project were completed designs, design specifications, and a final presentation to the class.</p>\n" +
+    "		<br/>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<img src=\"../images/Accelerate/AccelerateFinalDesignsHorizontal.png\" class=\"img-responsive\">\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				The final designs for our screens included a fun, playful color scheme. We also introduced an owl character that provided consistency and whimsy throughout, encouraging EMTs to continue using the application. These features provided a feeling that will be a welcome relief from the seriousness of the users' normal work days.\n" +
+    "				</div>\n" +
     "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "				The final deliverables for this project were completed designs, design specifications, and a final presentation to the class.\n" +
-    "				<br/></br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<img src=\"../images/Accelerate/AccelerateFinalDesignsHorizontal.png\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						The final designs for our screens included a fun, playful color scheme. We also introduced an owl character that provided consistency and whimsy throughout encouraging users to continue using the application. These features provided a feeling that will be a welcome relief from the seriousness of the users' normal work days.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>		\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		</div>		\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -426,19 +396,19 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "\n" +
     "<!--Meta data-->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-4 upward-adjust\">\n" +
-    "        <img src=\"../images/DistractionFreeCoding/icon.png\" style=\"width: 300px;\">\n" +
+    "	<div class=\"col col-md-6 upward-adjust\">\n" +
+    "        <img src=\"../images/DistractionFreeCoding/icon.png\">\n" +
     "	</div>\n" +
-    "	<div class=\"col col-md-8\">\n" +
-    "		<span class=\"category\">Project Type:</span> Research\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<span class=\"category\">Project Type:</span><br/>Research\n" +
     "		<br/><br/>\n" +
-    "		<p><span class=\"category\">Contributions:</span> Contextual Inquiry, Affinity Diagrams, Sequence Models, Flow Models, Visioning\n" +
+    "		<span class=\"category\">Contributions:</span><br/> Contextual Inquiry, Affinity Diagrams, Sequence Models, Flow Models, Visioning\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Team Members:</span> Holly Brosnahan, Amalya Henderson, Michael Richardson, Yueying Tang\n" +
+    "		<span class=\"category\">Team Members:</span><br/> Holly Brosnahan, Amalya Henderson, Michael Richardson, Yueying Tang\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span> October 2014 - December 2014\n" +
+    "		<span class=\"category\">Duration:</span><br/> October 2014 - December 2014\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> User Centered Research and Evaluation, CMU </p>\n" +
+    "		<span class=\"category\">Class:</span> <br/>User Centered Research and Evaluation, CMU\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -448,9 +418,9 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "	<div class=\"col col-md-12\">\n" +
     "		<p><span class=\"category\">Assignment:</span> This was a series of assignments designed to practice Contextual Design methods. The prompt was to observe student developers to see the issues that arise. Teams were then allowed to focus on improving any aspect of the student development process that they observed.\n" +
     "		<br/><br/>	\n" +
-    "		<span class=\"category\">Opportunity:</span> Student developers are easily distracted when trying to do to their homework. They are required to use a lot of systems to perform their tasks, and they are provided with a variety of resources to reference to learn the material. The need to switch between systems coupled with the constant distraction from social media and friends makes it difficult for students to stay focused on their assignments.\n" +
+    "		<span class=\"category\">Opportunity:</span> Student developers are easily distracted when trying to do to their homework. They are required to use a large number of systems to perform their tasks, and they are provided with a variety of resources to reference to learn the material. The need to switch between systems coupled with the constant distraction from social media and friends makes it difficult for students to stay focused on their assignments.\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks for a specific period of time for students to work and then provides break time where it allows messages to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p>\n" +
+    "		<span class=\"category\">Solution:</span> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks out online distractions for a user specified period of time, then provides a break when messages are allowed to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -458,113 +428,89 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<!--Process Header-->\n" +
     "<div class=\"row process\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<h3><span class=\"category\">Process</span></h3>\n" +
+    "		<h3>Process</h3>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Contextual Inquiry-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Contextual Inquiry</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We began by performing contextual interviews with student developers. Each team member interviewed one student; we had 5 team members giving us a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own homework assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. We asked students questions about what they were doing as they did it to get an understanding of their natural problems and processes. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		<h4>Contextual Inquiry</h4>\n" +
+    "		<p>We began by performing contextual interviews with student developers. Each team member interviewed one student; we had 5 team members giving us a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own homework assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. We asked students questions about what they were doing as they did it to get an understanding of their natural problems and processes. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Interpretation Sessions-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Interpretation Sessions</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	During the interpretation sessions, the team gathered and went through the interviews one at a time. The interviewer read their notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram. By having each member activity engaged in the session, we were able to internalize the information about each interview sesssion without having to be present for all of them.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/SequenceModel.JPG\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						We created sequence models for each interview. We included the steps that were taken during the interview as well as the triggers for those events and the intents of the actions taken. If breakdowns occurred, we noted those in red.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/FlowModel.JPG\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						During the interpretation sessions, we created flow models indicating the key players and how they interacted. We noted breakdowns in red.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
+    "		<h4>Interpretation Sessions</h4>\n" +
+    "		<p>During the interpretation sessions, the team gathered and went through the interviews one at a time. The interviewer read her notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram. By having each member activity engaged in the session, we were able to internalize the information about each interview sesssion without having to be present for all of them.</p>\n" +
+    "		<br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-6\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/SequenceModel.JPG\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				We created sequence models for each interview. We included the steps that were taken during the interview as well as the triggers for those events and the intents of the actions taken. If breakdowns occurred, we noted those in red.\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "			<div class=\"col col-md-4\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/FlowModel.JPG\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				During the interpretation sessions, we created flow models indicating the key players and how they interacted. We noted breakdowns in red.\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Affinity Diagram and Consolidated Models-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Affinity Diagram and Consolidated Models</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and just reading the headings to get an idea of what was happening. We also consolidated the 5 sequences into one sequence that represented all of the users. We did the same with the flow models to create one consolidated model. This process allows us to use the data we collected to create one picture of what is common in the process across all interviewees. It is also an additional step that helps us digest the information so that we can easily recall it later.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/Affinity.JPG\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/ConsolidatedFlow.jpg\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						The 5 flow models created during the interpretation sessions were combined into this one consolidated flow model representing all of the roles and relationships that were seen in the individual flow models.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/ConsolidatedSequence.JPG\" class=\"img-responsive\" >\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						The 5 sequence models created during the interpretation sessions were combined into this one consolidated sequence model. We included the intents and triggers from the original sequences into this model as well.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
+    "		<h4>Affinity Diagram and Consolidated Models</h4>\n" +
+    "		<p>We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and get an overall idea of what was happening by simply looking at the headings. We also consolidated the 5 sequences into one sequence that represented all of the users. We did the same with the flow models to create one consolidated model. This process allows us to use the data we collected to create one picture of what is common in the process across all interviewees. It is also an additional step that helps us digest the information so that we can easily recall it later.</p>\n" +
+    "		<br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/Affinity.JPG\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.\n" +
     "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-4\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/ConsolidatedFlow.jpg\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				The 5 flow models created during the interpretation sessions were combined into this one consolidated flow model representing all of the roles and relationships that were seen in the individual flow models.\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-md-4\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/ConsolidatedSequence.JPG\" class=\"img-responsive\" >\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				The 5 sequence models created during the interpretation sessions were combined into this one consolidated sequence model. We included the intents and triggers from the original sequences into this model as well.\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Visioning-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Visioning</h3>\n" +
+    "		<h4>Visioning</h4>\n" +
+    "		<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
+    "		<br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-5\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/GenerateIdeas.JPG\" class=\"img-responsive\">\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				Before we began visioning, we each looked at the affinity diagram and added notes containing design ideas, questions, and key features that needed to be included in our solutions.\n" +
+    "				</div>\n" +
     "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv style session with one person being the writer and the other team members speaking their ideas aloud. \n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-5\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/GenerateIdeas.JPG\" class=\"img-responsive\">\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						Before we began visioning, we each looked at the affinity diagram and added notes containing design ideas, questions, and key features that needed to be included in our solutions.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<img src=\"../images/DistractionFreeCoding/Vision.JPG\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						We created visions by doing quick sketches of the ideas that teammates were coming up with in a quick, improv style visioning session.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/Vision.JPG\" class=\"img-responsive\">\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				We created visions by doing quick sketches of the ideas that teammates were coming up with in a quick, improv style visioning session.\n" +
     "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
@@ -574,14 +520,8 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<!--Final Deliverables-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Final Deliverables</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	After we did 5 visions, we determined the ones we thought were most promising based on the information we learned about our users while generating our affinity diagram, sequence models, and flow models. We consolidated the visions containing those ideas to create a final concept. As a final deliverable, we presented our findings and our final idea to the class.\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		<h4>Final Deliverables</h4>\n" +
+    "		<p>After we did 5 visions, we determined the ones we thought were most promising based on the information we learned about our users while generating our affinity diagram, sequence models, and flow models. We consolidated the visions containing those ideas to create a final concept. As a final deliverable, we presented our findings and our final idea to the class.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -591,6 +531,8 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
 
 angular.module("../app/views/hackathon.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/hackathon.html",
+    "<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />\n" +
+    "\n" +
     "<!--Header-->\n" +
     "<div class=\"container\">\n" +
     "<h1>Hackathons and Challenges</h1>\n" +
@@ -684,16 +626,22 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "			</div>\n" +
     "			<div class=\"panel-body\">\n" +
     "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-3\">\n" +
+    "					<div class=\"col col-md-12\">\n" +
     "				        <img src=\"../images/Hackathons/MHCIHackathon/MHCI_Hackathon.png\">\n" +
     "					</div>\n" +
-    "					<div class=\"col col-md-9\">\n" +
+    "				</div>\n" +
+    "				<div class=\"row\">\n" +
+    "					<div class=\"col col-md-12\">\n" +
     "						<!--About the Challenge-->\n" +
     "						<div class= \"row\">\n" +
-    "							<h4>About The Challenge</h4>\n" +
+    "							<div class=\"col col-md-12\">\n" +
+    "								<h4>About The Challenge</h4>\n" +
+    "							</div>\n" +
     "						</div>\n" +
     "						<div class=\"row\">\n" +
-    "							This challenge was hosted by CMU’s Master’s of Human-Computer Interaction students. Technical support was provided by Microsoft, and the goal of the hackathon was to create a human-centered application with Microsoft technology. This hackathon took place over 20 hours.	\n" +
+    "							<div class=\"col col-md-12\">\n" +
+    "								This challenge was hosted by CMU’s Master’s of Human-Computer Interaction students. Technical support was provided by Microsoft, and the goal of the hackathon was to create a human-centered application with Microsoft technology. This hackathon took place over 20 hours.	\n" +
+    "							</div>	\n" +
     "						</div>\n" +
     "					</div>\n" +
     "				</div>\n" +
@@ -705,7 +653,7 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "				</div>\n" +
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-12\">\n" +
-    "						My team decided to use the kinect to create a fully interactive experience called Down Beat. We wanted to create a fun activity that can be used on any big screen by multiple people; we invisioned it being used in a large open area where people are gathered like a festival or amusement park. Down Beat takes a song that is broken up into 4 layers. Players use their bodies to control these layers. By moving faster, they speed up the tempo of their layers. By moving closer to the Kinect, they raise the volume of their layers. Additionally, there is a display of fireworks that is controlled by the same movements. Each player has a different color firework and they change volume and height based on movement. \n" +
+    "						My team decided to use the kinect to create a fully interactive experience called Down Beat. We wanted to create a fun activity that can be used on any big screen by multiple people; we envisioned it being used in a large open area where people are gathered like a festival or amusement park. Down Beat takes a song that is broken into 4 layers. Players use their bodies to control these layers. By moving faster, they speed up the tempo of their layers. By moving closer to the Kinect, they raise the volume of their layers. Additionally, there is a display of fireworks that is controlled by the same movements. Each player has a different color firework and they change volume and height based on movement. \n" +
     "					</div>\n" +
     "				</div>\n" +
     "				<!--My Contribution-->\n" +
@@ -787,7 +735,7 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "      <br class=\"hidden-md hidden-lg\"/>\n" +
     "      <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
     "      <h1>Kaitlyn Sparks</h1>\n" +
-    "      <h4>User Researcher and Interaction Designer</h4>\n" +
+    "      <h4>User Experience Research and Design</h4>\n" +
     "      <span><i>I am an Masters of Human-Computer Interaction student at Carnegie Mellon University in Pittsburgh. I\n" +
     "       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>   \n" +
     "      <br/><br/>\n" +
@@ -805,7 +753,7 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "  </div> \n" +
     "\n" +
     "  <br/>\n" +
-    "  <h1 style=\"color:#808080;\"> My Work </h1>\n" +
+    "  <h3 style=\"color:#808080;\"> My Work </h1>\n" +
     "  <hr/>\n" +
     "\n" +
     "    <div class=\"row\">\n" +
@@ -837,21 +785,22 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<h1>Peanuts</h1>\n" +
     "<h4>Research to understand how reciprocity and trust can impact microcharitable giving online</h4>\n" +
     "<hr/>\n" +
+    "\n" +
     "<!--Meta Data-->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-4\">\n" +
-    "        <img src=\"../images/Peanuts/Icon.png\" style=\"width: 300px;\">\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "        <img src=\"../images/Peanuts/Icon.png\">\n" +
     "	</div>\n" +
-    "	<div class=\"col col-md-8\">\n" +
-    "		<p><span class=\"category\">Project Type:</span> Research\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<span class=\"category\">Project Type:</span><br/> Research\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Contributions:</span> Survey Design and Analysis\n" +
+    "		<span class=\"category\">Contributions:</span><br/> Survey Design and Analysis\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Team Members:</span> Jeff Harris, Jim Martin, Katie Ramp\n" +
+    "		<span class=\"category\">Team Members:</span><br/> Jeff Harris, Jim Martin, Katie Ramp\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span> November 2014 - December 2014\n" +
+    "		<span class=\"category\">Duration:</span><br/> November 2014 - December 2014\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> Social Web, CMU</p>\n" +
+    "		<span class=\"category\">Class:</span><br/> Social Web, CMU\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -871,120 +820,101 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<!--Process Header-->\n" +
     "<div class=\"row process\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<h3><span class=\"category\">Process</span></h3>\n" +
+    "		<h3>Process</h3>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Literature Review and Initial Research-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Literature Review and Initial Research</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was an in-depth look at the aspects of a request on the subreddit r/RAOP. They showed that certain information would influence the success of the request. We began looking at r/RAOP and noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to common themes. After reviewing a few subreddits and other request websites, we decided to look at how showing reciprocity impacts people’s donations.\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		<h4>Literature Review and Initial Research</h4>\n" +
+    "		<p>We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was an in-depth look at the aspects of a request on the subreddit r/RAOP. They showed that certain information would influence the success of the request. We began looking at r/RAOP and noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to common themes. After reviewing a few subreddits and other request websites, we decided to look at how showing reciprocity impacts people’s donations.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Initial Survey-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Initial Survey</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We wanted to quickly explore what possible representations of reciprocity would influence people's behaviors. So we created a survey that showed 8 different requests with the same story but different reciprocity statements. The survey was distributed to 83 people that we recruited from friends and family. We asked which of the 8 requests they would be most likely to donate to. After the survey, we also got some feedback from participants to understand the reasoning behind their choices.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-4 col-md-offset-2\">\n" +
-    "						<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\">\n" +
-    "    					<div class=\"caption_text\">	\n" +
-    "						This is one of the options we showed on the survey. All options were exactly the same except for the statement regarding reciprocity.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<table class=\"table\">\n" +
-    "							<tr>\n" +
-    "								<th>Reciprocity Statement</th>\n" +
-    "								<th>Votes</th>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan helped Susan pay her rent last week.</td>\n" +
-    "								<td>18</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan has given to 100 people and has received donations from 50 people.</td>\n" +
-    "								<td>12</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan has given more than he has received since joining.</td>\n" +
-    "								<td>11</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan has given to about 15 causes in the past.</td>\n" +
-    "								<td>11</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan has given about twice as much as he has received.</td>\n" +
-    "								<td>9</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan gives to causes almost every week.</td>\n" +
-    "								<td>8</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan has given 150% as much as he has received.</td>\n" +
-    "								<td>8</td>\n" +
-    "							</tr>\n" +
-    "							<tr>\n" +
-    "								<td>Jonathan has given $60 and received $40.</td>\n" +
-    "								<td>6</td>\n" +
-    "							</tr>\n" +
-    "						</table>\n" +
-    "					</div>\n" +
+    "		<h4>Initial Survey</h4>\n" +
+    "		<p>WTo quickly explore how various representations of reciprocity would influence behavior, we created a survey showing 8 different requests with the same story, but different reciprocity statements. The survey was distributed to 83 different people we recruited from friends and family. We asked to which of the 8 requests they would be most likely to donate. After the survey, we also got some feedback from participants to understand the reasoning behind their choices.</p>\n" +
+    "		<br/><br/>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-4 col-md-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\">\n" +
+    "    			<div class=\"caption_text\">	\n" +
+    "					This is one of the options we showed on the survey. All options were exactly the same except for the statement regarding reciprocity.\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "			<div class=\"col col-md-4\">\n" +
+    "				<table class=\"table\">\n" +
+    "					<tr>\n" +
+    "						<th>Reciprocity Statement</th>\n" +
+    "						<th>Votes</th>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan helped Susan pay her rent last week.</td>\n" +
+    "						<td>18</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan has given to 100 people and has received donations from 50 people.</td>\n" +
+    "						<td>12</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan has given more than he has received since joining.</td>\n" +
+    "						<td>11</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan has given to about 15 causes in the past.</td>\n" +
+    "						<td>11</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan has given about twice as much as he has received.</td>\n" +
+    "						<td>9</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan gives to causes almost every week.</td>\n" +
+    "						<td>8</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan has given 150% as much as he has received.</td>\n" +
+    "						<td>8</td>\n" +
+    "					</tr>\n" +
+    "					<tr>\n" +
+    "						<td>Jonathan has given $60 and received $40.</td>\n" +
+    "						<td>6</td>\n" +
+    "					</tr>\n" +
+    "				</table>\n" +
+    "			</div>\n" +
+    "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Final Survey-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Final Survey</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	After analyzing the results of the first survey and the feedback we received, we decided to use the two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and got 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control that only showed the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result that we found was that those who donated spent longer thinking about their decision and as time increases, dollar amount increased as well. But we also saw that people generally gave more to people that had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money. \n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing the percentage of money given versus received</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing the percentage of money given versus received</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing number of people donated to versus the number received from</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing number of people donated to versus the number received from</div>\n" +
-    "					</div>\n" +
+    "		<h4>Final Survey</h4>\n" +
+    "		<p>After analyzing the results of the first survey and the feedback we received, we decided to use the two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p>\n" +
+    "		<br/><br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\">\n" +
     "				</div>\n" +
-    "\n" +
+    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing the percentage of money given versus received</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\">\n" +
+    "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing the percentage of money given versus received</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\">\n" +
+    "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing number of people donated to versus the number received from</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\">\n" +
+    "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing number of people donated to versus the number received from</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
@@ -993,32 +923,26 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<!--Application-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Application</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	We wanted to see what it would look like to apply the results of our surveys, so we created a microcharity website that showed reciprocity. As a team, we determined the concepts for the website, but the development was done by Jeff and Jim. If this had been a longer project, we wanted to use this website to conduct experiments to test what people do with actual money.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						On the homescreen of the website, we wanted to show the requestors name, the title of what they need money for, and the description of the need. By clicking on their name, you are taken to their profile.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						A user's profile page shows their requests and how much money have raised. It also shows their reciprocity in the form of the number of people that they have given to and received donations from.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
+    "		<h4>Application</h4>\n" +
+    "		<p>We wanted to see what it would look like to apply the results of our surveys, so we created a microcharity website showing reciprocity. As a team, we determined the concepts for the website, but the development was done by Jeff and Jim. If this had been a longer project, we wanted to use this website to conduct experiments to test what people do with actual money.</p>\n" +
+    "		<br/><br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-6\">\n" +
+    "				<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\">\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.\n" +
     "				</div>\n" +
-    "\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "			<div class=\"col col-md-6\">\n" +
+    "				<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\">\n" +
+    "				<div class=\"caption_text\">	\n" +
+    "				A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
+    "\n" +
     "</div>");
 }]);
 
@@ -1048,19 +972,19 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "\n" +
     "<!--Meta Data-->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-4\">\n" +
-    "        <img src=\"../images/WakeUp/icon.jpg\" style=\"width: 300px;\">\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "        <img src=\"../images/WakeUp/icon.jpg\">\n" +
     "	</div>\n" +
-    "	<div class=\"col col-md-8\">\n" +
-    "		<p><span class=\"category\">Project Type:</span> Development\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<span class=\"category\">Project Type:</span><br/> Development\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Contributions:</span> Design, Android Development\n" +
+    "		<span class=\"category\">Contributions:</span><br/> Design, Android Development\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Tools and Technologies:</span> Eclipse, Java, Android SDK, Adobe Photoshop\n" +
+    "		<span class=\"category\">Tools and Technologies:</span><br/> Eclipse, Java, Android SDK, Adobe Photoshop\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span> November 2014 - December 2014 (3 weeks)\n" +
+    "		<span class=\"category\">Duration:</span><br/> November 2014 - December 2014 (3 weeks)\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> Software Structures for User Interfaces, Mobile Lab, CMU</p>\n" +
+    "		<span class=\"category\">Class:</span><br/> Software Structures for User Interfaces, Mobile Lab, CMU\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -1080,50 +1004,36 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "<!--Final Designs-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Final Design</h3>\n" +
+    "		<h4>Final Designs</h4>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/WakeUp/home_screen.png\">\n" +
+    "    			</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Home screen</div>\n" +
     "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/home_screen.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Home screen</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/preferences_screen.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Preferences screen</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/set_alarm_screen.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Set Alarm screen</div>\n" +
-    "					</div>\n" +
-    "\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/WakeUp/alarm_screen.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">Screen that appears when the alarm clock goes off</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
+    "			<div class=\"col col-md-3\">\n" +
+    "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/preferences_screen.png\">\n" +
     "			</div>\n" +
+    "			<div class=\"thumbnail_caption_text\">Preferences screen</div>\n" +
     "		</div>\n" +
+    "		<div class=\"col col-md-3\">\n" +
+    "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/set_alarm_screen.png\">\n" +
+    "			</div>\n" +
+    "		<div class=\"thumbnail_caption_text\">Set Alarm screen</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"col col-md-3\">\n" +
+    "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/alarm_screen.png\">\n" +
+    "			</div>\n" +
+    "		<div class=\"thumbnail_caption_text\">Screen that appears when the alarm clock goes off</div>\n" +
     "	</div>\n" +
     "</div>\n" +
+    "\n" +
     "\n" +
     "<!--Final Code-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Final Code</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	GitHub: <a href=\"https://github.com/kaitlynesparks/WakeUp\">https://github.com/kaitlynesparks/WakeUp</a>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		<h4>Final Code</h4>\n" +
+    "		<p>GitHub: <a href=\"https://github.com/kaitlynesparks/WakeUp\">https://github.com/kaitlynesparks/WakeUp</a></p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -1143,17 +1053,17 @@ angular.module("../app/views/webdesign.html", []).run(["$templateCache", functio
     "\n" +
     "<!--Meta Data -->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-4\">\n" +
-    "        <img src=\"../images/PersonalWebsite/icon.png\" style=\"width: 300px;\">\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "        <img src=\"../images/PersonalWebsite/icon.png\" style=\"width: 400px;\">\n" +
     "	</div>\n" +
-    "	<div class=\"col col-md-8\">\n" +
-    "		<p><span class=\"category\">Project Type:</span> Design\n" +
+    "	<div class=\"col col-md-6\">\n" +
+    "		<span class=\"category\">Project Type:</span><br/> Design\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Contributions:</span> Sketch Wireframes, Digital Sketches, Low Fidelity Mockups, High Fidelity Mockups\n" +
+    "		<span class=\"category\">Contributions:</span> <br/> Sketch Wireframes, Digital Sketches, Low Fidelity Mockups, High Fidelity Mockups\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span> August 2014 - September 2014 (2.5 weeks)\n" +
+    "		<span class=\"category\">Duration:</span> <br/> August 2014 - September 2014 (2.5 weeks)\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> Interaction Design Fundamentals, CMU</p>\n" +
+    "		<span class=\"category\">Class:</span> <br/> Interaction Design Fundamentals, CMU\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -1163,7 +1073,7 @@ angular.module("../app/views/webdesign.html", []).run(["$templateCache", functio
     "	<div class=\"col col-md-12\">\n" +
     "		<p><span class=\"category\">Assignment:</span> Design a personal website home page for desktop and mobile platforms. \n" +
     "		<br/><br/>	\n" +
-    "		<span class=\"category\">Design Overview:</span> The focus of this design was to create a webpage and a mobile page with a cohesive look and feel across the two mediums. First, I focused on finding appropriate content for a professional, personal webpage. I chose to keep the design very simple so that all of the important elements were easy to find and consume. Additionally, to create consistency, I paid attention making the information heirarchy the same across the two screens.</p>\n" +
+    "		<span class=\"category\">Design Overview:</span> The focus of this design was to create a webpage and a mobile page with a cohesive look and feel across the two mediums. First, I focused on finding appropriate content for a professional, personal webpage. I chose to keep the design very simple so the important elements were easy to find and consume. Additionally, to create consistency, I paid attention to making the information heirarchy the same across the two screens.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "<hr/>\n" +
@@ -1171,136 +1081,118 @@ angular.module("../app/views/webdesign.html", []).run(["$templateCache", functio
     "<!--Process Header-->\n" +
     "<div class=\"row process\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<h3><span class=\"category\">Process</span></h3>\n" +
+    "		<h3>Process</h3>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
     "<!--Sketch Wireframes-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Sketch Wireframes</h3>\n" +
+    "		<h4>Sketch Wireframes</h4>\n" +
+    "		<p>The first step was to determine the content that was needed for this type of website and make sketch wireframes. While making these sketches, I focused on making the heirarchy consistent across the mobile and desktop versions of the website. I also concentrated on making the most important aspects of the website higher in the heirarchy. I decided that if someone was visiting a page like this, they would want to know who it was about, their title, and how to contact them; so I made that information easy to find at a glance. I also wanted it to be easy to look through examples of work and see a summary about the person, so I included that information on the home screen in the forms of a carousel showing work and a brief summary paragraph. I created 5 sketches of possible layouts and then picked the aspects I liked from each one to create a final sketch and use in future iterations.</p>\n" +
+    "		<br/><br/>\n" +
+    "	    	<div class=\"row\">\n" +
+    "				<div class=\"col col-md-4\">\n" +
+    "					<img src=\"../images/PersonalWebsite/website_sketch1.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption_text\">	\n" +
+    "					Sketch 1 for website. I originally included a picture of the person in these sketches but later decided it was not essential enough to be on the homepage and would fit better on the About page.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "				<div class=\"col col-md-4\">\n" +
+    "					<img src=\"../images/PersonalWebsite/website_sketch2.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption_text\">	\n" +
+    "					Sketch 2 for website which is an iteration on sketch 1. On the mobile site, I moved the navigation to the side but did not move forward with this decision because mobile device screens are generally not wide enough to be able to interact with two columns.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "				<div class=\"col col-md-4\">\n" +
+    "					<img src=\"../images/PersonalWebsite/website_sketch3.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption_text\">	\n" +
+    "					Sketch 3 for website. In this sketch, I moved the navigation to the side on both the mobile and desktop to keep it consistent. But as with sketch 2, I did not use this moving forward because two columns is difficult for users on a mobile device.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
     "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	The first step was to determine the content that was needed for this type of website and make sketch wireframes. While making these sketches, I focused on making the heirarchy consistent across the mobile and desktop versions of the website. I also concentrated on making the most important aspects of the website higher in the heirarchy. I decided that if someone was visiting a page like this, they would want to know who it was about, their title, and how to contact them; so I made that information easy to find at a glance. I also wanted it to be easy to look through examples of work and see a summary about the person, so I included that information on the home screen in the forms of a carousel showing work and a brief summary paragraph. I created 5 sketches of possible layouts and then picked the aspects I liked from each one to create a final sketch and use in future iterations.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/PersonalWebsite/website_sketch1.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						Sketch 1 for website. I originally included a picture of the person in these sketches but later decided it was not essential enough to be on the homepage and would fit better on the About page.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/PersonalWebsite/website_sketch2.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						Sketch 2 for website which is an iteration on sketch 1. On the mobile site, I moved the navigation to the side but did not move forward with this decision because mobile device screens are generally not wide enough to be able to interact with two columns.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/PersonalWebsite/website_sketch3.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						Sketch 3 for website. In this sketch, I moved the navigation to the side on both the mobile and desktop to keep it consistent. But as with sketch 2, I did not use this moving forward because two columns is difficult for users on a mobile device.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<br/><br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/PersonalWebsite/website_sketch4.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">	\n" +
+    "			<br/><br/>\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-md-4\">\n" +
+    "					<img src=\"../images/PersonalWebsite/website_sketch4.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption_text\">	\n" +
     "						Sketch 4 for website which is an interation on sketch 3. For this iteration, I moved the name to the left on the webpage. I ended up using this in the future because I found this design to be more common on websites, whereas the centered name felt more like a printed report.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/PersonalWebsite/website_sketch5.jpg\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						Sketch 5 for website which is an interation on sketches 3 and 4. In this iteration, I intended to put the contact information at the top so it was easily accessible. Later, I moved it to the bottom because it is frequently found there on webpages and it was still easy to spot on the bottom\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-4\">\n" +
-    "						<img src=\"../images/PersonalWebsite/website_sketch_final.jpg\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">	\n" +
-    "						The final sketch took elements from the original 5 sketches and put them together.\n" +
-    "						</div>\n" +
     "					</div>\n" +
     "				</div>\n" +
+    "				<div class=\"col col-md-4\">\n" +
+    "					<img src=\"../images/PersonalWebsite/website_sketch5.jpg\" class=\"img-responsive\">\n" +
+    "					<div class=\"caption_text\">	\n" +
+    "						Sketch 5 for website which is an interation on sketches 3 and 4. In this iteration, I intended to put the contact information at the top so it was easily accessible. Later, I moved it to the bottom because it is frequently found there on webpages and it was still easy to spot on the bottom\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			<div class=\"col col-md-4\">\n" +
+    "				<img src=\"../images/PersonalWebsite/website_sketch_final.jpg\" class=\"img-responsive\">\n" +
+    "					<div class=\"caption_text\">	\n" +
+    "						The final sketch took elements from the original 5 sketches and put them together.\n" +
+    "					</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
+    "\n" +
     "\n" +
     "<!--Digital Sketches and Low Fidelity Mockups-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Digital Sketches and Low Fidelity Mockups</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	After getting feedback from the class on the sketches, I moved to a digital sketch that was exactly the same as the final paper sketch. After getting my idea into a digital version and seeing it at a more realistic size and ratio, I was able to iterate to a low fidelity black and white mockup.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/digital_sketch.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">When moving to digital mockups, my first step was to translate my last paper sketch to an identical digital sketch.</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/low_fidelity_mockup.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">I created a black and white mock up first because I wanted to focus on content and heirarchy before working with colors and visual design.</div>\n" +
-    "					</div>\n" +
+    "		<h4>Digital Sketeches and Low Fidelity Mockups</h4>\n" +
+    "		<p>After getting feedback from the class on the sketches, I moved to a digital sketch that was exactly the same as the final paper sketch. After getting my idea into a digital version and seeing it at a more realistic size and ratio, I was able to iterate to a low fidelity black and white mockup.</p>\n" +
+    "		<br/><br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-6\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/digital_sketch.png\">\n" +
     "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">When moving to digital mockups, my first step was to translate my last paper sketch to an identical digital sketch.</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-md-6\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/low_fidelity_mockup.png\">\n" +
+    "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">I created a black and white mock up first because I wanted to focus on content and heirarchy before working with colors and visual design.</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
     "\n" +
     "<!--High Fidelity Mockups-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">High Fidelity Mockups</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	The next step I took was to convert the black and white mock up into a color mock up. I played with a few color schemes based on the low fidelity mock up. However, once I added color, I realized it felt very heavy. So I removed a lot of the color in favor of a very simple final design. For this type of website, I felt that the content needed to be more prominent than colors or dominating design elements.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-8 col-md-offset-2\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/high_fidelity_mockup.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">I converted my black and white sketch into a color mockup and iterated on how different color schemes.</div>\n" +
-    "					</div>\n" +
+    "		<h4>High Fidelity Mockups</h4>\n" +
+    "		<p>The next step I took was to convert the black and white mock up into a color mock up. I played with a few color schemes based on the low fidelity mock up. However, once I added color, I realized it felt very heavy. So I removed a lot of the color in favor of a very simple final design. For this type of website, I felt that the content needed to be more prominent than colors or dominating design elements.</p>\n" +
+    "		<br/><br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-8 col-md-offset-2\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/high_fidelity_mockup.png\">\n" +
     "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">I converted my black and white sketch into a color mockup and iterated on how different color schemes.</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
+    "\n" +
     "<!--Final Design-->\n" +
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">Final Design</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	At the end, I took all of the feedback I had gotten from classmates and the pieces of each iteration that I thought worked best and compiled it into a final high-fidelity mockup.\n" +
-    "		    	<br/><br/>\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-8 col-md-offset-2\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/final_design.png\">\n" +
-    "    					</div>\n" +
-    "    					<div class=\"thumbnail_caption_text\">My final deliverable was a full scale design for a desktop and mobile site.</div>\n" +
-    "					</div>\n" +
+    "		<h4>Final Design</h4>\n" +
+    "		<p>At the end, I took all the feedback I received from classmates and the pieces of each iteration that I thought worked best and compiled it into a final high-fidelity mockup.</p>\n" +
+    "		<br/><br/>\n" +
+    "    	<div class=\"row\">\n" +
+    "			<div class=\"col col-md-8 col-md-offset-2\">\n" +
+    "				<div class=\"thumbnail\"><img src=\"../images/PersonalWebsite/final_design.png\">\n" +
     "				</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">My final deliverable was a full scale design for a desktop and mobile site.</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
+    "\n" +
     "\n" +
     "</div>");
 }]);
