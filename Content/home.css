@@ -1,6 +1,11 @@
 body {
   padding-top: 50px;
 }
+
+hr {
+    border-color: rgba(128, 128, 128, 0.75);
+    border-width: 1px;
+}
  
 .thumbnail {
     position:relative;
@@ -65,8 +70,21 @@ background-color: #F1F1F1;
 
 .bg_blur
 {
-    background-image:url('../images/Home/Pittsburgh.JPG');
+    /*background-image:url('../images/Home/Pittsburgh.JPG');*/
+    background-image:url('../images/Home/KaitlynSparks.png');
     height: 300px;
+    background-size: cover;
+}
+.bg_blur_solid_xs
+{
+    background: #fff;
+    height: 80px;
+    background-size: cover;
+}
+
+.bg_blur_solid_sm {
+    background: #fff;
+    height: 200px;
     background-size: cover;
 }
 
@@ -109,4 +127,6 @@ background-color: #F1F1F1;
 .h2.myWork {
     font-color: black;
 }
+
+
     

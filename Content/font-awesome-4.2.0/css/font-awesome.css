@@ -573,6 +573,7 @@
 }
 .fa-linkedin-square:before {
   content: "\f08c";
+  color: #808080;
 }
 .fa-thumb-tack:before {
   content: "\f08d";
@@ -1323,6 +1324,7 @@
 }
 .fa-envelope-square:before {
   content: "\f199";
+  color: #808080;
 }
 .fa-wordpress:before {
   content: "\f19a";
