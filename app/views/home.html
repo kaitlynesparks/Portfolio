@@ -1,14 +1,16 @@
-﻿<link href="../Content/home.css" rel="stylesheet" />
+<!doctype html>
+<html>﻿
+<link href="../Content/home.css" rel="stylesheet" />
 <link href="../Content/font-awesome-4.2.0/css/font-awesome.css" rel="stylesheet">
 <link href="../Content/contact.css" rel="stylesheet" />
 
 <div class="container">
   <div class="row panel">
     <!--show large image beside text-->
-    <div class="col-md-4 bg_blur hidden-sm hidden-xs"> 
+    <div class="col-md-4 bg_blur hidden-sm hidden-xs">
     </div>
         <!--show white box where large image was to extend background-->
-    <div class="col-md-4 bg_blur_solid_sm visible-sm"> 
+    <div class="col-md-4 bg_blur_solid_sm visible-sm">
     </div>
     <!--show white box where large image was to extend background-->
     <div class="col-md-4 bg_blur_solid_xs visible-xs">
@@ -22,7 +24,7 @@
       <h1>Kaitlyn Sparks</h1>
       <h4>User Experience Research and Design</h4>
       <span><i>I am an Masters of Human-Computer Interaction student at Carnegie Mellon University in Pittsburgh. I
-       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>   
+       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>
       <br/><br/>
       <div class="row">
         <div class="col row-centered ">
@@ -35,27 +37,29 @@
       </div>
     </div>
   </div>
-  </div> 
+  </div>
 
   <br/>
-  <h3 style="color:#808080;"> My Work </h1>
+  <h3 class = "myWork"> My Work </h3>
   <hr/>
 
     <div class="row">
-      
+
       <div data-ng-repeat="project in projects">
 
-        <div class="col-xs-12 col-sm-6 col-md-4 row-centered">            
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 row-centered">
+          <a ui-sref="{{project.Nav}}">
             <div class="thumbnail">
-                <a ui-sref="{{project.Nav}}">
                   <div class="caption">
                       <h3>{{project.Title}}</h3>
                       <h5>Project Type: {{project.ProjectType}}</h5>
                       <p>{{project.Description}}</p>
                   </div>
-                </a>
                 <img src="{{project.Thumbnail}}" alt="...">
             </div>
+          </a>
         </div>
     </div>
 </div>
+</div>
+</html>

@@ -5,11 +5,11 @@
 
 /*.navbar {
 	background: none;
-}
+} */
 
 .navbar-default .navbar-brand {
 	font-family: biko;
 	font-variant: small-caps;
+  font-size: 2em;
 	color: #000;
-} */
-
+}

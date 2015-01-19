@@ -1,38 +1,41 @@
-﻿<link href="../Content/nav.css" rel="stylesheet" /> 
+<!doctype html>
+<html>
+  <link href="../Content/nav.css" rel="stylesheet" />
 
-<div class="navbar navbar-default navbar-top" data-ng-controller="indexController">
-  <div class="container"> 
-    <div class="row">
-      <div class="row-centered">
+  <div class="navbar navbar-default navbar-top" data-ng-controller="indexController">
+    <div class="container">
+      <div class="row">
+        <div class="row-centered">
 
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!--<a class="navbar-brand" ui-sref="home">Kaitlyn Sparks</a>-->
-        </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li id="homeNav"><a ui-sref="home">Home</a></li>
-            <li><a ui-sref="about">About</a></li>
-            <li><a ui-sref="resume">Resume</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a ui-sref="accelerate">Accelerate</a></li>
-                <li><a ui-sref="distractionfreecoding">Distraction Free Coding</a></li>
-                <li><a ui-sref="peanuts">Peanuts</a></li>
-                <li><a ui-sref="webdesign">Personal Website Design</a></li>
-                <li><a ui-sref="wakeup">Wake Up</a></li>
-                <li><a ui-sref="hackathon">Hackathons and Challenges</a></li>         
-              </ul>
-            </li>
-            <li>&emsp;</li>
-          </ul>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" ui-sref="home">Kaitlyn Sparks</a>-->
+          </div>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="homeNav" ui-sref="home">Home</a></li>
+              <li><a ui-sref="about">About</a></li>
+              <li><a ui-sref="resume">Resume</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a ui-sref="accelerate">Accelerate</a></li>
+                  <li><a ui-sref="distractionfreecoding">Distraction Free Coding</a></li>
+                  <li><a ui-sref="peanuts">Peanuts</a></li>
+                  <li><a ui-sref="webdesign">Personal Website Design</a></li>
+                  <li><a ui-sref="wakeup">Wake Up</a></li>
+                  <li><a ui-sref="hackathon">Hackathons and Challenges</a></li>
+                </ul>
+              </li>
+              <li>&emsp;</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</html>

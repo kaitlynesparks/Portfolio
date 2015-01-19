@@ -60,6 +60,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/templates/accelerate_carousel.html",
+    "<!doctype html>\n" +
+    "<html>﻿\n" +
     "<link href=\"../Content/accelerate_carousel.css\" rel=\"stylesheet\" />\n" +
     "<div id=\"thumbnail-preview-indicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
     "          <!-- Indicators -->\n" +
@@ -83,13 +85,6 @@ angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateC
     "          <div class=\"carousel-inner\">\n" +
     "            <div class=\"item slides active\">\n" +
     "              <div class=\"slide-1\"></div>\n" +
-    "              <div class=\"container\">\n" +
-    "                <div class=\"carousel-caption\">\n" +
-    "                  <h1>New carousel layout</h1>\n" +
-    "                  <p>Responsive thumbnail preview in carousel indicators.</p>\n" +
-    "                  <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Sign up today</a></p>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
     "            </div>\n" +
     "            <div class=\"item slides\">\n" +
     "              <div class=\"slide-2\"></div>\n" +
@@ -114,7 +109,9 @@ angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateC
     "          </div>\n" +
     "          <a class=\"left carousel-control\" href=\"#thumbnail-preview-indicators\" role=\"button\" data-slide=\"prev\"><span class=\"glyphicon glyphicon-chevron-left\"></span></a>\n" +
     "          <a class=\"right carousel-control\" href=\"#thumbnail-preview-indicators\" role=\"button\" data-slide=\"next\"><span class=\"glyphicon glyphicon-chevron-right\"></span></a>\n" +
-    "      </div> ");
+    "      </div>\n" +
+    "      </html>\n" +
+    "");
 }]);
 
 angular.module("../app/templates/footer.html", []).run(["$templateCache", function($templateCache) {
@@ -145,44 +142,47 @@ angular.module("../app/templates/footer.html", []).run(["$templateCache", functi
 
 angular.module("../app/templates/nav.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/templates/nav.html",
-    "<link href=\"../Content/nav.css\" rel=\"stylesheet\" /> \n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "  <link href=\"../Content/nav.css\" rel=\"stylesheet\" />\n" +
     "\n" +
-    "<div class=\"navbar navbar-default navbar-top\" data-ng-controller=\"indexController\">\n" +
-    "  <div class=\"container\"> \n" +
-    "    <div class=\"row\">\n" +
-    "      <div class=\"row-centered\">\n" +
+    "  <div class=\"navbar navbar-default navbar-top\" data-ng-controller=\"indexController\">\n" +
+    "    <div class=\"container\">\n" +
+    "      <div class=\"row\">\n" +
+    "        <div class=\"row-centered\">\n" +
     "\n" +
-    "        <div class=\"navbar-header\">\n" +
-    "          <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-responsive-collapse\">\n" +
-    "            <span class=\"icon-bar\"></span>\n" +
-    "            <span class=\"icon-bar\"></span>\n" +
-    "            <span class=\"icon-bar\"></span>\n" +
-    "          </button>\n" +
-    "          <!--<a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>-->\n" +
-    "        </div>\n" +
-    "        <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
-    "          <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "            <li id=\"homeNav\"><a ui-sref=\"home\">Home</a></li>\n" +
-    "            <li><a ui-sref=\"about\">About</a></li>\n" +
-    "            <li><a ui-sref=\"resume\">Resume</a></li>\n" +
-    "            <li class=\"dropdown\">\n" +
-    "              <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
-    "              <ul class=\"dropdown-menu\">\n" +
-    "                <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
-    "                <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
-    "                <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
-    "                <li><a ui-sref=\"webdesign\">Personal Website Design</a></li>\n" +
-    "                <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
-    "                <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>         \n" +
-    "              </ul>\n" +
-    "            </li>\n" +
-    "            <li>&emsp;</li>\n" +
-    "          </ul>\n" +
+    "          <div class=\"navbar-header\">\n" +
+    "            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-responsive-collapse\">\n" +
+    "              <span class=\"icon-bar\"></span>\n" +
+    "              <span class=\"icon-bar\"></span>\n" +
+    "              <span class=\"icon-bar\"></span>\n" +
+    "            </button>\n" +
+    "            <!--<a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>-->\n" +
+    "          </div>\n" +
+    "          <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
+    "            <ul class=\"nav navbar-nav navbar-right\">\n" +
+    "              <li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>\n" +
+    "              <li><a ui-sref=\"about\">About</a></li>\n" +
+    "              <li><a ui-sref=\"resume\">Resume</a></li>\n" +
+    "              <li class=\"dropdown\">\n" +
+    "                <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
+    "                <ul class=\"dropdown-menu\">\n" +
+    "                  <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
+    "                  <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
+    "                  <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
+    "                  <li><a ui-sref=\"webdesign\">Personal Website Design</a></li>\n" +
+    "                  <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
+    "                  <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>\n" +
+    "                </ul>\n" +
+    "              </li>\n" +
+    "              <li>&emsp;</li>\n" +
+    "            </ul>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "</div>\n" +
+    "</html>\n" +
     "");
 }]);
 
@@ -210,139 +210,237 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
 
 angular.module("../app/views/accelerate.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/accelerate.html",
-    "<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />\n" +
+    "<!doctype html>\n" +
+    "<html>﻿\n" +
+    "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
     "\n" +
-    "<!--Header-->\n" +
-    "<div class=\"container\">	\n" +
-    "<h1>Accelerate</h1>\n" +
-    "<h4>A project to design a mobile training application for emergency medical personnel</h4>\n" +
-    "<hr/>\n" +
+    "	<!--Header-->\n" +
+    "	<div class=\"container\">\n" +
+    "		<h1>Accelerate</h1>\n" +
+    "		<h4>October 2014 - December 2014</h4>\n" +
+    "		<hr/>\n" +
     "\n" +
-    "<!--Meta data -->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "        <img src=\"../images/Accelerate/Icon.png\" >\n" +
-    "	</div>\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "		<span class=\"category\">Project Type:</span><br/> Design\n" +
-    "		<br/><br/>	\n" +
-    "		<span class=\"category\">Contributions:</span> <br/> Affinity Diagrams, Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Team Members:</span> <br/> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span> <br/> October 2014 - December 2014\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> <br/> Interaction Design Fundamentals, CMU\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<hr/>\n" +
-    "\n" +
-    "<!--About Project -->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p><span class=\"category\">Assignment:</span> Conceive of an original mobile application that provides tools and/or information to an ambulance driver accessing the application while on the job.\n" +
-    "		<br/><br/>	\n" +
-    "		<span class=\"category\">Opportunity:</span> EMS workers have a uniquely stressful job and do not have much encouragement to learn life skills or additional job skills. However, they have downtime that can be used more effectively.\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> An application that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<hr/>\n" +
-    "\n" +
-    "<!--Process Header -->\n" +
-    "<div class=\"row process\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Process</h3>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Research -->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Research</h4>\n" +
-    "		<p>We started this project by researching the experience and needs of emergency medical staff. We read through internet blogs and articles, watched ambulance ride along videos, and interviewed an EMT to get an understanding of the life and work circumstances for a professional in the emergency medical services field.\n" +
-    "    	<blockquote>\n" +
-    "			<p>“Myself and many of my co-workers have sought grief counseling, nutrition assistance, and some have even been placed on heavy sleep medications because they never had [targeted information] available to them in a more private medium.”</p>\n" +
-    "			<small>EMT</small>\n" +
-    "		</blockquote> </p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Idea Generation -->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Idea Generation</h4>\n" +
-    "		<p>We generated concept ideas for apps and created an affinity diagram. The process of creating the affinity diagram allowed us to talk about the ideas as a team, and we later used the affinity diagram to to see ideas that we could combine into cohesive, larger concepts. After that, we sorted them into a feasibility-impact matrix showing the potential usefulness of the application against the difficulty of creating it. Personas were provided for us, and we used these to determine which ideas to pursue. We picked our top four choices and composed narratives about their use based on our personas. We used these narratives to make the selection for our final idea. We also followed up with the EMT we interviewed initially, asking additional questions to make sure our idea was useful and desirable.</p>\n" +
-    "		<br/>\n" +
+    "		<!--Meta data -->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<img src=\"../images/Accelerate/AffinityDiagram.jpg\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				We generated 50 design ideas then came together as a team to discuss them and create an affinity diagram that showed larger potential concepts.\n" +
+    "			<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "		        <img src=\"../images/Accelerate/Accelerate_icon2.png\" >\n" +
     "				</div>\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-6\">\n" +
-    "				<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.jpg\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
+    "				<span class=\"category\">Project Type:</span><br/> Design\n" +
+    "				<br/><br/>\n" +
+    "				<span class=\"category\">Contributions:</span> <br/> Affinity Diagrams,\n" +
+    "				Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
+    "				<br/><br/>\n" +
+    "				<span class=\"category\">Team Members:</span> <br/> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
+    "				<br/><br/>\n" +
+    "				<!--<span class=\"category\">Duration:</span> <br/> October 2014 - December 2014\n" +
+    "				<br/><br/>-->\n" +
+    "				<span class=\"category\">Class:</span> <br/> Interaction Design Fundamentals, CMU\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<hr/>\n" +
+    "\n" +
+    "		<!--About Project -->\n" +
+    "		<div class=\"row process\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<h3>Description</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<p>Emergency medical service employees have uniquely stressful jobs and do not\n" +
+    "				have sufficient encouragement to learn life skills or additional job\n" +
+    "				skills. For our Interaction Design Fundamentals class at CMU, we decided to\n" +
+    "				design a mobile application that provides relevant facts about topics such\n" +
+    "				as mental health, nutrition, and driving skills. Leaders can set up friendly\n" +
+    "				competitions about the facts for members of the squad. This promotes team\n" +
+    "				bonding and provides visibility of hard work to management.</p>\n" +
+    "\n" +
+    "\n" +
+    "				<!--<p><span class=\"category\">Assignment:</span> Conceive of an original mobile application that provides tools and/or information to an ambulance driver accessing the application while on the job.\n" +
+    "				<br/><br/>\n" +
+    "				<span class=\"category\">Opportunity:</span> EMS workers have a uniquely stressful job and do not have much encouragement to learn life skills or additional job skills. However, they have downtime that can be used more effectively.\n" +
+    "				<br/><br/>\n" +
+    "				<span class=\"category\">Solution:</span> An application that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>-->\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
+    "\n" +
+    "		<!--Process Header -->\n" +
+    "		<div class=\"row process\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<h3>Process</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
+    "		<!--Research -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<h4>Research</h4>\n" +
+    "				<p>We began by understanding the life and work circumstances for a\n" +
+    "					professional in the emergency medical services field. Our team researched\n" +
+    "					internet blogs, articles, and ride along videos of EMTs on the job.\n" +
+    "					Additionally, we conducted an interview with an EMT to further explore\n" +
+    "					the themes we saw in our initial research.</p>\n" +
+    "				<!--<p>We started this project by researching the experience and needs of emergency medical staff. We read through internet blogs and articles, watched ambulance ride along videos, and interviewed an EMT to get an understanding of the life and work circumstances for a professional in the emergency medical services field.-->\n" +
+    "		    	<blockquote>\n" +
+    "					<p>“Myself and many of my co-workers have sought grief counseling, nutrition assistance, and some have even been placed on heavy sleep medications because they never had [targeted information] available to them in a more private medium.”</p>\n" +
+    "					<small>EMT</small>\n" +
+    "				</blockquote>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
+    "		<!--Idea Generation -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<h4>Idea Generation</h4>\n" +
+    "				<!--<p>We generated concept ideas for apps and created an affinity diagram. The process of creating the affinity diagram allowed us to talk about the ideas as a team, and we later used the affinity diagram to to see ideas that we could combine into cohesive, larger concepts. After that, we sorted them into a feasibility-impact matrix showing the potential usefulness of the application against the difficulty of creating it. Personas were provided for us, and we used these to determine which ideas to pursue. We picked our top four choices and composed narratives about their use based on our personas. We used these narratives to make the selection for our final idea. We also followed up with the EMT we interviewed initially, asking additional questions to make sure our idea was useful and desirable.</p>-->\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<p>After doing research, we started determining what mobile application\n" +
+    "				solution would meet the needs of emergency medical service professionals.\n" +
+    "				We generated fifty unique application concepts and mapped them on an\n" +
+    "				affinity diagram. Then we used those sorted groups of concepts onto a\n" +
+    "				feasibility-impact matrix. We used these and the personas we were provided\n" +
+    "				to create narratives of the most promising ideas. We received feedback\n" +
+    "				from our classmates and also from an EMT on our concepts.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "				<div class = \"col col-md-6 col-md-offset-3\">\n" +
+    "					<div class=\"thumbnail\">\n" +
+    "						<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.png\" class=\"img-responsive\" >\n" +
+    "							<div class=\"caption\">\n" +
+    "								We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
+    "							</div>\n" +
+    "					</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
+    "				<!--<br/>\n" +
+    "				<div class=\"row\">\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "\n" +
+    "						<img src=\"../images/Accelerate/AffinityDiagram.jpg\" class=\"img-responsive\" >\n" +
+    "						<div class=\"caption_text\">\n" +
+    "						We generated 50 design ideas then came together as a team to discuss them and create an affinity diagram that showed larger potential concepts.\n" +
+    "						</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-6\">\n" +
+    "						<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.jpg\" class=\"img-responsive\" >\n" +
+    "						<div class=\"caption_text\">\n" +
+    "						We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
+    "						</div>\n" +
+    "					</div>\n" +
+    "					<div class=\"col col-md-3\">\n" +
+    "						<img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\" class=\"img-responsive\" >\n" +
+    "						<div class=\"caption_text\">\n" +
+    "						Our final impact-feasibility matrix, along with our personas and larger concepts from our affinity diagram, was used to narrow down the ideas worth pursuing further.\n" +
+    "						</div>\n" +
+    "					</div>\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				Our final impact-feasibility matrix, along with our personas and larger concepts from our affinity diagram, was used to narrow down the ideas worth pursuing further.\n" +
+    "		</div>-->\n" +
+    "\n" +
+    "		<!-- Application Design -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<h4>Application Design</h4>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-md-12\">\n" +
+    "				<p>We expounded upon our idea using a navigation map. We updated it as we\n" +
+    "				added to our concept and as we created higher fidelity designs. By referencing\n" +
+    "				it throughout the process, we were able to keep an appropriate breadth and\n" +
+    "				depth for the application. We also used it as a check to keep the functionality\n" +
+    "				of the application appropriately simple.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-md-6 col-md-offset-3\">\n" +
+    "				<div class = \"thumbnail\">\n" +
+    "					<img src=\"../images/Accelerate/NavigationMap.png\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						After creating hand sketches of the application screens, we updated the\n" +
+    "						navigation map.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-md-12\">\n" +
+    "				<p>As we went through the design process, we made increasingly more detailed\n" +
+    "					designs. We began with sketches, then created low-fidelity mockups,\n" +
+    "					and finally interated to make high-fidelity mockups. To create mockups,\n" +
+    "					we used Adobe Illustrator. We went through multiple iterations of\n" +
+    "					high-fidelity mock-ups trying to get the right color palette and feel\n" +
+    "					for our application. We decided that we wanted a  playful and light-hearted\n" +
+    "					theme. We wanted to give them an application that was enjoyable to use\n" +
+    "					and would help to alleviate some of their stress.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<div class = \"thumbnail\">\n" +
+    "					<img src=\"../images/Accelerate/LowFiMockUps_white.png\" class=\"img-responsive\">\n" +
+    "					<div class=\"caption\">\n" +
+    "						Low-fidelity digital sketches of our application.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "				<!--<p>We fleshed out our idea using a navigation map, which we used to think through the functionality of our app and the interaction that would be needed to move between different functions. Through our navigation map, we were able to quickly analyze the breadth and depth of our application. We initially created it using screen names. As we progressed through our design process, we maintained our navigation map and kept checking that breadth and depth was appropriate. In updating, we also replaced key screens with sketches, low-fidelity mockups, and high-fidelity mockups. This was helpful for us because it was natural for the complexity of our application to increase as we thought about it more; however, we wanted to keep it simple. Using the navigation map, we were able to see when we needed to reconsider features and scale back.</p>\n" +
+    "				<br/>\n" +
+    "				<div class=\"row\">\n" +
+    "					<div class=\"col col-md-8\">\n" +
+    "						<img src=\"../images/Accelerate/NavMapWithSketches.JPG\" class=\"img-responsive\">\n" +
+    "						<div class=\"caption_text\">\n" +
+    "							As a team, we created a navigation map to sketch out the flow of our application. As we continued the design process, we updated our navigation map and added sketches for key screens.\n" +
+    "						</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "				<br/>\n" +
+    "				<p>As we went through the design process, we made increasingly more detailed designs. We began with sketches, then created low-fidelity mockups, and finally interated to make high-fidelity mockups. To create mockups, we used Adobe Illustrator. We went through multiple iterations of high-fidelity mock-ups trying to get the right color palette and feel for our application. We originally had a look and feel that was inspired by ambulances. We had red and blue as our primary colors and had straight lines. However, we later decided that we wanted a more playful and lighthearted theme. EMTs see ambulances incessantly and they are likely a stressful place for them, so we didn't want to remind them of that. We wanted to give them an application that was enjoyable for them and would help to alleviate some of their stress.</p>\n" +
+    "				<br/>\n" +
+    "				<div class=\"row\">\n" +
+    "					<div class=\"col col-md-12\">\n" +
+    "						<img src=\"../images/Accelerate/LowFiMockUps.png\" class=\"img-responsive\">\n" +
+    "							<div class=\"caption_text\">\n" +
+    "								After doing sketches, we did an iteration of low-fidelity mockups in black and white. These were used to begin understanding the amount of information and interactivity that would be appropriate per screen.\n" +
+    "							</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>-->\n" +
+    "\n" +
+    "		<!--Final Deliverables -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<h4>Final Deliverables</h4>\n" +
+    "				<p>The final deliverables for this project were completed designs, design\n" +
+    "					specifications, and a final presentation to the class. The final designs\n" +
+    "					included a fun, playful color scheme and an owl character to provide\n" +
+    "					consistency and whimsy throughout.</p>\n" +
+    "				<div class=\"row\">\n" +
+    "					<div class=\"col col-md-8 col-md-offset-2\">\n" +
+    "						<div class = \"thumbnail\">\n" +
+    "							<img src=\"../images/Accelerate/Accelerate-Final-Designs.png\" class=\"img-responsive\">\n" +
+    "							<div class=\"caption\">\n" +
+    "								We designed eight total screens for our final design.\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "					</div>\n" +
     "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!-- Application Design -->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Application Design</h4>\n" +
-    "		<p>We fleshed out our idea using a navigation map, which we used to think through the functionality of our app and the interaction that would be needed to move between different functions. Through our navigation map, we were able to quickly analyze the breadth and depth of our application. We initially created it using screen names. As we progressed through our design process, we maintained our navigation map and kept checking that breadth and depth was appropriate. In updating, we also replaced key screens with sketches, low-fidelity mockups, and high-fidelity mockups. This was helpful for us because it was natural for the complexity of our application to increase as we thought about it more; however, we wanted to keep it simple. Using the navigation map, we were able to see when we needed to reconsider features and scale back.</p>\n" +
-    "		<br/>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-8\">\n" +
-    "				<img src=\"../images/Accelerate/NavMapWithSketches.JPG\" class=\"img-responsive\">\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "					As a team, we created a navigation map to sketch out the flow of our application. As we continued the design process, we updated our navigation map and added sketches for key screens.\n" +
-    "				</div>\n" +
-    "			</div>	\n" +
-    "		</div> \n" +
-    "		<br/>\n" +
-    "		<p>As we went through the design process, we made increasingly more detailed designs. We began with sketches, then created low-fidelity mockups, and finally interated to make high-fidelity mockups. To create mockups, we used Adobe Illustrator. We went through multiple iterations of high-fidelity mock-ups trying to get the right color palette and feel for our application. We originally had a look and feel that was inspired by ambulances. We had red and blue as our primary colors and had straight lines. However, we later decided that we wanted a more playful and lighthearted theme. EMTs see ambulances incessantly and they are likely a stressful place for them, so we didn't want to remind them of that. We wanted to give them an application that was enjoyable for them and would help to alleviate some of their stress.</p>\n" +
-    "		<br/>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<img src=\"../images/Accelerate/LowFiMockUps.png\" class=\"img-responsive\">\n" +
-    "					<div class=\"caption_text\">	\n" +
-    "						After doing sketches, we did an iteration of low-fidelity mockups in black and white. These were used to begin understanding the amount of information and interactivity that would be appropriate per screen.\n" +
-    "					</div>\n" +
-    "			</div>\n" +
-    "		</div>		\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Final Deliverables -->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Final Deliverables</h4>\n" +
-    "		<p>he final deliverables for this project were completed designs, design specifications, and a final presentation to the class.</p>\n" +
-    "		<br/>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<img src=\"../images/Accelerate/AccelerateFinalDesignsHorizontal.png\" class=\"img-responsive\">\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				The final designs for our screens included a fun, playful color scheme. We also introduced an owl character that provided consistency and whimsy throughout, encouraging EMTs to continue using the application. These features provided a feeling that will be a welcome relief from the seriousness of the users' normal work days.\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>		\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "</div>");
+    "</html>\n" +
+    "");
 }]);
 
 angular.module("../app/views/contact.html", []).run(["$templateCache", function($templateCache) {
@@ -713,6 +811,8 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
 
 angular.module("../app/views/home.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/home.html",
+    "<!doctype html>\n" +
+    "<html>﻿\n" +
     "<link href=\"../Content/home.css\" rel=\"stylesheet\" />\n" +
     "<link href=\"../Content/font-awesome-4.2.0/css/font-awesome.css\" rel=\"stylesheet\">\n" +
     "<link href=\"../Content/contact.css\" rel=\"stylesheet\" />\n" +
@@ -720,10 +820,10 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "<div class=\"container\">\n" +
     "  <div class=\"row panel\">\n" +
     "    <!--show large image beside text-->\n" +
-    "    <div class=\"col-md-4 bg_blur hidden-sm hidden-xs\"> \n" +
+    "    <div class=\"col-md-4 bg_blur hidden-sm hidden-xs\">\n" +
     "    </div>\n" +
     "        <!--show white box where large image was to extend background-->\n" +
-    "    <div class=\"col-md-4 bg_blur_solid_sm visible-sm\"> \n" +
+    "    <div class=\"col-md-4 bg_blur_solid_sm visible-sm\">\n" +
     "    </div>\n" +
     "    <!--show white box where large image was to extend background-->\n" +
     "    <div class=\"col-md-4 bg_blur_solid_xs visible-xs\">\n" +
@@ -737,7 +837,7 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "      <h1>Kaitlyn Sparks</h1>\n" +
     "      <h4>User Experience Research and Design</h4>\n" +
     "      <span><i>I am an Masters of Human-Computer Interaction student at Carnegie Mellon University in Pittsburgh. I\n" +
-    "       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>   \n" +
+    "       will graduate in August 2015. I like to make complex systems simple and enjoyable for people to use.</i></span>\n" +
     "      <br/><br/>\n" +
     "      <div class=\"row\">\n" +
     "        <div class=\"col row-centered \">\n" +
@@ -750,30 +850,33 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "      </div>\n" +
     "    </div>\n" +
     "  </div>\n" +
-    "  </div> \n" +
+    "  </div>\n" +
     "\n" +
     "  <br/>\n" +
-    "  <h3 style=\"color:#808080;\"> My Work </h1>\n" +
+    "  <h3 class = \"myWork\"> My Work </h3>\n" +
     "  <hr/>\n" +
     "\n" +
     "    <div class=\"row\">\n" +
-    "      \n" +
+    "\n" +
     "      <div data-ng-repeat=\"project in projects\">\n" +
     "\n" +
-    "        <div class=\"col-xs-12 col-sm-6 col-md-4 row-centered\">            \n" +
+    "        <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-4 row-centered\">\n" +
+    "          <a ui-sref=\"{{project.Nav}}\">\n" +
     "            <div class=\"thumbnail\">\n" +
-    "                <a ui-sref=\"{{project.Nav}}\">\n" +
     "                  <div class=\"caption\">\n" +
     "                      <h3>{{project.Title}}</h3>\n" +
     "                      <h5>Project Type: {{project.ProjectType}}</h5>\n" +
     "                      <p>{{project.Description}}</p>\n" +
     "                  </div>\n" +
-    "                </a>\n" +
     "                <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
     "            </div>\n" +
+    "          </a>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>");
+    "</div>\n" +
+    "</div>\n" +
+    "</html>\n" +
+    "");
 }]);
 
 angular.module("../app/views/peanuts.html", []).run(["$templateCache", function($templateCache) {
@@ -1243,16 +1346,20 @@ app.controller('homeController', ['$scope', function ($scope) {
 
 $scope.projects = [];
 
-$scope.projects = [{Title: "Accelerate", Description: "A project to design a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Icon.png", Nav: "accelerate", ProjectType:"Design"},
-				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/icon.png", Nav: "distractionfreecoding", ProjectType:"Research"},
-				   {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", Thumbnail: "../images/Peanuts/Icon.png", Nav: "peanuts", ProjectType:"Research"},
-				   {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/icon.png", Nav: "webdesign", ProjectType: "Design"},
-				   {Title: "Wake Up", Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", Thumbnail: "../images/WakeUp/icon.jpg", Nav: "wakeup", ProjectType: "Development"},
-				   {Title: "Hackathons and Challenges", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/icon.jpg", Nav: "hackathon", ProjectType: "Development"}];
+$scope.projects = [{Title: "Accelerate", Description: "A project to design a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Accelerate_icon2.png", Nav: "accelerate", ProjectType:"Design"},
+				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/distractionfreecoding_icon.png", Nav: "distractionfreecoding", ProjectType:"Research"},
+         {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", Thumbnail: "../images/Peanuts/peanuts_icon.png", Nav: "peanuts", ProjectType:"Research"},
+       {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/personalWebsite_icon.png", Nav: "webdesign", ProjectType: "Design"},
+     {Title: "Wake Up", Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", Thumbnail: "../images/WakeUp/wakeup_icon.png", Nav: "wakeup", ProjectType: "Development"},
+   {Title: "Hackathons and Challenges", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/hackathon_icon.png", Nav: "hackathon", ProjectType: "Development"}];
 
 }]);
 
-}());;(function () {
+
+
+
+}());
+;(function () {
     'use strict';
 app.controller('indexController', ['$scope', function ($scope) {
 
