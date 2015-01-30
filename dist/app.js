@@ -205,7 +205,7 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
     "    </div>\n" +
     "    <div class=\"row\">\n" +
     "      <h3>Contact Me</h3>\n" +
-    "      <span class=\"about-text\">I would love to hear from you! You can contact me at kaitlynesparks@gmail.com or 912-585-2036.</span>\n" +
+    "      <span class=\"about-text\">I would love to hear from you. You can contact me at kaitlynesparks@gmail.com or connect to me on<a href=\"https://www.linkedin.com/in/kaitlynsparks\"> LinkedIn</span>.\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
@@ -953,16 +953,23 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<hr/>\n" +
     "\n" +
     "<!--About the Project-->\n" +
-    "<div class=\"row\">\n" +
+    "<!--<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<p><span class=\"category\">Assignment:</span> Pick any topic related to social web and explore it with design, research, and/or development.\n" +
     "		<br/><br/>	\n" +
     "		<span class=\"category\">Opportunity:</span> When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity.\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p>\n" +
+    "		<span class=\"category\">Solution:</span> We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p> -->\n" +
+    "<div class=\"row process\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h3>Description</h3>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<hr/>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p>There are a multitude of places popping up on the internet for the purpose of eliciting and receiving help. Some of these are stand alone sites and others are communities within social sites, such as Reddit. When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity. We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "\n" +
     "<!--Process Header-->\n" +
     "<div class=\"row process\">\n" +
@@ -983,7 +990,7 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Initial Survey</h4>\n" +
-    "		<p>WTo quickly explore how various representations of reciprocity would influence behavior, we created a survey showing 8 different requests with the same story, but different reciprocity statements. The survey was distributed to 83 different people we recruited from friends and family. We asked to which of the 8 requests they would be most likely to donate. After the survey, we also got some feedback from participants to understand the reasoning behind their choices.</p>\n" +
+    "		<p>To quickly explore how various representations of reciprocity would influence behavior, we created a survey showing 8 different requests with the same story, but different reciprocity statements. The survey was distributed to 83 different people we recruited from friends and family. We asked to which of the 8 requests they would be most likely to donate. After the survey, we also got some feedback from participants to understand the reasoning behind their choices.</p>\n" +
     "		<br/><br/>\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-md-4 col-md-offset-2\">\n" +
@@ -1048,7 +1055,7 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Final Survey</h4>\n" +
-    "		<p>After analyzing the results of the first survey and the feedback we received, we decided to use the two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p>\n" +
+    "		<p>After analyzing the results of the first survey and the feedback we received, we decided to use two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p>\n" +
     "		<br/><br/>\n" +
     "    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-3\">\n" +
@@ -1183,7 +1190,7 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "<hr/>\n" +
     "\n" +
     "<!--About the project-->\n" +
-    "<div class=\"row\">\n" +
+    "<!--<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<p><span class=\"category\">Assignment:</span> Design and develop a mobile application to demonstrate Android development.\n" +
     "		<br/><br/>	\n" +
@@ -1192,7 +1199,17 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "		<span class=\"category\">Solution:</span> I decided to build an application that is a dedicated morning alarm clock. This alarm clock allows you to set your preferred city, bus route, and bus stop. When the alarm goes off, this information is displayed to the user.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<hr/>\n" +
+    "<hr/> -->\n" +
+    "<div class=\"row process\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h3>Description</h3>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p>The final project for my Software Structures for User Interfaces Mobile development lab was to create an Android application of our choice. I looked to my own life for inspiration. When my alarm goes off in the morning, the first thing I do is check the weather and the bus information to determine how long I have to get ready and what I need to wear for the day. I decided to build an application that is a dedicated morning alarm clock. This alarm clock allows you to set your preferred city, bus route, and bus stop. When the alarm goes off, this information is displayed to the user.</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "\n" +
     "<!--Final Designs-->\n" +
     "<div class=\"row\">\n" +
