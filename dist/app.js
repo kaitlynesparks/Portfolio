@@ -518,16 +518,25 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<hr/>\n" +
     "\n" +
     "<!--About Project-->\n" +
+    "<div class=\"row process\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<h3>Description</h3>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "<div class=\"row\">\n" +
+    "	<div class=\"col col-md-12\">\n" +
+    "		<p>Developers struggle to pay attention to their work, especially student developers. It's easy to get distracted on a computer. We also noticed that developers heavily depend on outside resources and spend significant time switching between applications to access those resources. For our User Centered Research and Evaluation class at CMU, we performed the contextual design methodology as described by Karen Holtzblatt on student developers. Synthesizing that research, we discovered that distraction and application switching were two of the biggest problems they faced. We envisioned a solution that will lock down the coding environment to prevent distraction while improving the way that students view outside resources. </p>\n" +
+    "\n" +
+    "<!--<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<p><span class=\"category\">Assignment:</span> This was a series of assignments designed to practice Contextual Design methods. The prompt was to observe student developers to see the issues that arise. Teams were then allowed to focus on improving any aspect of the student development process that they observed.\n" +
     "		<br/><br/>	\n" +
     "		<span class=\"category\">Opportunity:</span> Student developers are easily distracted when trying to do to their homework. They are required to use a large number of systems to perform their tasks, and they are provided with a variety of resources to reference to learn the material. The need to switch between systems coupled with the constant distraction from social media and friends makes it difficult for students to stay focused on their assignments.\n" +
     "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks out online distractions for a user specified period of time, then provides a break when messages are allowed to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p>\n" +
+    "		<span class=\"category\">Solution:</span> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks out online distractions for a user specified period of time, then provides a break when messages are allowed to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p> -->\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<hr/>\n" +
+    "\n" +
     "\n" +
     "<!--Process Header-->\n" +
     "<div class=\"row process\">\n" +
@@ -540,7 +549,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Contextual Inquiry</h4>\n" +
-    "		<p>We began by performing contextual interviews with student developers. Each team member interviewed one student; we had 5 team members giving us a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own homework assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. We asked students questions about what they were doing as they did it to get an understanding of their natural problems and processes. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.</p>\n" +
+    "		<p>We began by performing contextual interviews with student developers. Each team member interviewed one student for a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own homework assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -548,7 +557,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Interpretation Sessions</h4>\n" +
-    "		<p>During the interpretation sessions, the team gathered and went through the interviews one at a time. The interviewer read her notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram. By having each member activity engaged in the session, we were able to internalize the information about each interview sesssion without having to be present for all of them.</p>\n" +
+    "		<p>During the interpretation sessions, the team went through the interviews one at a time. The interviewer read her notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram.</p>\n" +
     "		<br/>\n" +
     "		<!--\n" +
     "    	<div class=\"row\">\n" +
@@ -581,7 +590,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Affinity Diagram and Consolidated Models</h4>\n" +
-    "		<p>We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and get an overall idea of what was happening by simply looking at the headings. We also consolidated the 5 sequences into one sequence that represented all of the users. We did the same with the flow models to create one consolidated model. This process allows us to use the data we collected to create one picture of what is common in the process across all interviewees. It is also an additional step that helps us digest the information so that we can easily recall it later.</p>\n" +
+    "		<p>We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and get an overall idea of what was happening by simply looking at the headings. We also consolidated the 5 sequences into one sequence that represented all of the users. We did the same with the flow models to create one consolidated model. This process allows us to use the data we collected to create one picture of what is common in the process across all interviewees.</p>\n" +
     "		<br/>\n" +
     "    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-12\">\n" +
@@ -617,7 +626,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Visioning</h4>\n" +
-    "		<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
+    "		<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv-style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
     "		<br/>\n" +
     "<!--    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-5\">\n" +
