@@ -170,7 +170,7 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "                  <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
     "                  <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
     "                  <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
-    "                  <li><a ui-sref=\"webdesign\">Personal Website Design</a></li>\n" +
+    "                  <!--<li><a ui-sref=\"webdesign\">Personal Website Design</a></li>-->\n" +
     "                  <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
     "                  <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>\n" +
     "                </ul>\n" +
@@ -195,13 +195,17 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
     "  <div class = \"col col-md-8 col-md-offset-2\">\n" +
     "    <div class=\"row\">\n" +
     "      <h3>Get to know me professionally</h3>\n" +
-    "      <span class=\"about-text\">I went to Vanderbilt and double majored in psychology and computer science. I grew up in a rural community and didn't know much about the job market, but I knew I cared about solving complex problems for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at as a program manager and a developer. Then I found Human-Computer Interaction and knew that's what I wanted to study. So, I went to CMU to pursue my Masters in HCI. </span>\n" +
+    "      <span class=\"about-text\">I went to Vanderbilt and double majored in psychology and computer science. I grew up in a rural community and didn't know much about the job market, but I knew I cared about solving complex problems for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at Asurion as a program manager and a developer. Then I found Human-Computer Interaction and knew that's what I wanted to study. So, I went to CMU to pursue my Masters in HCI. </span>\n" +
     "      <br/><br/>\n" +
-    "      <span class=\"about-text\">My passion is to figure out complicated systems and understand how to make them simple for users. I also enjoy learning about people's motivations for what they do; I think that's key to knowing what to design for them and also for working harmoniously with others. Having studied computer science, psychology, and now HCI, I have a wide range of knowledge that helps me to work well in diverse teams.</span>\n" +
+    "      <span class=\"about-text\">My career goal is to understand complicated systems and determine how to make them simple for users. I also enjoy learning about people's motivations for what they do; I think that's key to knowing what to design for them and also for working harmoniously with others. Having studied computer science, psychology, and now HCI, I have a wide range of knowledge that helps me to work well in diverse teams.</span>\n" +
     "    </div>\n" +
     "    <div class=\"row\">\n" +
     "      <h3>Get to know me personally</h3>\n" +
-    "      <span class=\"about-text\">I am originally from a small town in south Georgia called Vidalia. It is home to the famous Vidalia sweet onion. In high school I played softball, tennis, and did competitive cheerleading. I moved to Nashville for college and lived there for a few years after graduation. I was a cheerleader at Vanderbilt cheering for men's and women's basketball and football. I love sports, especially SEC football and Atlanta Braves baseball! I also really like dogs, sweet tea, diet coke, and outdoor activities. </span>\n" +
+    "      <span class=\"about-text\">I am originally from a small town in south Georgia called Vidalia. It is home to the famous Vidalia sweet onion. In high school I played softball, tennis, and did competitive cheerleading. I moved to Nashville for college and lived there for a few years after graduation. I was a cheerleader at Vanderbilt cheering for men's and women's basketball and football. I enjoy watching sports, especially SEC football and Atlanta Braves baseball! I also really like dogs, sweet tea, diet coke, sitcoms, and outdoor activities. </span>\n" +
+    "    </div>\n" +
+    "    <div class=\"row\">\n" +
+    "      <h3>Contact Me</h3>\n" +
+    "      <span class=\"about-text\">I would love to hear from you! You can contact me at kaitlynesparks@gmail.com or 912-585-2036.</span>\n" +
     "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
@@ -217,7 +221,7 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
     "		<h1>Accelerate</h1>\n" +
-    "		<h4>October 2014 - December 2014</h4>\n" +
+    "		<h4>A project to design a mobile training application for emergency medical personnel</h4>\n" +
     "		<hr/>\n" +
     "\n" +
     "		<!--Meta data -->\n" +
@@ -228,15 +232,15 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "				</div>\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-6\">\n" +
-    "				<span class=\"category\">Project Type:</span><br/> Design\n" +
-    "				<br/><br/>\n" +
+    "				<!--<span class=\"category\">Project Type:</span><br/> Design\n" +
+    "				<br/><br/>-->\n" +
     "				<span class=\"category\">Contributions:</span> <br/> Affinity Diagrams,\n" +
     "				Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
     "				<br/><br/>\n" +
     "				<span class=\"category\">Team Members:</span> <br/> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
     "				<br/><br/>\n" +
-    "				<!--<span class=\"category\">Duration:</span> <br/> October 2014 - December 2014\n" +
-    "				<br/><br/>-->\n" +
+    "				<span class=\"category\">Duration:</span> <br/> October 2014 - December 2014\n" +
+    "				<br/><br/>\n" +
     "				<span class=\"category\">Class:</span> <br/> Interaction Design Fundamentals, CMU\n" +
     "			</div>\n" +
     "		</div>\n" +
@@ -311,13 +315,13 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
-    "				<div class = \"col col-md-6 col-md-offset-3\">\n" +
-    "					<div class=\"thumbnail\">\n" +
-    "						<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.png\" class=\"img-responsive\" >\n" +
-    "							<div class=\"caption\">\n" +
-    "								We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
-    "							</div>\n" +
-    "					</div>\n" +
+    "			<div class = \"col col-md-6 col-md-offset-3\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.png\" class=\"img-responsive\" >\n" +
+    "						<div class=\"caption\">\n" +
+    "							We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
+    "						</div>\n" +
+    "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "\n" +
@@ -494,12 +498,14 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "\n" +
     "<!--Meta data-->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6 upward-adjust\">\n" +
-    "        <img src=\"../images/DistractionFreeCoding/icon.png\">\n" +
+    "	<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
+    "		<div class=\"thumbnail\">\n" +
+    "        	<img src=\"../images/DistractionFreeCoding/distractionfreecoding_icon.png\">\n" +
+    "        </div>\n" +
     "	</div>\n" +
     "	<div class=\"col col-md-6\">\n" +
-    "		<span class=\"category\">Project Type:</span><br/>Research\n" +
-    "		<br/><br/>\n" +
+    "		<!--<span class=\"category\">Project Type:</span><br/>Research\n" +
+    "		<br/><br/> -->\n" +
     "		<span class=\"category\">Contributions:</span><br/> Contextual Inquiry, Affinity Diagrams, Sequence Models, Flow Models, Visioning\n" +
     "		<br/><br/>\n" +
     "		<span class=\"category\">Team Members:</span><br/> Holly Brosnahan, Amalya Henderson, Michael Richardson, Yueying Tang\n" +
@@ -544,6 +550,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		<h4>Interpretation Sessions</h4>\n" +
     "		<p>During the interpretation sessions, the team gathered and went through the interviews one at a time. The interviewer read her notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram. By having each member activity engaged in the session, we were able to internalize the information about each interview sesssion without having to be present for all of them.</p>\n" +
     "		<br/>\n" +
+    "		<!--\n" +
     "    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-6\">\n" +
     "				<img src=\"../images/DistractionFreeCoding/SequenceModel.JPG\" class=\"img-responsive\" >\n" +
@@ -557,7 +564,16 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "				During the interpretation sessions, we created flow models indicating the key players and how they interacted. We noted breakdowns in red.\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "		</div>	\n" +
+    "		</div>	-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12 col-lg-12\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/models.png\" class=\"img-responsive\">\n" +
+    "					<div class=\"caption\">\n" +
+    "						During our interpretation sessions, we created sequence models and flow models for each participant.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -569,12 +585,17 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		<br/>\n" +
     "    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-12\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/Affinity.JPG\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/Affinity.png\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.\n" +
+    "					</div>\n" +
+    "				<!--<div class=\"caption_text\">	\n" +
+    "				A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.-->\n" +
     "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
+    "		<!--\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-md-4\">\n" +
     "				<img src=\"../images/DistractionFreeCoding/ConsolidatedFlow.jpg\" class=\"img-responsive\" >\n" +
@@ -588,7 +609,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "				The 5 sequence models created during the interpretation sessions were combined into this one consolidated sequence model. We included the intents and triggers from the original sequences into this model as well.\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "		</div>	\n" +
+    "		</div>	-->\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -598,7 +619,7 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		<h4>Visioning</h4>\n" +
     "		<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
     "		<br/>\n" +
-    "    	<div class=\"row\">\n" +
+    "<!--    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-5\">\n" +
     "				<img src=\"../images/DistractionFreeCoding/GenerateIdeas.JPG\" class=\"img-responsive\">\n" +
     "				<div class=\"caption_text\">	\n" +
@@ -611,7 +632,17 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "				We created visions by doing quick sketches of the ideas that teammates were coming up with in a quick, improv style visioning session.\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "		</div> -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-md-12\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/visioning.png\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						We captured key ideas from our diagrams, sketched out ideas as a team, and then analyzed those ideas for pros and cons before coming up with a final vision.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>			\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -691,10 +722,11 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-12\">\n" +
     "						<div class=\"thumbnail\"><img src=\"../images/Hackathons/FeedingFriendzy/FeedingFriendzyFinalDesigns.png\">\n" +
+    "							<div class=\"caption\">	\n" +
+    "								Screen shots of the final application taken from the running application in the iOS emulator \n" +
+    "							</div>\n" +
     "						</div>\n" +
-    "						<div class=\"thumbnail_caption_text\">	\n" +
-    "						Screen shots of the final application taken from the running application in the iOS emulator \n" +
-    "						</div>\n" +
+    "\n" +
     "					</div>\n" +
     "				</div>\n" +
     "				<!--More Information-->\n" +
@@ -705,9 +737,9 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "				</div>\n" +
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-12\">\n" +
-    "						ChallengePost: <a href=\"http://challengepost.com/software/feeding-friendzy\">http://challengepost.com/software/feeding-friendzy</a>\n" +
+    "						<a href=\"http://challengepost.com/software/feeding-friendzy\">ChallengePost</a>\n" +
     "						<br/>\n" +
-    "						GitHub: <a href=\"https://github.com/shawnxusy/Feeding-friendzy\">https://github.com/shawnxusy/Feeding-friendzy</a>\n" +
+    "						<a href=\"https://github.com/shawnxusy/Feeding-friendzy\">GitHub</a>\n" +
     "					</div>\n" +
     "				</div>\n" +
     "			</div>\n" +
@@ -774,16 +806,17 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-6\">\n" +
     "						<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/coding.JPG\">\n" +
+    "							<div class=\"caption\">	\n" +
+    "								Working together during the challenge.\n" +
+    "							</div>\n" +
     "						</div>\n" +
-    "						<div class=\"thumbnail_caption_text\">	\n" +
-    "						Working together during the challenge.\n" +
-    "						</div>\n" +
+    "						\n" +
     "					</div>\n" +
     "					<div class=\"col col-md-6\">\n" +
     "						<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/downbeat_demo.jpg\">\n" +
-    "						</div>\n" +
-    "						<div class=\"thumbnail_caption_text\">	\n" +
-    "						For the final presentation, we gave a fun demo of our application. The fireworks were shown on a display behind us.\n" +
+    "							<div class=\"caption\">	\n" +
+    "								For the final presentation, we gave a fun demo of our application. The fireworks were shown on a display behind us.\n" +
+    "							</div>\n" +
     "						</div>\n" +
     "					</div>\n" +
     "				</div>\n" +
@@ -795,9 +828,9 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "				</div>	\n" +
     "				<div class=\"row\">\n" +
     "					<div class=\"col col-md-12\">\n" +
-    "						Hackathon Link: <a href=\"https://www.hackerleague.org/hackathons/mhci-hackathon\">https://www.hackerleague.org/hackathons/mhci-hackathon</a>\n" +
+    "						<a href=\"https://www.hackerleague.org/hackathons/mhci-hackathon\">HackerLeague</a>\n" +
     "						<br/>\n" +
-    "						GitHub: <a href=\"https://github.com/MasterPie/MHCI_Hackathon\">https://github.com/MasterPie/MHCI_Hackathon</a>\n" +
+    "						<a href=\"https://github.com/MasterPie/MHCI_Hackathon\">GitHub</a>\n" +
     "					</div>\n" +
     "				</div>\n" +
     "			</div>\n" +
@@ -891,12 +924,14 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "\n" +
     "<!--Meta Data-->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "        <img src=\"../images/Peanuts/Icon.png\">\n" +
+    "	<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
+    "		<div class=\"thumbnail\">\n" +
+    "        	<img src=\"../images/Peanuts/Icon.png\" >\n" +
+    "		</div>\n" +
     "	</div>\n" +
     "	<div class=\"col col-md-6\">\n" +
-    "		<span class=\"category\">Project Type:</span><br/> Research\n" +
-    "		<br/><br/>\n" +
+    "		<!--<span class=\"category\">Project Type:</span><br/> Research\n" +
+    "		<br/><br/>-->\n" +
     "		<span class=\"category\">Contributions:</span><br/> Survey Design and Analysis\n" +
     "		<br/><br/>\n" +
     "		<span class=\"category\">Team Members:</span><br/> Jeff Harris, Jim Martin, Katie Ramp\n" +
@@ -943,10 +978,18 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "		<br/><br/>\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-md-4 col-md-offset-2\">\n" +
-    "				<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						This is one of the options we showed on the survey. All options were exactly the same except for the statement regarding reciprocity.\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
+    "			\n" +
+    "				<!--<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\">\n" +
     "    			<div class=\"caption_text\">	\n" +
     "					This is one of the options we showed on the survey. All options were exactly the same except for the statement regarding reciprocity.\n" +
-    "				</div>\n" +
+    "				</div> -->\n" +
+    "\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-4\">\n" +
     "				<table class=\"table\">\n" +
@@ -1000,24 +1043,48 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "		<br/><br/>\n" +
     "    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-3\">\n" +
-    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\">\n" +
+    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\">\n" +
     "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing the percentage of money given versus received</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing the percentage of money given versus received</div>-->\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						Negative reciprocity option used during the final survey showing the percentage of money given versus received\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-3\">\n" +
-    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\">\n" +
+    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\">\n" +
     "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing the percentage of money given versus received</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing the percentage of money given versus received</div>-->\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						Positive reciprocity option used during the final survey showing the percentage of money given versus received\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-3\">\n" +
-    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\">\n" +
+    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\">\n" +
     "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing number of people donated to versus the number received from</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing number of people donated to versus the number received from</div> -->\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						Negative reciprocity option used during the final survey showing number of people donated to versus the number received from\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-3\">\n" +
-    "				<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\">\n" +
+    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\">\n" +
     "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing number of people donated to versus the number received from</div>\n" +
+    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing number of people donated to versus the number received from</div>-->\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						Positive reciprocity option used during the final survey showing number of people donated to versus the number received from\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
@@ -1031,16 +1098,28 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "		<br/><br/>\n" +
     "    	<div class=\"row\">\n" +
     "			<div class=\"col col-md-6\">\n" +
-    "				<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\">\n" +
+    "				<!--<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\">\n" +
     "				<div class=\"caption_text\">	\n" +
     "				On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.\n" +
-    "				</div>\n" +
+    "				</div>-->\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-6\">\n" +
-    "				<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\">\n" +
+    "				<!--<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\">\n" +
     "				<div class=\"caption_text\">	\n" +
     "				A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.\n" +
-    "				</div>\n" +
+    "				</div> -->\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\" >\n" +
+    "					<div class=\"caption\">\n" +
+    "						A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.\n" +
+    "					</div>\n" +
+    "				</div>		\n" +
     "			</div>\n" +
     "		</div>	\n" +
     "	</div>\n" +
@@ -1075,12 +1154,14 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "\n" +
     "<!--Meta Data-->\n" +
     "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "        <img src=\"../images/WakeUp/icon.jpg\">\n" +
+    "	<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
+    "		<div class=\"thumbnail\">\n" +
+    "        <img src=\"../images/WakeUp/icon.jpg\" >\n" +
+    "		</div>\n" +
     "	</div>\n" +
     "	<div class=\"col col-md-6\">\n" +
-    "		<span class=\"category\">Project Type:</span><br/> Development\n" +
-    "		<br/><br/>\n" +
+    "		<!--<span class=\"category\">Project Type:</span><br/> Development\n" +
+    "		<br/><br/> -->\n" +
     "		<span class=\"category\">Contributions:</span><br/> Design, Android Development\n" +
     "		<br/><br/>\n" +
     "		<span class=\"category\">Tools and Technologies:</span><br/> Eclipse, Java, Android SDK, Adobe Photoshop\n" +
@@ -1111,23 +1192,24 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-md-3\">\n" +
     "				<div class=\"thumbnail\"><img src=\"../images/WakeUp/home_screen.png\">\n" +
+    "					<div class=\"caption\">Home screen</div>	\n" +
     "    			</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Home screen</div>\n" +
     "			</div>\n" +
     "			<div class=\"col col-md-3\">\n" +
     "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/preferences_screen.png\">\n" +
+    "				<div class=\"caption\">Preferences screen</div>\n" +
     "			</div>\n" +
-    "			<div class=\"thumbnail_caption_text\">Preferences screen</div>\n" +
     "		</div>\n" +
     "		<div class=\"col col-md-3\">\n" +
     "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/set_alarm_screen.png\">\n" +
+    "				<div class=\"caption\">Set Alarm screen</div>\n" +
     "			</div>\n" +
-    "		<div class=\"thumbnail_caption_text\">Set Alarm screen</div>\n" +
     "		</div>\n" +
     "		<div class=\"col col-md-3\">\n" +
     "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/alarm_screen.png\">\n" +
+    "				<div class=\"caption\">Alarm Alert Screen</div>\n" +
     "			</div>\n" +
-    "		<div class=\"thumbnail_caption_text\">Screen that appears when the alarm clock goes off</div>\n" +
+    "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -1136,7 +1218,7 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "<div class=\"row\">\n" +
     "	<div class=\"col col-md-12\">\n" +
     "		<h4>Final Code</h4>\n" +
-    "		<p>GitHub: <a href=\"https://github.com/kaitlynesparks/WakeUp\">https://github.com/kaitlynesparks/WakeUp</a></p>\n" +
+    "		<a href=\"https://github.com/kaitlynesparks/WakeUp\">GitHub</a>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -1349,7 +1431,7 @@ $scope.projects = [];
 $scope.projects = [{Title: "Accelerate", Description: "A project to design a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Accelerate_icon2.png", Nav: "accelerate", ProjectType:"Design"},
 				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/distractionfreecoding_icon.png", Nav: "distractionfreecoding", ProjectType:"Research"},
          {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", Thumbnail: "../images/Peanuts/peanuts_icon.png", Nav: "peanuts", ProjectType:"Research"},
-       {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/personalWebsite_icon.png", Nav: "webdesign", ProjectType: "Design"},
+      /* {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/personalWebsite_icon.png", Nav: "webdesign", ProjectType: "Design"},*/
      {Title: "Wake Up", Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", Thumbnail: "../images/WakeUp/wakeup_icon.png", Nav: "wakeup", ProjectType: "Development"},
    {Title: "Hackathons and Challenges", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/hackathon_icon.png", Nav: "hackathon", ProjectType: "Development"}];
 
