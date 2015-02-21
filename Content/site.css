@@ -1,4 +1,9 @@
-﻿/* Sticky footer styles
+﻿@font-face {
+  font-family: biko;
+  src: url(../Content/BikoFont/Biko_Regular.otf);
+}
+
+/* Sticky footer styles
 -------------------------------------------------- */
 html {
     position: relative;
@@ -11,7 +16,6 @@ body {
       padding-top: 40px;
   padding-bottom: 10px;
 }
-
 
 
 #footer {
