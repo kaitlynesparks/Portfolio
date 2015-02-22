@@ -1,20 +1,7 @@
-h1 {
-	color: #000;
+.meta-data .meta-data-point ul li a {
+	color: #63C0BF;
 }
 
-h4 {
+.key-findings {
 	color: #808080;
-	font-weight: 200;
 }
-.category {
-	font-size: 1.1em;
-	color: #000;
-	text-transform: uppercase;
-}
-
-h3 {
-	text-transform: uppercase;
-	text-weight: lighter;
-}
-
-

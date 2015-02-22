@@ -116,28 +116,37 @@ angular.module("../app/templates/accelerate_carousel.html", []).run(["$templateC
 
 angular.module("../app/templates/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/templates/footer.html",
-    "<br/>\n" +
-    "<div id=\"footer\">\n" +
-    "    <div class=\"container\">\n" +
-    "        <div class=\"row row-centered\">\n" +
-    "            <div class=\"col-md-12\">\n" +
-    "                <p style=\"margin-top: 15px\">\n" +
-    "                    <a ui-sref=\"home\" style=\"font-weight: bold\">Home</a>&emsp;\n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "    <link href=\"../Content/footer.css\" rel=\"stylesheet\" />\n" +
+    "    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
+    "    <br/>\n" +
+    "    <div id=\"footer\">\n" +
+    "        <div class=\"container\">\n" +
+    "            <!--<div class=\"row row-centered\">-->\n" +
+    "                <div class=\"row\">\n" +
+    "                <div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "                    <div id=\"contact\">\n" +
+    "                        <p>Email: kaitlynesparks@gmail.com</p>\n" +
+    "                        <p>Tel: (912) 585 - 2036 </p>\n" +
+    "                    </div>   \n" +
+    "                        <!--<a ui-sref=\"home\" style=\"font-weight: bold\">Home</a>&emsp;\n" +
     "\n" +
-    "                    <a ui-sref=\"about\" style=\"font-weight: bold\">About</a>&emsp;\n" +
-    "                    \n" +
-    "                    <a ui-sref=\"contact\" style=\"font-weight: bold\">Contact Me</a>\n" +
-    "                    <br>\n" +
-    "                    <span style=\"font-size: 10px; color: black; font-family: sans-serif; \" dir=\"ltr\">Powered By;</span>\n" +
-    "                    <a href=\"https://angularjs.org/\" style=\"font-size: 13px\">AngularJS</a>\n" +
-    "                    <span style=\"font-size: 10px; color: black; font-family: sans-serif; \" dir=\"ltr\">\n" +
-    "                    and </a>\n" +
-    "                    <a href=\"http://getbootstrap.com/\" style=\"font-size: 13px\">Boostrap</a>\n" +
-    "                </p>\n" +
+    "                        <a ui-sref=\"about\" style=\"font-weight: bold\">About</a>&emsp;\n" +
+    "                        \n" +
+    "                        <a ui-sref=\"contact\" style=\"font-weight: bold\">Contact Me</a>\n" +
+    "                        <br>\n" +
+    "                       <!-- <span style=\"font-size: 10px; color: black; font-family: sans-serif; \" dir=\"ltr\">Powered By;</span>\n" +
+    "                        <a href=\"https://angularjs.org/\" style=\"font-size: 13px\">AngularJS</a>\n" +
+    "                        <span style=\"font-size: 10px; color: black; font-family: sans-serif; \" dir=\"ltr\">\n" +
+    "                        and </a>\n" +
+    "                        <a href=\"http://getbootstrap.com/\" style=\"font-size: 13px\">Boostrap</a> -->\n" +
+    "\n" +
+    "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>");
+    "</html>    ");
 }]);
 
 angular.module("../app/templates/nav.html", []).run(["$templateCache", function($templateCache) {
@@ -145,6 +154,7 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "<!doctype html>\n" +
     "<html>\n" +
     "  <link href=\"../Content/nav.css\" rel=\"stylesheet\" />\n" +
+    "  <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "  <div class=\"navbar navbar-default navbar-top\" data-ng-controller=\"indexController\">\n" +
     "    <div class=\"container\">\n" +
@@ -157,11 +167,11 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "              <span class=\"icon-bar\"></span>\n" +
     "              <span class=\"icon-bar\"></span>\n" +
     "            </button>\n" +
-    "            <!--<a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>-->\n" +
+    "            <a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>\n" +
     "          </div>\n" +
     "          <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
     "            <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "              <li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>\n" +
+    "              <!--<li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>-->\n" +
     "              <li><a ui-sref=\"about\">About</a></li>\n" +
     "              <li><a ui-sref=\"resume\">Resume</a></li>\n" +
     "              <li class=\"dropdown\">\n" +
@@ -188,29 +198,39 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
 
 angular.module("../app/views/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/about.html",
-    "<div class= \"container\">\n" +
-    "  <div class = \"col col-md-8 col-md-offset-2\">\n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "  <link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
+    "    <!--<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />-->\n" +
+    "  <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
+    "  <div class= \"container\">\n" +
     "    <div class=\"row\">\n" +
-    "      <h1>About Me</h1>\n" +
-    "    </div>\n" +
-    "  </div>  \n" +
-    "  <div class = \"col col-md-8 col-md-offset-2\">\n" +
+    "      <div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-12\"> \n" +
+    "        <h1>About Me</h1>\n" +
+    "      </div>\n" +
+    "    </div> \n" +
     "    <div class=\"row\">\n" +
-    "      <h3>Get to know me professionally</h3>\n" +
-    "      <span class=\"about-text\">I went to Vanderbilt and double majored in psychology and computer science. I grew up in a rural community and didn't know much about the job market, but I knew I cared about solving complex problems for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at Asurion as a program manager and a developer. Then I found Human-Computer Interaction and knew that's what I wanted to study. So, I went to CMU to pursue my Masters in HCI. </span>\n" +
-    "      <br/><br/>\n" +
-    "      <span class=\"about-text\">My career goal is to understand complicated systems and determine how to make them simple for users. I also enjoy learning about people's motivations for what they do; I think that's key to knowing what to design for them and also for working harmoniously with others. Having studied computer science, psychology, and now HCI, I have a wide range of knowledge that helps me to work well in diverse teams.</span>\n" +
-    "    </div>\n" +
+    "      <div class = \"col col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n" +
+    "        <h3>Get to know me professionally</h3>\n" +
+    "        <span class=\"about-text\">I went to Vanderbilt and double majored in psychology and computer science. I grew up in a rural community and didn't know much about the job market, but I knew I cared about solving complex problems for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at Asurion as a program manager and a developer. Then I found Human-Computer Interaction and knew that's what I wanted to study. So, I went to CMU to pursue my Masters in HCI. </span>\n" +
+    "        <br/><br/>\n" +
+    "        <span class=\"about-text\">My career goal is to understand complicated systems and determine how to make them simple for users. I also enjoy learning about people's motivations for what they do; I think that's key to knowing what to design for them and also for working harmoniously with others. Having studied computer science, psychology, and now HCI, I have a wide range of knowledge that helps me to work well in diverse teams.</span>\n" +
+    "      </div>\n" +
+    "      <div class = \"col col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1\">\n" +
+    "        <h3>Get to know me personally</h3>\n" +
+    "        <span class=\"about-text\">I am originally from a small town in south Georgia called Vidalia. It is home to the famous Vidalia sweet onion. In high school I played softball, tennis, and did competitive cheerleading. I moved to Nashville for college and lived there for a few years after graduation. I was a cheerleader at Vanderbilt cheering for men's and women's basketball and football. I enjoy watching sports, especially SEC football and Atlanta Braves baseball! I also really like dogs, sweet tea, diet coke, sitcoms, and outdoor activities. </span>\n" +
+    "        <h3>Contact Me</h3>\n" +
+    "        <span class=\"about-text\">I would love to hear from you. You can contact me at kaitlynesparks@gmail.com or connect to me on<a href=\"https://www.linkedin.com/in/kaitlynsparks\"> LinkedIn</span>.\n" +
+    "      </div>\n" +
+    "    </div>   \n" +
+    "    <br/>    \n" +
     "    <div class=\"row\">\n" +
-    "      <h3>Get to know me personally</h3>\n" +
-    "      <span class=\"about-text\">I am originally from a small town in south Georgia called Vidalia. It is home to the famous Vidalia sweet onion. In high school I played softball, tennis, and did competitive cheerleading. I moved to Nashville for college and lived there for a few years after graduation. I was a cheerleader at Vanderbilt cheering for men's and women's basketball and football. I enjoy watching sports, especially SEC football and Atlanta Braves baseball! I also really like dogs, sweet tea, diet coke, sitcoms, and outdoor activities. </span>\n" +
-    "    </div>\n" +
-    "    <div class=\"row\">\n" +
-    "      <h3>Contact Me</h3>\n" +
-    "      <span class=\"about-text\">I would love to hear from you. You can contact me at kaitlynesparks@gmail.com or connect to me on<a href=\"https://www.linkedin.com/in/kaitlynsparks\"> LinkedIn</span>.\n" +
-    "    </div>\n" +
+    "      <div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "        <img src=\"../images/about-me.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "      </div> \n" +
+    "    </div> \n" +
     "  </div>\n" +
-    "</div>\n" +
+    "</html>  \n" +
     "");
 }]);
 
@@ -219,232 +239,167 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "<!doctype html>\n" +
     "<html>﻿\n" +
     "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
+    "	<!--<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />-->\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
-    "		<h1>Accelerate</h1>\n" +
-    "		<h4>A project to design a mobile training application for emergency medical personnel</h4>\n" +
+    "		<div class=\"headline\">\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "					<h1 class=\"headline\">Accelerate</h1>\n" +
+    "					<h4 class=\"headline\">iOS Application Design</h4>\n" +
+    "					<p class=\"headline\">October 2014 - December 2014</p>\n" +
+    "				</div>\n" +
+    "			</div>		\n" +
+    "		</div>\n" +
     "		<hr/>\n" +
     "\n" +
     "		<!--Meta data -->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "		        <img src=\"../images/Accelerate/Accelerate_icon2.png\" >\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "			<div class=\"col col-md-6\">\n" +
-    "				<!--<span class=\"category\">Project Type:</span><br/> Design\n" +
-    "				<br/><br/>-->\n" +
-    "				<span class=\"category\">Contributions:</span> <br/> Affinity Diagrams,\n" +
-    "				Narratives, Navigation Maps, Wireframes, Low-Fidelity Mockups, High-Fidelity Mockups\n" +
-    "				<br/><br/>\n" +
-    "				<span class=\"category\">Team Members:</span> <br/> Jay Lui, Nicole Navolio, Leticia Patricio\n" +
-    "				<br/><br/>\n" +
-    "				<span class=\"category\">Duration:</span> <br/> October 2014 - December 2014\n" +
-    "				<br/><br/>\n" +
-    "				<span class=\"category\">Class:</span> <br/> Interaction Design Fundamentals, CMU\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<hr/>\n" +
-    "\n" +
-    "		<!--About Project -->\n" +
-    "		<div class=\"row process\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<h3>Description</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>Emergency medical service employees have uniquely stressful jobs and do not have sufficient encouragement to learn life skills or additional job skills. For our Interaction Design Fundamentals class at CMU, we decided to design a mobile application that provides relevant facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<p>Emergency medical service employees have uniquely stressful jobs and do not\n" +
-    "				have sufficient encouragement to learn life skills or additional job\n" +
-    "				skills. For our Interaction Design Fundamentals class at CMU, we decided to\n" +
-    "				design a mobile application that provides relevant facts about topics such\n" +
-    "				as mental health, nutrition, and driving skills. Leaders can set up friendly\n" +
-    "				competitions about the facts for members of the squad. This promotes team\n" +
-    "				bonding and provides visibility of hard work to management.</p>\n" +
-    "\n" +
-    "\n" +
-    "				<!--<p><span class=\"category\">Assignment:</span> Conceive of an original mobile application that provides tools and/or information to an ambulance driver accessing the application while on the job.\n" +
-    "				<br/><br/>\n" +
-    "				<span class=\"category\">Opportunity:</span> EMS workers have a uniquely stressful job and do not have much encouragement to learn life skills or additional job skills. However, they have downtime that can be used more effectively.\n" +
-    "				<br/><br/>\n" +
-    "				<span class=\"category\">Solution:</span> An application that provides facts about topics such as mental health, nutrition, and driving skills. Leaders can set up friendly competitions about the facts for members of the squad. This promotes team bonding and provides visibility of hard work to management.</p>-->\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Accelerate/Accelerate_icon_long.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "		</div>	<!--End icon image-->\n" +
     "\n" +
-    "\n" +
-    "		<!--Process Header -->\n" +
-    "		<div class=\"row process\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<h3>Process</h3>\n" +
+    "		<div class=\"row meta-data\">\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2 col-lg-offset-2\">\n" +
+    "				<h4 class=\"meta-header\">Process</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Research</li>\n" +
+    "					<li>Brainstorming</li>\n" +
+    "					<li>Flow Map</li>\n" +
+    "					<li>Wireframing</li>\n" +
+    "					<li>Hi-fidelity Design</li>\n" +
+    "				</ul>	\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Contributions</h4>\n" +
+    "				<ul>\n" +
+    "					<li>User Research</li>\n" +
+    "					<li>Flow Map</li>\n" +
+    "					<li>Wireframes</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Team</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Jay Lui</li>\n" +
+    "					<li>Nicole Navolio</li>\n" +
+    "					<li>Leticia Patricio</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Deliverables</h4>\n" +
+    "				<ul>\n" +
+    "					<li><a href=\"../images/Accelerate/Accelerate-Final-Designs.png\" target=\"_blank\">Final Designs</a></li>\n" +
+    "					<li><a href=\"../images/Accelerate/Design-Specs.pdf\" target=\"_blank\">Design Specifications</a></li>\n" +
+    "					<li><a href=\"../images/Accelerate/Final-Presentation.pdf\" target=\"_blank\">Presentation</a></li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "		</div>	<!--End meta-data section-->\n" +
     "\n" +
     "		<!--Research -->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<h4>Research</h4>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Research</h3>\n" +
     "				<p>We began by understanding the life and work circumstances for a\n" +
     "					professional in the emergency medical services field. Our team researched\n" +
     "					internet blogs, articles, and ride along videos of EMTs on the job.\n" +
     "					Additionally, we conducted an interview with an EMT to further explore\n" +
-    "					the themes we saw in our initial research.</p>\n" +
-    "				<!--<p>We started this project by researching the experience and needs of emergency medical staff. We read through internet blogs and articles, watched ambulance ride along videos, and interviewed an EMT to get an understanding of the life and work circumstances for a professional in the emergency medical services field.-->\n" +
-    "		    	<blockquote>\n" +
+    "					the themes we saw in our initial research.</p>	\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<blockquote>\n" +
     "					<p>“Myself and many of my co-workers have sought grief counseling, nutrition assistance, and some have even been placed on heavy sleep medications because they never had [targeted information] available to them in a more private medium.”</p>\n" +
     "					<small>EMT</small>\n" +
     "				</blockquote>\n" +
-    "			</div>\n" +
+    "			</div>	\n" +
     "		</div>\n" +
+    "		<div class=\"key-findings\">\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "					<img src=\"../images/Accelerate/key-findings.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>	<!-- end Research -->\n" +
     "\n" +
-    "		<!--Idea Generation -->\n" +
+    "		<!-- Brainstorming -->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<h4>Idea Generation</h4>\n" +
-    "				<!--<p>We generated concept ideas for apps and created an affinity diagram. The process of creating the affinity diagram allowed us to talk about the ideas as a team, and we later used the affinity diagram to to see ideas that we could combine into cohesive, larger concepts. After that, we sorted them into a feasibility-impact matrix showing the potential usefulness of the application against the difficulty of creating it. Personas were provided for us, and we used these to determine which ideas to pursue. We picked our top four choices and composed narratives about their use based on our personas. We used these narratives to make the selection for our final idea. We also followed up with the EMT we interviewed initially, asking additional questions to make sure our idea was useful and desirable.</p>-->\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Brainstorming</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<p>After doing research, we started determining what mobile application\n" +
-    "				solution would meet the needs of emergency medical service professionals.\n" +
-    "				We generated fifty unique application concepts and mapped them on an\n" +
-    "				affinity diagram. Then we used those sorted groups of concepts onto a\n" +
-    "				feasibility-impact matrix. We used these and the personas we were provided\n" +
-    "				to create narratives of the most promising ideas. We received feedback\n" +
-    "				from our classmates and also from an EMT on our concepts.</p>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>After doing research, we started determining what mobile application solution would meet the needs of emergency medical service professionals. We generated fifty unique application concepts and mapped them on an affinity diagram. Then we used those sorted groups of concepts onto a feasibility-impact matrix. We used these and the personas we were provided to create narratives of the most promising ideas. We received feedback from our classmates and also from an EMT on our concepts.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class = \"col col-md-6 col-md-offset-3\">\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.png\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption\">\n" +
-    "							We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
-    "						</div>\n" +
-    "				</div>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Accelerate/Impact-feasibility.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.</p>\n" +
     "			</div>\n" +
-    "		</div>\n" +
+    "		</div> <!-- end Brainstorming -->\n" +
     "\n" +
-    "				<!--<br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-3\">\n" +
+    "		<!-- Flow Map -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Flow Map</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>We expounded upon our idea using a flow map. We updated it as we added to our concept and as we created higher fidelity designs. By referencing it throughout the process, we were able to keep an appropriate breadth and depth for the application. We also used it as a check to keep the functionality of the application appropriately simple.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Accelerate/flow-map.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">At each stage of the design process, we updated our flow map with the most relevant screens</p>\n" +
+    "			</div>\n" +
+    "		</div> <!-- end Flow Map -->\n" +
     "\n" +
-    "						<img src=\"../images/Accelerate/AffinityDiagram.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">\n" +
-    "						We generated 50 design ideas then came together as a team to discuss them and create an affinity diagram that showed larger potential concepts.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<img src=\"../images/Accelerate/ImpactFeasibilityWithPeople.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">\n" +
-    "						We worked as a team talking through our design ideas to determine the impact and feasibility of each idea.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-3\">\n" +
-    "						<img src=\"../images/Accelerate/ImpactFeasibilityMatrix.jpg\" class=\"img-responsive\" >\n" +
-    "						<div class=\"caption_text\">\n" +
-    "						Our final impact-feasibility matrix, along with our personas and larger concepts from our affinity diagram, was used to narrow down the ideas worth pursuing further.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
+    "		<!-- Wireframing -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Wireframing</h3>\n" +
     "			</div>\n" +
-    "		</div>-->\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>As we went through the design process, we made increasingly more detailed designs. We began with sketches, then created low-fidelity mockups, and finally interated to make high-fidelity mockups. To create mockups, we used Adobe Illustrator. We went through multiple iterations of high-fidelity mock-ups trying to get the right color palette and feel for our application. We decided that we wanted a  playful and light-hearted theme. We wanted to give them an application that was enjoyable to use and would help to alleviate some of their stress.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Accelerate/LowFiMockUps_white.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">Low-fidelity digital sketches of our application.</p>\n" +
+    "			</div>\n" +
+    "		</div> <!-- end wireframing -->\n" +
     "\n" +
-    "		<!-- Application Design -->\n" +
+    "		<!-- Hi-fidelity Design -->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<h4>Application Design</h4>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">High-Fidelity Design</h3>\n" +
+    "				<p>The final deliverables for this project were completed designs, design pecifications, and a final presentation to the class. As part of the presentation, we also included a <a href=\"https://projects.invisionapp.com/share/3G1SPWQKJ#/screens\" target=\"_blank\">demo</a> created with invision. The final designs included a fun, playful color scheme and an owl character to provide consistency and whimsy throughout.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class = \"col col-md-12\">\n" +
-    "				<p>We expounded upon our idea using a navigation map. We updated it as we\n" +
-    "				added to our concept and as we created higher fidelity designs. By referencing\n" +
-    "				it throughout the process, we were able to keep an appropriate breadth and\n" +
-    "				depth for the application. We also used it as a check to keep the functionality\n" +
-    "				of the application appropriately simple.</p>\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img id=\"FinalDesigns\" src=\"../images/Accelerate/Accelerate-Final-Designs.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">We designed eight total screens for our final design.</p>\n" +
     "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class = \"col col-md-6 col-md-offset-3\">\n" +
-    "				<div class = \"thumbnail\">\n" +
-    "					<img src=\"../images/Accelerate/NavigationMap.png\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						After creating hand sketches of the application screens, we updated the\n" +
-    "						navigation map.\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class = \"col col-md-12\">\n" +
-    "				<p>As we went through the design process, we made increasingly more detailed\n" +
-    "					designs. We began with sketches, then created low-fidelity mockups,\n" +
-    "					and finally interated to make high-fidelity mockups. To create mockups,\n" +
-    "					we used Adobe Illustrator. We went through multiple iterations of\n" +
-    "					high-fidelity mock-ups trying to get the right color palette and feel\n" +
-    "					for our application. We decided that we wanted a  playful and light-hearted\n" +
-    "					theme. We wanted to give them an application that was enjoyable to use\n" +
-    "					and would help to alleviate some of their stress.</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<div class = \"thumbnail\">\n" +
-    "					<img src=\"../images/Accelerate/LowFiMockUps_white.png\" class=\"img-responsive\">\n" +
-    "					<div class=\"caption\">\n" +
-    "						Low-fidelity digital sketches of our application.\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "				<!--<p>We fleshed out our idea using a navigation map, which we used to think through the functionality of our app and the interaction that would be needed to move between different functions. Through our navigation map, we were able to quickly analyze the breadth and depth of our application. We initially created it using screen names. As we progressed through our design process, we maintained our navigation map and kept checking that breadth and depth was appropriate. In updating, we also replaced key screens with sketches, low-fidelity mockups, and high-fidelity mockups. This was helpful for us because it was natural for the complexity of our application to increase as we thought about it more; however, we wanted to keep it simple. Using the navigation map, we were able to see when we needed to reconsider features and scale back.</p>\n" +
-    "				<br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-8\">\n" +
-    "						<img src=\"../images/Accelerate/NavMapWithSketches.JPG\" class=\"img-responsive\">\n" +
-    "						<div class=\"caption_text\">\n" +
-    "							As a team, we created a navigation map to sketch out the flow of our application. As we continued the design process, we updated our navigation map and added sketches for key screens.\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<br/>\n" +
-    "				<p>As we went through the design process, we made increasingly more detailed designs. We began with sketches, then created low-fidelity mockups, and finally interated to make high-fidelity mockups. To create mockups, we used Adobe Illustrator. We went through multiple iterations of high-fidelity mock-ups trying to get the right color palette and feel for our application. We originally had a look and feel that was inspired by ambulances. We had red and blue as our primary colors and had straight lines. However, we later decided that we wanted a more playful and lighthearted theme. EMTs see ambulances incessantly and they are likely a stressful place for them, so we didn't want to remind them of that. We wanted to give them an application that was enjoyable for them and would help to alleviate some of their stress.</p>\n" +
-    "				<br/>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<img src=\"../images/Accelerate/LowFiMockUps.png\" class=\"img-responsive\">\n" +
-    "							<div class=\"caption_text\">\n" +
-    "								After doing sketches, we did an iteration of low-fidelity mockups in black and white. These were used to begin understanding the amount of information and interactivity that would be appropriate per screen.\n" +
-    "							</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>-->\n" +
+    "		</div> <!-- end hi-fidelity design -->\n" +
     "\n" +
-    "		<!--Final Deliverables -->\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<h4>Final Deliverables</h4>\n" +
-    "				<p>The final deliverables for this project were completed designs, design\n" +
-    "					specifications, and a final presentation to the class. The final designs\n" +
-    "					included a fun, playful color scheme and an owl character to provide\n" +
-    "					consistency and whimsy throughout.</p>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-8 col-md-offset-2\">\n" +
-    "						<div class = \"thumbnail\">\n" +
-    "							<img src=\"../images/Accelerate/Accelerate-Final-Designs.png\" class=\"img-responsive\">\n" +
-    "							<div class=\"caption\">\n" +
-    "								We designed eight total screens for our final design.\n" +
-    "							</div>\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "	</div>\n" +
+    "	</div>	<!-- end container -->\n" +
     "</html>\n" +
     "");
 }]);
@@ -490,374 +445,361 @@ angular.module("../app/views/contact.html", []).run(["$templateCache", function(
 
 angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/distractionfreecoding.html",
-    "<link href=\"../Content/distractionfreecoding.css\" rel=\"stylesheet\" />\n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "<!--Header-->\n" +
-    "<div class=\"container\">\n" +
-    "<h1>Distraction Free Coding</h1>\n" +
-    "<h4>Research student developer problems using Contextual Design methodology</h4>\n" +
-    "<hr/>\n" +
+    "	<!--Header-->\n" +
+    "	<div class=\"container\">\n" +
     "\n" +
-    "<!--Meta data-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
-    "		<div class=\"thumbnail\">\n" +
-    "        	<img src=\"../images/DistractionFreeCoding/distractionfreecoding_icon.png\">\n" +
-    "        </div>\n" +
-    "	</div>\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "		<!--<span class=\"category\">Project Type:</span><br/>Research\n" +
-    "		<br/><br/> -->\n" +
-    "		<span class=\"category\">Contributions:</span><br/> Contextual Inquiry, Affinity Diagrams, Sequence Models, Flow Models, Visioning\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Team Members:</span><br/> Holly Brosnahan, Amalya Henderson, Michael Richardson, Yueying Tang\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span><br/> October 2014 - December 2014\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span> <br/>User Centered Research and Evaluation, CMU\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<hr/>\n" +
-    "\n" +
-    "<!--About Project-->\n" +
-    "<div class=\"row process\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Description</h3>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p>Developers struggle to pay attention to their work, especially student developers. It's easy to get distracted on a computer. We also noticed that developers heavily depend on outside resources and spend significant time switching between applications to access those resources. For our User Centered Research and Evaluation class at CMU, we performed the contextual design methodology as described by Karen Holtzblatt on student developers. Synthesizing that research, we discovered that distraction and application switching were two of the biggest problems they faced. We envisioned a solution that will lock down the coding environment to prevent distraction while improving the way that students view outside resources. </p>\n" +
-    "\n" +
-    "<!--<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p><span class=\"category\">Assignment:</span> This was a series of assignments designed to practice Contextual Design methods. The prompt was to observe student developers to see the issues that arise. Teams were then allowed to focus on improving any aspect of the student development process that they observed.\n" +
-    "		<br/><br/>	\n" +
-    "		<span class=\"category\">Opportunity:</span> Student developers are easily distracted when trying to do to their homework. They are required to use a large number of systems to perform their tasks, and they are provided with a variety of resources to reference to learn the material. The need to switch between systems coupled with the constant distraction from social media and friends makes it difficult for students to stay focused on their assignments.\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> A coding environment that blocks messages and provides a single environment for students to reference resources and make annotations. The program locks out online distractions for a user specified period of time, then provides a break when messages are allowed to reach students. It also provides places to take notes that are tied to lines of code and shows resources beside code files which prevents students from having to switch between applications.</p> -->\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "\n" +
-    "<!--Process Header-->\n" +
-    "<div class=\"row process\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Process</h3>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Contextual Inquiry-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Contextual Inquiry</h4>\n" +
-    "		<p>We began by performing contextual interviews with student developers. Each team member interviewed one student for a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own homework assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Interpretation Sessions-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Interpretation Sessions</h4>\n" +
-    "		<p>During the interpretation sessions, the team went through the interviews one at a time. The interviewer read her notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram.</p>\n" +
-    "		<br/>\n" +
-    "		<!--\n" +
-    "    	<div class=\"row\">\n" +
-    "			<div class=\"col col-md-6\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/SequenceModel.JPG\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				We created sequence models for each interview. We included the steps that were taken during the interview as well as the triggers for those events and the intents of the actions taken. If breakdowns occurred, we noted those in red.\n" +
+    "		<div class=\"headline\">\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "					<h1 class=\"headline\">Distraction Free Coding</h1>\n" +
+    "					<h4 class=\"headline\">Research student developer problems using Contextual Design methodology</h4>\n" +
+    "					<p class=\"headline\">October 2014 - December 2014</p>\n" +
     "				</div>\n" +
-    "			</div>\n" +
-    "			<div class=\"col col-md-4\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/FlowModel.JPG\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				During the interpretation sessions, we created flow models indicating the key players and how they interacted. We noted breakdowns in red.\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>	-->\n" +
+    "			</div>		\n" +
+    "		</div> <!-- close headline -->\n" +
+    "		<hr/>\n" +
+    "\n" +
+    "		<!--Meta data-->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12 col-lg-12\">\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/DistractionFreeCoding/models.png\" class=\"img-responsive\">\n" +
-    "					<div class=\"caption\">\n" +
-    "						During our interpretation sessions, we created sequence models and flow models for each participant.\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>	\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Affinity Diagram and Consolidated Models-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Affinity Diagram and Consolidated Models</h4>\n" +
-    "		<p>We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and get an overall idea of what was happening by simply looking at the headings. We also consolidated the 5 sequences into one sequence that represented all of the users. We did the same with the flow models to create one consolidated model. This process allows us to use the data we collected to create one picture of what is common in the process across all interviewees.</p>\n" +
-    "		<br/>\n" +
-    "    	<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/DistractionFreeCoding/Affinity.png\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.\n" +
-    "					</div>\n" +
-    "				<!--<div class=\"caption_text\">	\n" +
-    "				A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective. Breakdowns are represented with notes in red type.-->\n" +
-    "				</div>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>Developers struggle to pay attention to their work, especially student developers. It's easy to get distracted on a computer. We also noticed that developers heavily depend on outside resources and spend significant time switching between applications to access those resources. For our User Centered Research and Evaluation class at CMU, we performed the contextual design methodology as described by Karen Holtzblatt on student developers. Synthesizing that research, we discovered that distraction and application switching were two of the biggest problems they faced. We envisioned a solution that will lock down the coding environment to prevent distraction while improving the way that students view outside resources. </p>\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<!--\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-4\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/ConsolidatedFlow.jpg\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				The 5 flow models created during the interpretation sessions were combined into this one consolidated flow model representing all of the roles and relationships that were seen in the individual flow models.\n" +
-    "				</div>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/Contextual-inquiry-stats.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-4\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/ConsolidatedSequence.JPG\" class=\"img-responsive\" >\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				The 5 sequence models created during the interpretation sessions were combined into this one consolidated sequence model. We included the intents and triggers from the original sequences into this model as well.\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>	-->\n" +
-    "	</div>\n" +
-    "</div>\n" +
+    "		</div> <!-- end icon image -->\n" +
     "\n" +
-    "<!--Visioning-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Visioning</h4>\n" +
-    "		<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv-style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
-    "		<br/>\n" +
-    "<!--    	<div class=\"row\">\n" +
-    "			<div class=\"col col-md-5\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/GenerateIdeas.JPG\" class=\"img-responsive\">\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				Before we began visioning, we each looked at the affinity diagram and added notes containing design ideas, questions, and key features that needed to be included in our solutions.\n" +
-    "				</div>\n" +
+    "		<div class=\"row meta-data\">\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2 col-lg-offset-2\">\n" +
+    "				<h4 class=\"meta-header\">Process</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Contextual Inquiry</li>\n" +
+    "					<li>Interpretation</li>\n" +
+    "					<li>Consolidated Models</li>\n" +
+    "					<li>Visioning</li>\n" +
+    "				</ul>	\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<img src=\"../images/DistractionFreeCoding/Vision.JPG\" class=\"img-responsive\">\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				We created visions by doing quick sketches of the ideas that teammates were coming up with in a quick, improv style visioning session.\n" +
-    "				</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Contributions</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Interview</li>\n" +
+    "					<li>Models</li>\n" +
+    "					<li>Brainstorming</li>\n" +
+    "				</ul>	\n" +
     "			</div>\n" +
-    "		</div> -->\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Team</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Holly Brosnahan</li>\n" +
+    "					<li>Amalya Henderson</li>\n" +
+    "					<li>Michael Richardson</li>\n" +
+    "					<li>Yueying Tang</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Deliverables</h4>\n" +
+    "				<ul>\n" +
+    "					<li><a href=\"../images/DistractionFreeCoding/Final-Presentation.pdf\" target=\"_blank\">Presentation</a></li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "		</div> <!-- end Meta-data -->\n" +
+    "\n" +
+    "		<!--About Project-->\n" +
+    "\n" +
+    "		<!--Contextual Inquiry-->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-12\">\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/DistractionFreeCoding/visioning.png\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						We captured key ideas from our diagrams, sketched out ideas as a team, and then analyzed those ideas for pros and cons before coming up with a final vision.\n" +
-    "					</div>\n" +
-    "				</div>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Contextual Inquiry</h3>\n" +
     "			</div>\n" +
-    "		</div>			\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>We began by performing contextual interviews with student developers. Each team member interviewed one developer for a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.</p>\n" +
+    "			</div>\n" +
+    "		</div> <!-- end contextual inquiry -->\n" +
+    "		\n" +
+    "		<!--Interpretation Sessions-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Interpretation Sessions</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>During the interpretation sessions, the team went through the interviews one at a time. The interviewer read her notes aloud and the rest of the team worked on creating the flow model and the sequence model. We also created notes about interesting things, breakdowns, and design ideas that would be used later to create the affinity diagram.</p>\n" +
+    "			</div>\n" +
+    "		</div> \n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/Interpretation-Sessions.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">During our interpretation sessions, we created models models for each participant and took notes to use for the affinity diagram.</p>\n" +
+    "			</div>\n" +
+    "		</div> <!-- end interpretation session -->\n" +
+    "\n" +
+    "		<!--Affinity Diagram and Consolidated Models-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 ccol-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Affinity Diagram and Consolidated Models</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and get an overall idea of what was happening by simply looking at the headings. </p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/AffinityDiagram.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">A portion of our affinity diagram that was created from the notes taken during the interpretation session. The blue and pink post-its are written from the interviewees perspective.</p>\n" +
+    "			</div>\n" +
+    "		</div> <!-- end affinity diagram -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>We also consolidated the 5 sequences into one sequence that represented all of the users. We did the same with the flow models to create one consolidated model. This process allows us to use the data we collected to create one picture of what is common in the process across all interviewees.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/Consolidated-Models.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">Consolidated sequence and flow models</p>\n" +
+    "			</div>\n" +
+    "		</div> <!-- end affinity diagram -->\n" +
+    "\n" +
+    "		<!--Visioning-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Visioning</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv-style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/DistractionFreeCoding/Visioning.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">We captured key ideas from our diagrams, sketched out ideas as a team, and then analyzed those ideas for pros and cons before coming up with a final vision.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
+    "		<!--Final Deliverables-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Final Deliverables</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>After we did 5 visions, we determined the ones we thought were most promising based on the information we learned about our users while generating our affinity diagram, sequence models, and flow models. We consolidated the visions containing those ideas to create a final concept. As a final deliverable, we presented our findings and our final idea to the class.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
     "	</div>\n" +
-    "</div>\n" +
     "\n" +
-    "<!--Final Deliverables-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Final Deliverables</h4>\n" +
-    "		<p>After we did 5 visions, we determined the ones we thought were most promising based on the information we learned about our users while generating our affinity diagram, sequence models, and flow models. We consolidated the visions containing those ideas to create a final concept. As a final deliverable, we presented our findings and our final idea to the class.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "\n" +
-    "</div>");
+    "</html>");
 }]);
 
 angular.module("../app/views/hackathon.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/hackathon.html",
-    "<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />\n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "<!--Header-->\n" +
-    "<div class=\"container\">\n" +
-    "<h1>Hackathons and Challenges</h1>\n" +
-    "<h4>I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills</h4>\n" +
-    "<hr/>\n" +
+    "	<!--Header-->\n" +
+    "	<div class=\"container\">\n" +
+    "		<div class=\"headline\">\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\"> \n" +
+    "					<h1 class=\"headline\">Hackathons and Challenges</h1>\n" +
+    "					<h4 class=\"headling\">I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills</h4>\n" +
+    "				</div>\n" +
+    "			</div>		\n" +
+    "		</div>		\n" +
+    "		<hr/>\n" +
     "\n" +
-    "<!--iOS App Challenge-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">iOS App Challenge</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<img src=\"../images/Hackathons/FeedingFriendzy/iOSAppChallenge.png\" class=\"img-responsive\">\n" +
-    "				</div>\n" +
-    "\n" +
-    "				<!-- About the Challenge-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>About the Challenge</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						This challenge was sponsored by Apple and was designed to teach students Apple’s new language for apps, Swift.  We were given a quick workshop one afternoon on using Swift. Then we had the task of developing an App using Apple’s Sharesheet API which can be used to share content through other apps on the phone, including text messaging, email, Facebook, Twitter, etc. \n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--Our Project-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>Our Project</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						My team decided to build an application that we called Feeding Friendzy. This app is intended to help busy people, like college students or young professionals, that don’t like to eat alone. This app allows you to choose a time and place to eat and then push that notification to your social feeds so that your friends can join you for a meal. We integrated our app with the Google Maps and Google Places APIs so that users can select eating locations from within the app.  We also integrated the login and sharing features with Facebook so that users did not have to manage a new set of friends just for this application. \n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--My Contribution-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>My Contribution</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						For this project, I used Xcode and the Swift programming language. My contributions included the Facebook integration and putting together the overall application. For the Facebook integration, I integrated the login and polled the API for your friend network. I was also responsible for the overall flow of the application and integrating all of the pieces that the rest of the team worked on, including server code, database development, Google APIs integration, and image design. \n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--Final Application-->	\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>Final Application</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Hackathons/FeedingFriendzy/FeedingFriendzyFinalDesigns.png\">\n" +
-    "							<div class=\"caption\">	\n" +
-    "								Screen shots of the final application taken from the running application in the iOS emulator \n" +
-    "							</div>\n" +
+    "		<!--iOS App Challenge-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<div class=\"panel panel-default\">\n" +
+    "					<div class=\"panel-heading\">\n" +
+    "			    		<h3 class=\"panel-title\">iOS App Challenge</h3>\n" +
+    "					</div> <!--close panel-heading -->\n" +
+    "					<div class=\"panel-body\">\n" +
+    "			    		<div class=\"row\">\n" +
+    "							<img src=\"../images/Hackathons/FeedingFriendzy/iOSAppChallenge.png\" class=\"img-responsive\">\n" +
     "						</div>\n" +
     "\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--More Information-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>More Information</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<a href=\"http://challengepost.com/software/feeding-friendzy\">ChallengePost</a>\n" +
-    "						<br/>\n" +
-    "						<a href=\"https://github.com/shawnxusy/Feeding-friendzy\">GitHub</a>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--MHCI Hackathon-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<div class=\"panel panel-default\">\n" +
-    "			<div class=\"panel-heading\">\n" +
-    "		    	<h3 class=\"panel-title\">MHCI Hackathon</h3>\n" +
-    "			</div>\n" +
-    "			<div class=\"panel-body\">\n" +
-    "		    	<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "				        <img src=\"../images/Hackathons/MHCIHackathon/MHCI_Hackathon.png\">\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<!--About the Challenge-->\n" +
-    "						<div class= \"row\">\n" +
-    "							<div class=\"col col-md-12\">\n" +
-    "								<h4>About The Challenge</h4>\n" +
+    "						<!-- About the Challenge-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">The Challenge</h3>\n" +
     "							</div>\n" +
     "						</div>\n" +
     "						<div class=\"row\">\n" +
-    "							<div class=\"col col-md-12\">\n" +
-    "								This challenge was hosted by CMU’s Master’s of Human-Computer Interaction students. Technical support was provided by Microsoft, and the goal of the hackathon was to create a human-centered application with Microsoft technology. This hackathon took place over 20 hours.	\n" +
-    "							</div>	\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--Our Project-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>Our Project</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						My team decided to use the kinect to create a fully interactive experience called Down Beat. We wanted to create a fun activity that can be used on any big screen by multiple people; we envisioned it being used in a large open area where people are gathered like a festival or amusement park. Down Beat takes a song that is broken into 4 layers. Players use their bodies to control these layers. By moving faster, they speed up the tempo of their layers. By moving closer to the Kinect, they raise the volume of their layers. Additionally, there is a display of fireworks that is controlled by the same movements. Each player has a different color firework and they change volume and height based on movement. \n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--My Contribution-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>My Contribution</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						For this project, my contribution was the controller for the music layers. I used C#, Visual Studio, and the <a href=\"http://www.ambiera.com/irrklang/\">IrrKlang</a> music player library. When movement was detected by the Kinect, an event was sent to the music controller which was responsible for parsing the events and making the appropriate adjustments to the corresponding layers of music.\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--Final Application-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>Final Application</h4>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/coding.JPG\">\n" +
-    "							<div class=\"caption\">	\n" +
-    "								Working together during the challenge.\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<p>This challenge was sponsored by Apple and was designed to teach students Apple’s new language for apps, Swift.  We were given a quick workshop one afternoon on using Swift. Then we had the task of developing an App using Apple’s Sharesheet API which can be used to share content through other apps on the phone, including text messaging, email, Facebook, Twitter, etc. </p>\n" +
     "							</div>\n" +
     "						</div>\n" +
-    "						\n" +
-    "					</div>\n" +
-    "					<div class=\"col col-md-6\">\n" +
-    "						<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/downbeat_demo.jpg\">\n" +
-    "							<div class=\"caption\">	\n" +
-    "								For the final presentation, we gave a fun demo of our application. The fireworks were shown on a display behind us.\n" +
-    "							</div>\n" +
-    "						</div>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "				<!--More Information-->\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<h4>More Information</h4>\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
-    "				<div class=\"row\">\n" +
-    "					<div class=\"col col-md-12\">\n" +
-    "						<a href=\"https://www.hackerleague.org/hackathons/mhci-hackathon\">HackerLeague</a>\n" +
-    "						<br/>\n" +
-    "						<a href=\"https://github.com/MasterPie/MHCI_Hackathon\">GitHub</a>\n" +
-    "					</div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "</div>\n" +
     "\n" +
-    "		\n" +
-    "</div>");
+    "						<!--Our Project-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">Our Project</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<p>My team decided to build an application that we called Feeding Friendzy. This app is intended to help busy people, like college students or young professionals, that don’t like to eat alone. This app allows you to choose a time and place to eat and then push that notification to your social feeds so that your friends can join you for a meal. We integrated our app with the Google Maps and Google Places APIs so that users can select eating locations from within the app.  We also integrated the login and sharing features with Facebook so that users did not have to manage a new set of friends just for this application. </p>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "					\n" +
+    "						<!--My Contribution-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">My Contribution</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<p>For this project, I used Xcode and the Swift programming language. My contributions included the Facebook integration and putting together the overall application. For the Facebook integration, I integrated the login and polled the API for your friend network. I was also responsible for the overall flow of the application and integrating all of the pieces that the rest of the team worked on, including server code, database development, Google APIs integration, and image design.</p>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "					\n" +
+    "						<!--Final Application-->	\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">Final Application</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<img src=\"../images/Hackathons/FeedingFriendzy/FeedingFriendzyFinalDesigns.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "								<p class=\"caption\">Screen shots of the final application taken from the running application in the iOS emulator.</p>\n" +
+    "							</div>\n" +
+    "						</div> \n" +
+    "\n" +
+    "						<!--More Information-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">More Information</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<a href=\"http://challengepost.com/software/feeding-friendzy\">ChallengePost</a>\n" +
+    "								<br/>\n" +
+    "								<a href=\"https://github.com/shawnxusy/Feeding-friendzy\">GitHub</a>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "					</div> <!-- close panel-body -->\n" +
+    "				</div> <!-- close panel -->\n" +
+    "			</div> <!-- close column -->\n" +
+    "		</div> <!-- close row -->	\n" +
+    "\n" +
+    "		<!--MHCI Hackathon-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<div class=\"panel panel-default\">\n" +
+    "					<div class=\"panel-heading\">\n" +
+    "			    		<h3 class=\"panel-title\">MHCI Hackathon</h3>\n" +
+    "					</div>\n" +
+    "					<div class=\"panel-body\">\n" +
+    "			    		<div class=\"row\">\n" +
+    "							<img src=\"../images/Hackathons/MHCIHackathon/MHCI_Hackathon.png\" class=\"img-responsive\">\n" +
+    "						</div>\n" +
+    "		    			\n" +
+    "						<!-- About the Challenge-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">The Challenge</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<p>This challenge was hosted by CMU’s Master’s of Human-Computer Interaction students. Technical support was provided by Microsoft, and the goal of the hackathon was to create a human-centered application with Microsoft technology. This hackathon took place over 20 hours.</p>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "\n" +
+    "						<!--Our Project-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">Our Project</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<p>My team decided to use the kinect to create a fully interactive experience called Down Beat. We wanted to create a fun activity that can be used on any big screen by multiple people; we envisioned it being used in a large open area where people are gathered like a festival or amusement park. Down Beat takes a song that is broken into 4 layers. Players use their bodies to control these layers. By moving faster, they speed up the tempo of their layers. By moving closer to the Kinect, they raise the volume of their layers. Additionally, there is a display of fireworks that is controlled by the same movements. Each player has a different color firework and they change volume and height based on movement.</p>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "\n" +
+    "						<!--My Contribution-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">My Contribution</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<p>For this project, my contribution was the controller for the music layers. I used C#, Visual Studio, and the <a href=\"http://www.ambiera.com/irrklang/\">IrrKlang</a> music player library. When movement was detected by the Kinect, an event was sent to the music controller which was responsible for parsing the events and making the appropriate adjustments to the corresponding layers of music.</p>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "\n" +
+    "						<!--Final Application-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">Final Application</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n" +
+    "								<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/coding.JPG\">\n" +
+    "									<div class=\"caption\">	\n" +
+    "										Working together during the challenge.\n" +
+    "									</div>\n" +
+    "								</div>\n" +
+    "							</div>\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n" +
+    "								<div class=\"thumbnail\"><img src=\"../images/Hackathons/MHCIHackathon/downbeat_demo.jpg\">\n" +
+    "									<div class=\"caption\">	\n" +
+    "										For the final presentation, we gave a fun demo of our application. The fireworks were shown on a display behind us.\n" +
+    "									</div>\n" +
+    "								</div>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "\n" +
+    "						<!--More Information-->\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<h3 class=\"phase-header\">More Information</h3>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "						<div class=\"row\">\n" +
+    "							<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
+    "								<a href=\"https://www.hackerleague.org/hackathons/mhci-hackathon\">HackerLeague</a>\n" +
+    "								<br/>\n" +
+    "								<a href=\"https://github.com/MasterPie/MHCI_Hackathon\">GitHub</a>\n" +
+    "							</div>\n" +
+    "						</div>\n" +
+    "					</div> <!-- close panel-body -->\n" +
+    "				</div> <!-- close panel -->\n" +
+    "			</div> <!-- close col -->\n" +
+    "		</div><!-- close row -->\n" +
+    "	</div> <!-- close container -->\n" +
+    "</html>");
 }]);
 
 angular.module("../app/views/home.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/home.html",
     "<!doctype html>\n" +
     "<html>﻿\n" +
-    "<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>\n" +
     "<link href=\"../Content/home.css\" rel=\"stylesheet\" />\n" +
     "<link href=\"../Content/font-awesome-4.2.0/css/font-awesome.css\" rel=\"stylesheet\">\n" +
     "<link href=\"../Content/contact.css\" rel=\"stylesheet\" />\n" +
@@ -926,225 +868,144 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
 
 angular.module("../app/views/peanuts.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/peanuts.html",
-    "<link href=\"../Content/peanuts.css\" rel=\"stylesheet\" />\n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "<!--Header-->\n" +
-    "<div class=\"container\">\n" +
-    "<h1>Peanuts</h1>\n" +
-    "<h4>Research to understand how reciprocity and trust can impact microcharitable giving online</h4>\n" +
-    "<hr/>\n" +
+    "	<!--Header-->\n" +
+    "	<div class=\"container\">\n" +
     "\n" +
-    "<!--Meta Data-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
-    "		<div class=\"thumbnail\">\n" +
-    "        	<img src=\"../images/Peanuts/Icon.png\" >\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "		<!--<span class=\"category\">Project Type:</span><br/> Research\n" +
-    "		<br/><br/>-->\n" +
-    "		<span class=\"category\">Contributions:</span><br/> Survey Design and Analysis\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Team Members:</span><br/> Jeff Harris, Jim Martin, Katie Ramp\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span><br/> November 2014 - December 2014\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span><br/> Social Web, CMU\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<hr/>\n" +
+    "		<div class=\"headline\">\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "					<h1 class=\"headline\">Peanuts</h1>\n" +
+    "					<h4 class=\"headling\">Research to understand how reciprocity and trust can impact microcharitable giving online</h4>\n" +
+    "					<p class=\"headline\">November 2014 - December 2014</p>\n" +
+    "				</div>\n" +
+    "			</div>		\n" +
+    "		</div>		\n" +
+    "		<hr/>\n" +
     "\n" +
-    "<!--About the Project-->\n" +
-    "<!--<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p><span class=\"category\">Assignment:</span> Pick any topic related to social web and explore it with design, research, and/or development.\n" +
-    "		<br/><br/>	\n" +
-    "		<span class=\"category\">Opportunity:</span> When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity.\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p> -->\n" +
-    "<div class=\"row process\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Description</h3>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p>There are a multitude of places popping up on the internet for the purpose of eliciting and receiving help. Some of these are stand alone sites and others are communities within social sites, such as Reddit. When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity. We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Process Header-->\n" +
-    "<div class=\"row process\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Process</h3>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Literature Review and Initial Research-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Literature Review and Initial Research</h4>\n" +
-    "		<p>We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was an in-depth look at the aspects of a request on the subreddit r/RAOP. They showed that certain information would influence the success of the request. We began looking at r/RAOP and noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to common themes. After reviewing a few subreddits and other request websites, we decided to look at how showing reciprocity impacts people’s donations.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Initial Survey-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Initial Survey</h4>\n" +
-    "		<p>To quickly explore how various representations of reciprocity would influence behavior, we created a survey showing 8 different requests with the same story, but different reciprocity statements. The survey was distributed to 83 different people we recruited from friends and family. We asked to which of the 8 requests they would be most likely to donate. After the survey, we also got some feedback from participants to understand the reasoning behind their choices.</p>\n" +
-    "		<br/><br/>\n" +
+    "		<!--Meta Data-->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-4 col-md-offset-2\">\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						This is one of the options we showed on the survey. All options were exactly the same except for the statement regarding reciprocity.\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
-    "			\n" +
-    "				<!--<img src=\"../images/Peanuts/survey1example.jpg\" class=\"img-responsive\">\n" +
-    "    			<div class=\"caption_text\">	\n" +
-    "					This is one of the options we showed on the survey. All options were exactly the same except for the statement regarding reciprocity.\n" +
-    "				</div> -->\n" +
-    "\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>There are a multitude of places popping up on the internet for the purpose of eliciting and receiving help. Some of these are stand alone sites and others are communities within social sites, such as Reddit. When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity. We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p>\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-4\">\n" +
-    "				<table class=\"table\">\n" +
-    "					<tr>\n" +
-    "						<th>Reciprocity Statement</th>\n" +
-    "						<th>Votes</th>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan helped Susan pay her rent last week.</td>\n" +
-    "						<td>18</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan has given to 100 people and has received donations from 50 people.</td>\n" +
-    "						<td>12</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan has given more than he has received since joining.</td>\n" +
-    "						<td>11</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan has given to about 15 causes in the past.</td>\n" +
-    "						<td>11</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan has given about twice as much as he has received.</td>\n" +
-    "						<td>9</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan gives to causes almost every week.</td>\n" +
-    "						<td>8</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan has given 150% as much as he has received.</td>\n" +
-    "						<td>8</td>\n" +
-    "					</tr>\n" +
-    "					<tr>\n" +
-    "						<td>Jonathan has given $60 and received $40.</td>\n" +
-    "						<td>6</td>\n" +
-    "					</tr>\n" +
-    "				</table>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/peanuts-logo-long.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "			</div>\n" +
+    "		</div> <!-- end icon image -->\n" +
+    "\n" +
+    "		<div class=\"row meta-data\">\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2 col-lg-offset-2\">\n" +
+    "				<h4 class=\"meta-header\">Process</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Literature Review</li>\n" +
+    "					<li>Initial Survey</li>\n" +
+    "					<li>Final Survey</li>\n" +
+    "					<li>Application Development</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Contributions</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Research</li>\n" +
+    "					<li>Survey Design</li>\n" +
+    "					<li>Survey Analysis</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Team</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Jeff Harris</li>\n" +
+    "					<li>Jim Martin</li>\n" +
+    "					<li>Katie Ramp</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Deliverables</h4>\n" +
+    "				<ul>\n" +
+    "					<li><a href=\"../images/Peanuts/Final-Presentation.pdf\" target=\"_blank\">Presentation</a></li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "		</div> <!-- end Meta-data -->	\n" +
+    "\n" +
+    "		<!--About the Project-->\n" +
+    "\n" +
+    "		<!--Literature Review and Initial Research-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Literature Review and Initial Research</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was an in-depth look at the aspects of a request on the subreddit r/RAOP. They showed that certain information would influence the success of the request. We began looking at r/RAOP and noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to common themes. After reviewing a few subreddits and other request websites, we decided to look at how showing reciprocity impacts people’s donations.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
+    "		<!--Initial Survey-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Initial Survey</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>To quickly explore how various representations of reciprocity would influence behavior, we created a survey showing 8 different requests with the same story, but different reciprocity statements. The survey was distributed to 83 different people we recruited from friends and family. We asked to which of the 8 requests they would be most likely to donate. After the survey, we also got some feedback from participants to understand the reasoning behind their choices.</p>\n" +
     "			</div>\n" +
     "		</div>	\n" +
-    "	</div>\n" +
-    "</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/initial-survey.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
     "\n" +
-    "<!--Final Survey-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Final Survey</h4>\n" +
-    "		<p>After analyzing the results of the first survey and the feedback we received, we decided to use two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p>\n" +
-    "		<br/><br/>\n" +
-    "    	<div class=\"row\">\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\">\n" +
-    "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing the percentage of money given versus received</div>-->\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/Card_general_less.jpg\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						Negative reciprocity option used during the final survey showing the percentage of money given versus received\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
+    "		<!--Final Survey-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Final Survey</h3>\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\">\n" +
-    "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing the percentage of money given versus received</div>-->\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/Card_general_more.jpg\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						Positive reciprocity option used during the final survey showing the percentage of money given versus received\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>After analyzing the results of the first survey and the feedback we received, we decided to use two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p>\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\">\n" +
-    "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Negative reciprocity option used during the final survey showing number of people donated to versus the number received from</div> -->\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/Card_back_received_more.jpg\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						Negative reciprocity option used during the final survey showing number of people donated to versus the number received from\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/final-survey.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
     "			</div>\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<!--<div class=\"thumbnail\"><img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\">\n" +
-    "				</div>\n" +
-    "				<div class=\"thumbnail_caption_text\">Positive reciprocity option used during the final survey showing number of people donated to versus the number received from</div>-->\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/Card_back_given_more.jpg\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						Positive reciprocity option used during the final survey showing number of people donated to versus the number received from\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
+    "		</div>	\n" +
+    "\n" +
+    "		<!--Application Development-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Application Development</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>We wanted to see what it would look like to apply the results of our surveys, so we created a microcharity website showing reciprocity. As a team, we determined the concepts for the website, but the development was done by Jeff and Jim. If this had been a longer project, we wanted to use this website to conduct experiments to test what people do with actual money.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/Home_Screen.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/Profile_Screen.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Application-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Application</h4>\n" +
-    "		<p>We wanted to see what it would look like to apply the results of our surveys, so we created a microcharity website showing reciprocity. As a team, we determined the concepts for the website, but the development was done by Jeff and Jim. If this had been a longer project, we wanted to use this website to conduct experiments to test what people do with actual money.</p>\n" +
-    "		<br/><br/>\n" +
-    "    	<div class=\"row\">\n" +
-    "			<div class=\"col col-md-6\">\n" +
-    "				<!--<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\">\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.\n" +
-    "				</div>-->\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/website_homepage.png\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.\n" +
-    "					</div>\n" +
-    "				</div>	\n" +
-    "			</div>\n" +
-    "			<div class=\"col col-md-6\">\n" +
-    "				<!--<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\">\n" +
-    "				<div class=\"caption_text\">	\n" +
-    "				A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.\n" +
-    "				</div> -->\n" +
-    "				<div class=\"thumbnail\">\n" +
-    "					<img src=\"../images/Peanuts/website_profile.png\" class=\"img-responsive\" >\n" +
-    "					<div class=\"caption\">\n" +
-    "						A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.\n" +
-    "					</div>\n" +
-    "				</div>		\n" +
-    "			</div>\n" +
-    "		</div>	\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "</div>");
+    "</html>");
 }]);
 
 angular.module("../app/views/resume.html", []).run(["$templateCache", function($templateCache) {
@@ -1163,96 +1024,86 @@ angular.module("../app/views/resume.html", []).run(["$templateCache", function($
 
 angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../app/views/wakeup.html",
-    "<link href=\"../Content/wakeup.css\" rel=\"stylesheet\" />\n" +
+    "<!doctype html>\n" +
+    "<html>\n" +
+    "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "<!--Header-->\n" +
-    "<div class=\"container\">\n" +
-    "<h1>Wake Up</h1>\n" +
-    "<h4>Development of an Android application that gives the weather and bus information when an alarm goes off</h4>\n" +
-    "<hr/>\n" +
+    "	<!--Header-->\n" +
+    "	<div class=\"container\">\n" +
+    "		\n" +
+    "		<div class=\"headline\">\n" +
+    "			<div class=\"row\">\n" +
+    "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "					<h1 class=\"headline\">WakeUp</h1>\n" +
+    "					<h4 class=\"headling\">Development of an Android Application</h4>\n" +
+    "					<p class=\"headline\">November 2014 - December 2014</p>\n" +
+    "				</div>\n" +
+    "			</div>		\n" +
+    "		</div>		\n" +
+    "		<hr/>\n" +
     "\n" +
-    "<!--Meta Data-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-6 col-lg-6 col-sm-6 col-xl-6 col-xs-12\">\n" +
-    "		<div class=\"thumbnail\">\n" +
-    "        <img src=\"../images/WakeUp/icon.jpg\" >\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "	<div class=\"col col-md-6\">\n" +
-    "		<!--<span class=\"category\">Project Type:</span><br/> Development\n" +
-    "		<br/><br/> -->\n" +
-    "		<span class=\"category\">Contributions:</span><br/> Design, Android Development\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Tools and Technologies:</span><br/> Eclipse, Java, Android SDK, Adobe Photoshop\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Duration:</span><br/> November 2014 - December 2014 (3 weeks)\n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Class:</span><br/> Software Structures for User Interfaces, Mobile Lab, CMU\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<hr/>\n" +
-    "\n" +
-    "<!--About the project-->\n" +
-    "<!--<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p><span class=\"category\">Assignment:</span> Design and develop a mobile application to demonstrate Android development.\n" +
-    "		<br/><br/>	\n" +
-    "		<span class=\"category\">Opportunity:</span> When my alarm goes off in the morning, the first thing I do is check the weather and the bus information to determine how long I have to get ready and what I need to wear for the day. \n" +
-    "		<br/><br/>\n" +
-    "		<span class=\"category\">Solution:</span> I decided to build an application that is a dedicated morning alarm clock. This alarm clock allows you to set your preferred city, bus route, and bus stop. When the alarm goes off, this information is displayed to the user.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<hr/> -->\n" +
-    "<div class=\"row process\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h3>Description</h3>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<p>The final project for my Software Structures for User Interfaces Mobile development lab was to create an Android application of our choice. I looked to my own life for inspiration. When my alarm goes off in the morning, the first thing I do is check the weather and the bus information to determine how long I have to get ready and what I need to wear for the day. I decided to build an application that is a dedicated morning alarm clock. This alarm clock allows you to set your preferred city, bus route, and bus stop. When the alarm goes off, this information is displayed to the user.</p>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "<!--Final Designs-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Final Designs</h4>\n" +
+    "		<!--Meta Data-->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "				<div class=\"thumbnail\"><img src=\"../images/WakeUp/home_screen.png\">\n" +
-    "					<div class=\"caption\">Home screen</div>	\n" +
-    "    			</div>\n" +
-    "			</div>\n" +
-    "			<div class=\"col col-md-3\">\n" +
-    "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/preferences_screen.png\">\n" +
-    "				<div class=\"caption\">Preferences screen</div>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>The final project for my Software Structures for User Interfaces Mobile development lab was to create an Android application of our choice. I looked to my own life for inspiration. When my alarm goes off in the morning, the first thing I do is check the weather and the bus information to determine how long I have to get ready and what I need to wear for the day. I decided to build an application that is a dedicated morning alarm clock. This alarm clock allows you to set your preferred city, bus route, and bus stop. When the alarm goes off, this information is displayed to the user.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<div class=\"col col-md-3\">\n" +
-    "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/set_alarm_screen.png\">\n" +
-    "				<div class=\"caption\">Set Alarm screen</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/WakeUp/wakeup-icon-long.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "			</div>\n" +
+    "		</div> <!-- end icon image -->\n" +
+    "\n" +
+    "		<div class=\"row meta-data\">\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2 col-lg-offset-2\">\n" +
+    "				<h4 class=\"meta-header\">Process</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Design</li>\n" +
+    "					<li>Development</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Contributions</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Application Design</li>\n" +
+    "					<li>Android Development</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Technologies</h4>\n" +
+    "				<ul>\n" +
+    "					<li>Eclipse</li>\n" +
+    "					<li>Java</li>\n" +
+    "					<li>Android SDK</li>\n" +
+    "					<li>Adobe Photoshop</li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2\">\n" +
+    "				<h4 class=\"meta-header\">Deliverables</h4>\n" +
+    "				<ul>\n" +
+    "					<li><a href=\"https://github.com/kaitlynesparks/WakeUp\" target=\"_blank\">Application Code</a></li>\n" +
+    "				</ul>	\n" +
+    "			</div>\n" +
+    "		</div> <!-- end Meta-data -->\n" +
+    "\n" +
+    "\n" +
+    "		<!--About the project-->\n" +
+    "\n" +
+    "		<!--Final Designs-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header\">Final Designs</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<div class=\"col col-md-3\">\n" +
-    "			<div class=\"thumbnail\"><img src=\"../images/WakeUp/alarm_screen.png\">\n" +
-    "				<div class=\"caption\">Alarm Alert Screen</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/WakeUp/Final-Screens.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">The final design consisted of 4 screens: Home Screen, Preferences Scrren, Set Alarm Screen, and Alarm Alert Screen.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "\n" +
-    "<!--Final Code-->\n" +
-    "<div class=\"row\">\n" +
-    "	<div class=\"col col-md-12\">\n" +
-    "		<h4>Final Code</h4>\n" +
-    "		<a href=\"https://github.com/kaitlynesparks/WakeUp\">GitHub</a>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
-    "\n" +
-    "</div>");
+    "</html>");
 }]);
 
 angular.module("../app/views/webdesign.html", []).run(["$templateCache", function($templateCache) {

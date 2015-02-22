@@ -1,15 +1,17 @@
-@font-face {
-  font-family: biko;
-  src: url(../Content/BikoFont/Biko_Regular.otf);
-}
+
 
 /*.navbar {
 	background: none;
 } */
 
 .navbar-default .navbar-brand {
-	font-family: biko;
+	font-family: 'Muli', sans-serif;
 	font-variant: small-caps;
-  font-size: 2em;
-	color: #000;
+  	font-size: 2em;
+	color: #808080;
+}
+
+.navbar a {
+	font-family: 'Muli', sans-serif;
+	font-variant: small-caps;
 }

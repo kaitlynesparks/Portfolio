@@ -1,7 +1,7 @@
 h1 {
-  color: #000;
+  font-family: 'Muli', sans-serif;
 }
-
+/*
 h4 {
   color: #808080;
   font-weight: 200;
@@ -19,4 +19,67 @@ h3 {
 
 p {
   margin-bottom: 10px;
+}*/
+
+/**New Design**/
+
+.headline {
+	text-align: center;
+	font-family: 'Muli', sans-serif;
 }
+
+.headline h1 {
+	color: #000;
+}
+
+.headline h4 {
+	color: #808080;
+ 	font-weight: 200;
+}
+
+h3 {
+	font-family: 'Muli', sans-serif;
+}
+
+.meta-data {
+	color: #808080;
+	font-family: 'Muli', sans-serif;
+}
+
+.meta-header {
+	margin-top: 1em;
+}
+
+.section-header {
+	font-family: 'Muli', sans-serif;
+	font-size: 24px;
+}
+
+.meta-data .meta-data-point ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.meta-data .meta-data-point ul li {
+	font-size: 12px;
+}
+
+a {
+	color: #206D87;
+}
+
+.phase-header {
+	font-family: 'Muli', sans-serif;
+	color: #000;
+	font-size: 20px;
+}
+
+.caption {
+	font-style: italic;
+    font-size: .9em;
+}
+
+
+
+
