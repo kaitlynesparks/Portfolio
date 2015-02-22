@@ -848,16 +848,18 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "      <div data-ng-repeat=\"project in projects\">\n" +
     "\n" +
     "        <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-4 row-centered\">\n" +
-    "          <a ui-sref=\"{{project.Nav}}\">\n" +
+    "          \n" +
     "            <div class=\"thumbnail\">\n" +
+    "              <a ui-sref=\"{{project.Nav}}\">\n" +
     "                  <div class=\"caption\">\n" +
     "                      <h3>{{project.Title}}</h3>\n" +
     "                      <h5>Project Type: {{project.ProjectType}}</h5>\n" +
     "                      <p>{{project.Description}}</p>\n" +
     "                  </div>\n" +
+    "                   </a>\n" +
     "                <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
     "            </div>\n" +
-    "          </a>\n" +
+    "         \n" +
     "        </div>\n" +
     "    </div>\n" +
     "</div>\n" +

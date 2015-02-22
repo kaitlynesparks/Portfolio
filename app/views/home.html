@@ -48,16 +48,18 @@
       <div data-ng-repeat="project in projects">
 
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 row-centered">
-          <a ui-sref="{{project.Nav}}">
+          
             <div class="thumbnail">
+              <a ui-sref="{{project.Nav}}">
                   <div class="caption">
                       <h3>{{project.Title}}</h3>
                       <h5>Project Type: {{project.ProjectType}}</h5>
                       <p>{{project.Description}}</p>
                   </div>
+                   </a>
                 <img src="{{project.Thumbnail}}" alt="...">
             </div>
-          </a>
+         
         </div>
     </div>
 </div>
