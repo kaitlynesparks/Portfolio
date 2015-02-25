@@ -47,8 +47,7 @@
 
       <div data-ng-repeat="project in projects">
 
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 row-centered">
-          
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
               <a ui-sref="{{project.Nav}}">
                   <div class="caption">
@@ -56,10 +55,9 @@
                       <h5>Project Type: {{project.ProjectType}}</h5>
                       <p>{{project.Description}}</p>
                   </div>
-                   </a>
-                <img src="{{project.Thumbnail}}" alt="...">
+              </a>
+              <img src="{{project.Thumbnail}}" alt="...">
             </div>
-         
         </div>
     </div>
 </div>

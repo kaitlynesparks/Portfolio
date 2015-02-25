@@ -4,14 +4,27 @@
 	background: none;
 } */
 
+.navbar {
+	font: #206D87;
+}
+
 .navbar-default .navbar-brand {
 	font-family: 'Muli', sans-serif;
 	font-variant: small-caps;
   	font-size: 2em;
+  	font-weight: bold;
 	color: #808080;
+	/*color: #206D87;*/
+}
+ 
+.navbar-nav {
+	color: #206D87;
 }
 
-.navbar a {
+.navbar li a {
 	font-family: 'Muli', sans-serif;
 	font-variant: small-caps;
+	font-weight: bold;
+	/*color: #206D87;*/
 }
+
