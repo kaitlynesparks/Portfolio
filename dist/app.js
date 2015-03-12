@@ -112,7 +112,7 @@ angular.module("../app/templates/footer.html", []).run(["$templateCache", functi
     "<!doctype html>\n" +
     "<html>\n" +
     "    <link href=\"../Content/footer.css\" rel=\"stylesheet\" >\n" +
-    "    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>\n" +
+    "    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "    <div id=\"footer\">\n" +
     "        <div id=\"footer-element\">\n" +
@@ -121,21 +121,18 @@ angular.module("../app/templates/footer.html", []).run(["$templateCache", functi
     "                    <div class=\"col col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n" +
     "                        <div id=\"AboutMe\">\n" +
     "                            <h2>About Me</h2>\n" +
-    "                            <p>I am a UX researcher and designer currently at Carnegie Mellon University pursuing my Masters of HCI. I have a unique background with undergraduate degrees in Psychology and Computer Science. I also have professional experience working as a software developer and a program manager.</p>\n" +
+    "                            <p>I am a UX researcher and designer currently pursuing my Masters of HCI at Carnegie Mellon University. I have a unique background with undergraduate degrees in Psychology and Computer Science. I also have professional experience working as a software developer and a program manager.</p>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2\">\n" +
     "                        <div id=\"Contact\">\n" +
     "                            <h2>Contact</h2>\n" +
-    "                            <p>Email: kaitlynesparks@gmail.com</p>\n" +
-    "                            <p>LinkedIn: <a href=\"https://www.linkedin.com/in/kaitlynsparks\"> https://www.linkedin.com/in/kaitlynsparks</a></p>\n" +
-    "                            <div class=\"row\">\n" +
-    "                                <div class=\"col row-centered \">\n" +
-    "                                    <a href=\"https://www.linkedin.com/in/kaitlynsparks\"><i id=\"social\" class=\"fa fa-linkedin-square fa-3x social-li\"></i></a>\n" +
-    "                                    <a href=\"mailto:kaitlynesparks@gmail.com\"><i id=\"social\" class=\"fa fa-envelope-square fa-3x social-em\"></i></a>\n" +
-    "                                </div>\n" +
-    "                            </div>   \n" +
-    "\n" +
+    "                            <h4>Email:</h4>\n" +
+    "                            <p>kaitlynesparks@gmail.com</p>\n" +
+    "                            <h4>LinkedIn:</h4>\n" +
+    "                            <p><a href=\"https://www.linkedin.com/in/kaitlynsparks\"> https://www.linkedin.com/in/kaitlynsparks</a></p>\n" +
+    "                            <a href=\"https://www.linkedin.com/in/kaitlynsparks\"><i id=\"social\" class=\"fa fa-linkedin-square fa-3x social-li\"></i></a>\n" +
+    "                            <a href=\"mailto:kaitlynesparks@gmail.com\"><i id=\"social\" class=\"fa fa-envelope-square fa-3x social-em\"></i></a>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
@@ -168,45 +165,42 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "  \n" +
     "  <link href=\"../Content/site.css\" rel=\"stylesheet\" />\n" +
     "  <link href=\"../Content/nav.css\" rel=\"stylesheet\" />\n" +
-    "  <link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>\n" +
+    "  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "  <div class=\"navbar navbar-default navbar-fixed-top\" data-ng-controller=\"indexController\">\n" +
-    "    <div class=\"container\">\n" +
-    "      <div class=\"row\">\n" +
-    "        <div class=\"row-centered\">\n" +
-    "\n" +
-    "          <div class=\"navbar-header\">\n" +
-    "            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-responsive-collapse\">\n" +
-    "              <span class=\"icon-bar\"></span>\n" +
-    "              <span class=\"icon-bar\"></span>\n" +
-    "              <span class=\"icon-bar\"></span>\n" +
-    "            </button>\n" +
-    "            <a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>\n" +
-    "          </div>\n" +
-    "          <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
-    "            <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "              <!--<li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>-->\n" +
-    "              <li><a ui-sref=\"about\">About</a></li>\n" +
-    "              <li><a ui-sref=\"resume\">Resume</a></li>\n" +
-    "              <li><a ui-sref=\"contact\">Contact</a></li>\n" +
-    "              <li class=\"dropdown\">\n" +
-    "                <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
-    "                <ul class=\"dropdown-menu\">\n" +
-    "                  <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
-    "                  <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
-    "                  <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
-    "                  <!--<li><a ui-sref=\"webdesign\">Personal Website Design</a></li>-->\n" +
-    "                  <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
-    "                  <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>\n" +
-    "                </ul>\n" +
-    "              </li>\n" +
-    "              <li>&emsp;</li>\n" +
-    "            </ul>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "      </div>\n" +
+    "   <nav class=\"navbar navbar-default navbar-fixed-top\" data-ng-controller=\"indexController\">\n" +
+    "  <div class=\"container\">\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <!--<a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>-->\n" +
+    "      <a class=\"navbar-brand\" ui-sref=\"home\"><img src=\"../images/brand2.png\"  alt=\"Responsive image\"></a>\n" +
     "    </div>\n" +
+    "    <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
+    "          <ul class=\"nav navbar-nav navbar-right\">\n" +
+    "            <!--<li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>-->\n" +
+    "            <li><a ui-sref=\"about\">About</a></li>\n" +
+    "            <li><a ui-sref=\"resume\">Resume</a></li>\n" +
+    "            <li><a ui-sref=\"contact\">Contact</a></li>\n" +
+    "            <li class=\"dropdown\">\n" +
+    "              <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
+    "              <ul class=\"dropdown-menu\">\n" +
+    "                <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
+    "                <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
+    "                <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
+    "                <!--<li><a ui-sref=\"webdesign\">Personal Website Design</a></li>-->\n" +
+    "                <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
+    "                <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>\n" +
+    "              </ul>\n" +
+    "            </li>\n" +
+    "            <li>&emsp;</li>\n" +
+    "          </ul>\n" +
+    "    </div>\n" +
+    "\n" +
     "  </div>\n" +
+    "</nav>\n" +
     "</html>\n" +
     "");
 }]);
@@ -838,48 +832,16 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "<html>﻿\n" +
     "<link href=\"../Content/home.css\" rel=\"stylesheet\" />\n" +
     "<link href=\"../Content/font-awesome-4.2.0/css/font-awesome.css\" rel=\"stylesheet\">\n" +
-    "<link href=\"../Content/contact.css\" rel=\"stylesheet\" />\n" +
     "\n" +
     "\n" +
     "<div class=\"container\">\n" +
-    "  <div class=\"row panel\">\n" +
-    "    <!--show large image beside text-->\n" +
-    "    <div class=\"col-md-4 bg_blur hidden-sm hidden-xs\">\n" +
-    "    </div>\n" +
-    "        <!--show white box where large image was to extend background-->\n" +
-    "    <div class=\"col-md-4 bg_blur_solid_sm visible-sm\">\n" +
-    "    </div>\n" +
-    "    <!--show white box where large image was to extend background-->\n" +
-    "    <div class=\"col-md-4 bg_blur_solid_xs visible-xs\">\n" +
-    "    </div>\n" +
-    "    <div class=\"col-md-8 col-xs-12\">\n" +
-    "      <!--show small image above dialog box for x-small and small screen size-->\n" +
-    "      <img src=\"../images/Home/KaitlynSparks.png\" class=\"img-thumbnail hidden-md hidden-lg hidden-xl picture_mob\" />\n" +
-    "      <div class=\"header\">\n" +
-    "        <br class=\"hidden-md hidden-lg\"/>\n" +
-    "        <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
-    "        <h1>Kaitlyn Sparks</h1>\n" +
-    "        <h4>User Experience Research and Design</h4>\n" +
-    "        <span><i>I am a Masters of Human-Computer Interaction student at Carnegie Mellon University graduating in August 2015. I am looking for a career in user experience research and design.</i></span>\n" +
-    "        <br/><br/>\n" +
-    "        <div class=\"row\">\n" +
-    "          <div class=\"col row-centered \">\n" +
+    "  \n" +
     "\n" +
-    "            <a href=\"https://www.linkedin.com/in/kaitlynsparks\"><i id=\"social\" class=\"fa fa-linkedin-square fa-3x social-li\"></i></a>\n" +
-    "            <a href=\"mailto:kaitlynesparks@gmail.com\"><i id=\"social\" class=\"fa fa-envelope-square fa-3x social-em\"></i></a>\n" +
-    "          </div>\n" +
-    "          <br class=\"hidden-md hidden-lg hidden-sm\"/>\n" +
-    "\n" +
-    "        </div>\n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "\n" +
-    "  <br/>\n" +
+    " <!-- <br/>\n" +
     "  <h3 class = \"myWork\"> My Work </h3>\n" +
-    "  <hr/>\n" +
+    "  <hr/> -->\n" +
     "\n" +
-    "    <div class=\"row\">\n" +
+    "    <div class=\"row projects\">\n" +
     "\n" +
     "      <div data-ng-repeat=\"project in projects\">\n" +
     "\n" +
@@ -1361,7 +1323,16 @@ $scope.projects = [{Title: "Accelerate", Description: "A project to design a mob
     'use strict';
 app.controller('indexController', ['$scope', function ($scope) {
 
-    
+
+  $(window).scroll(function() {
+
+    if ($(document).scrollTop() > 1) {
+      $('nav').addClass('shrink');
+    } else {
+      $('nav').removeClass('shrink');
+    }
+  });
+
 
 }]);
 

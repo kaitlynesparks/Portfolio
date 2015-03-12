@@ -69,7 +69,7 @@ hr {
 }
 
 body {
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family: "Open Sans",Helvetica,Arial,sans-serif;
 font-size: 14px;
 line-height: 1.42857143;
 color: #fff;
@@ -133,23 +133,23 @@ color: #fff;
 
 }
 
-.h2.myWork {
-    font-color: black;
-}
-
 .myWork {
+  margin-top: 40px;
   color: #808080;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: thin;
 }
 
 h1 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
-h3 {
-    font-family: 'Muli', sans-serif;
+/*.projects {
+    margin-top: 70px;
 }
+*/

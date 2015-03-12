@@ -1,25 +1,114 @@
 .navbar {
-	background-color: #F1F1F1;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #F1F1F1;
+	height: 100px;
 }
 
 .navbar-default .navbar-brand {
-	font-family: 'Roboto', sans-serif;
-	font-variant: small-caps;
-  	font-size: 3em;
+	font-family: 'Open Sans', sans-serif;
+	/*font-variant: small-caps;*/
+  	font-size: 30px;
   	font-weight: 500; 
-	color: #2B5061;
+	/*color: #2B5061;*/
+	color:#0D2A36;
 }
  
 .navbar li a {
-	font-family: 'Roboto', sans-serif;
-	font-variant: small-caps;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
+	padding-top: 43px !important;
+  	padding-bottom: 43px !important;
+  	font-size: 14px;
+  	/*-webkit-transition: all 1s ease;
+  	-moz-transition: all 1s ease;
+  	-o-transition: all 1s ease;
+  	transition: all 1s ease;*/
 }
 
 ul.nav a:hover,
 ul.nav a:focus { 
 	border: none !important;
-	color: #D6401C !important; 
+	color: #8A3F38 !important; 
 }
+
+
+.navbar-brand:hover {
+	color: #8A3F38 !important; 
+}
+
+body {
+	padding-top: 100px;
+}
+
+nav a {
+	padding-top: 20px !important;
+  	padding-bottom: 20px !important;
+  	font-size: 14px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+
+nav.navbar.shrink {
+  max-height: 50px;
+  background-color: #F1F1F1;
+}
+
+/*controls the links on the menu on the left*/
+nav.shrink a {
+  padding-top: 17px !important;
+  padding-bottom: 0px !important;
+  font-size: 12px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+nav.shrink .navbar-brand img {
+	transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Firefox*/
+	-moz-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Microsoft Internet Explorer*/
+	-ms-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Chrome, Safari*/
+	-webkit-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Opera*/
+	-o-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 12px 5px 5px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-default .navbar-brand img{
+		max-height: 50px;
+	}
+
+	nav.shrink .navbar-brand img {
+		transform: translate(-15%, -30%) scale(0.7);
+		/*Firefox*/
+		-moz-transform: translate(-15%, -30%) scale(0.7);
+		/*Microsoft Internet Explorer*/
+		-ms-transform: translate(-15%, -30%) scale(0.7);
+		/*Chrome, Safari*/
+		-webkit-transform: translate(-15%, -30%) scale(0.7);
+		/*Opera*/
+		-o-transform: translate(-15%, -30%) scale(0.7);
+	}
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-default .navbar-brand img{
+		max-height: 40px;
+	}
+}
+
