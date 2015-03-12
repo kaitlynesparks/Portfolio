@@ -1,30 +1,25 @@
-
-
-/*.navbar {
-	background: none;
-} */
-
 .navbar {
-	font: #206D87;
+	background-color: #F1F1F1;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navbar-default .navbar-brand {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-variant: small-caps;
-  	font-size: 2em;
-  	font-weight: bold;
-	color: #808080;
-	/*color: #206D87;*/
+  	font-size: 3em;
+  	font-weight: 500; 
+	color: #2B5061;
 }
  
-.navbar-nav {
-	color: #206D87;
-}
-
 .navbar li a {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-variant: small-caps;
-	font-weight: bold;
-	/*color: #206D87;*/
+	font-weight: normal;
 }
 
+ul.nav a:hover,
+ul.nav a:focus { 
+	border: none !important;
+	color: #D6401C !important; 
+}

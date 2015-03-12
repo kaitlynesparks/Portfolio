@@ -1,14 +1,25 @@
-#footer {
-	background-color: #206D87;
-}
+/*#footer {
+	background-color: #2B5061;
+	padding-bottom: 20px;
+}*/
 
-#contact {
-	margin-top: 15px;
+#footer-element {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #2B5061;
 }
 
 p {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	color: #fff;
-	line-height: 10px;
+}
+
+h2 {
+	color: #D6401C
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
 }
