@@ -13,7 +13,7 @@
 	color:#0D2A36;
 }
  
-.navbar li a {
+.navbar .topNav {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	padding-top: 43px !important;
@@ -46,6 +46,16 @@ nav a {
   	font-size: 14px;
 }
 
+nav .dropdown-menu > li > a {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+nav.shrink .dropdown-menu > li > a {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
 nav .navbar-toggle {
   margin: 13px 15px 13px 0;
 }
@@ -53,11 +63,12 @@ nav .navbar-toggle {
 
 nav.navbar.shrink {
   max-height: 50px;
-  background-color: #F1F1F1;
+  /*background-color: #F1F1F1;*/
+  background-color: rgba(241, 241, 241, .95);
 }
 
 /*controls the links on the menu on the left*/
-nav.shrink a {
+nav.shrink .topNav {
   padding-top: 17px !important;
   padding-bottom: 0px !important;
   font-size: 12px;
@@ -95,13 +106,9 @@ nav.shrink .navbar-toggle {
 
 	nav.shrink .navbar-brand img {
 		transform: translate(-15%, -30%) scale(0.7);
-		/*Firefox*/
 		-moz-transform: translate(-15%, -30%) scale(0.7);
-		/*Microsoft Internet Explorer*/
 		-ms-transform: translate(-15%, -30%) scale(0.7);
-		/*Chrome, Safari*/
 		-webkit-transform: translate(-15%, -30%) scale(0.7);
-		/*Opera*/
 		-o-transform: translate(-15%, -30%) scale(0.7);
 	}
 }

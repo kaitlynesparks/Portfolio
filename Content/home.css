@@ -1,15 +1,3 @@
-
-
-/*@font-face {
-    font-family: biko;
-    src: url(../Content/BikoFont/Biko_Light-Restricted.otf);
-    font-weight: thin;
-}*/
-
-body {
-  /*padding-top: 50px;*/
-}
-
 hr {
     border-color: rgba(128, 128, 128, 0.75);
     border-width: 1px;
@@ -72,9 +60,12 @@ body {
 font-family: "Open Sans",Helvetica,Arial,sans-serif;
 font-size: 14px;
 line-height: 1.42857143;
-color: #fff;
+background-color: #fff;
 /*background-color: #F1F1F1;*/
+}
 
+.panel {
+    background-color: #F1F1F1;
 }
 
 .bg_blur
@@ -86,21 +77,23 @@ color: #fff;
 }
 .bg_blur_solid_xs
 {
-    background: #fff;
+    background: #F1F1F1;
     height: 120px;
     background-size: cover;
 }
 
 .bg_blur_solid_sm {
-    background: #fff;
+    background: #F1F1F1;
     height: 200px;
     background-size: cover;
 }
 
 .header{
-    color : #808080;
-    margin-left:10%;
+    color: #808080;
+    margin-left:20px;
+    margin-right: 20px;
     margin-top:70px;
+    
 }
 
 .picture{
@@ -148,6 +141,11 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
+
+h3 {
+    line-height: 40px;
+}
+
 
 /*.projects {
     margin-top: 70px;

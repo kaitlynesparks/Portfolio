@@ -121,7 +121,7 @@ angular.module("../app/templates/footer.html", []).run(["$templateCache", functi
     "                    <div class=\"col col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n" +
     "                        <div id=\"AboutMe\">\n" +
     "                            <h2>About Me</h2>\n" +
-    "                            <p>I am a UX researcher and designer currently pursuing my Masters of HCI at Carnegie Mellon University. I have a unique background with undergraduate degrees in Psychology and Computer Science. I also have professional experience working as a software developer and a program manager.</p>\n" +
+    "                            <p>I am a UX researcher and designer currently pursuing my Masters of HCI at Carnegie Mellon University. I will graduate in August 2015. I have a unique background with undergraduate degrees in Psychology and Computer Science. I also have professional experience working as a software developer and a program manager.</p>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                    <div class=\"col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2\">\n" +
@@ -140,21 +140,6 @@ angular.module("../app/templates/footer.html", []).run(["$templateCache", functi
     "        </div>    \n" +
     "    </div>\n" +
     "</html>  \n" +
-    "                    <!--<div id=\"contact\">\n" +
-    "                        <p>Email: kaitlynesparks@gmail.com</p>\n" +
-    "                        <p>Tel: (912) 585 - 2036 </p>\n" +
-    "                    </div> -->  \n" +
-    "                        <!--<a ui-sref=\"home\" style=\"font-weight: bold\">Home</a>&emsp;\n" +
-    "\n" +
-    "                        <a ui-sref=\"about\" style=\"font-weight: bold\">About</a>&emsp;\n" +
-    "                        \n" +
-    "                        <a ui-sref=\"contact\" style=\"font-weight: bold\">Contact Me</a>\n" +
-    "                        <br>\n" +
-    "                       <!-- <span style=\"font-size: 10px; color: black; font-family: sans-serif; \" dir=\"ltr\">Powered By;</span>\n" +
-    "                        <a href=\"https://angularjs.org/\" style=\"font-size: 13px\">AngularJS</a>\n" +
-    "                        <span style=\"font-size: 10px; color: black; font-family: sans-serif; \" dir=\"ltr\">\n" +
-    "                        and </a>\n" +
-    "                        <a href=\"http://getbootstrap.com/\" style=\"font-size: 13px\">Boostrap</a> -->   \n" +
     "  ");
 }]);
 
@@ -167,40 +152,38 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "  <link href=\"../Content/nav.css\" rel=\"stylesheet\" />\n" +
     "  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "   <nav class=\"navbar navbar-default navbar-fixed-top\" data-ng-controller=\"indexController\">\n" +
-    "  <div class=\"container\">\n" +
-    "    <div class=\"navbar-header\">\n" +
-    "      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "      </button>\n" +
-    "      <!--<a class=\"navbar-brand\" ui-sref=\"home\">Kaitlyn Sparks</a>-->\n" +
-    "      <a class=\"navbar-brand\" ui-sref=\"home\"><img src=\"../images/brand2.png\"  alt=\"Responsive image\"></a>\n" +
+    "  <nav class=\"navbar navbar-default navbar-fixed-top\" data-ng-controller=\"indexController\">\n" +
+    "    <div class=\"container\">\n" +
+    "      <div class=\"navbar-header\">\n" +
+    "        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n" +
+    "          <span class=\"icon-bar\"></span>\n" +
+    "          <span class=\"icon-bar\"></span>\n" +
+    "          <span class=\"icon-bar\"></span>\n" +
+    "        </button>\n" +
+    "        <a class=\"navbar-brand\" ui-sref=\"home\"><img src=\"../images/brand2.png\"  alt=\"Responsive image\"></a>\n" +
+    "      </div>\n" +
+    "      <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
+    "        <ul class=\"nav navbar-nav navbar-right\">\n" +
+    "          <!--<li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>-->\n" +
+    "          <li><a ui-sref=\"about\" class=\"topNav\">About</a></li>\n" +
+    "          <li><a ui-sref=\"resume\" class=\"topNav\">Resume</a></li>\n" +
+    "          <li><a ui-sref=\"contact\" class=\"topNav\">Contact</a></li>\n" +
+    "          <li class=\"dropdown\">\n" +
+    "            <a class=\"dropdown-toggle topNav\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
+    "            <ul class=\"dropdown-menu\">\n" +
+    "              <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
+    "              <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
+    "              <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
+    "              <!--<li><a ui-sref=\"webdesign\">Personal Website Design</a></li>-->\n" +
+    "              <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
+    "              <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>\n" +
+    "            </ul>\n" +
+    "          </li>\n" +
+    "          <li>&emsp;</li>\n" +
+    "        </ul>\n" +
+    "      </div>\n" +
     "    </div>\n" +
-    "    <div class=\"navbar-collapse collapse navbar-responsive-collapse\">\n" +
-    "          <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "            <!--<li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>-->\n" +
-    "            <li><a ui-sref=\"about\">About</a></li>\n" +
-    "            <li><a ui-sref=\"resume\">Resume</a></li>\n" +
-    "            <li><a ui-sref=\"contact\">Contact</a></li>\n" +
-    "            <li class=\"dropdown\">\n" +
-    "              <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
-    "              <ul class=\"dropdown-menu\">\n" +
-    "                <li><a ui-sref=\"accelerate\">Accelerate</a></li>\n" +
-    "                <li><a ui-sref=\"distractionfreecoding\">Distraction Free Coding</a></li>\n" +
-    "                <li><a ui-sref=\"peanuts\">Peanuts</a></li>\n" +
-    "                <!--<li><a ui-sref=\"webdesign\">Personal Website Design</a></li>-->\n" +
-    "                <li><a ui-sref=\"wakeup\">Wake Up</a></li>\n" +
-    "                <li><a ui-sref=\"hackathon\">Hackathons and Challenges</a></li>\n" +
-    "              </ul>\n" +
-    "            </li>\n" +
-    "            <li>&emsp;</li>\n" +
-    "          </ul>\n" +
-    "    </div>\n" +
-    "\n" +
-    "  </div>\n" +
-    "</nav>\n" +
+    "  </nav>\n" +
     "</html>\n" +
     "");
 }]);
@@ -249,7 +232,7 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "<html>﻿\n" +
     "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
     "	<!--<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />-->\n" +
-    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
@@ -832,14 +815,13 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "<html>﻿\n" +
     "<link href=\"../Content/home.css\" rel=\"stylesheet\" />\n" +
     "<link href=\"../Content/font-awesome-4.2.0/css/font-awesome.css\" rel=\"stylesheet\">\n" +
+    "<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "\n" +
+    "<!-- About me panel  -->\n" +
     "<div class=\"container\">\n" +
-    "  \n" +
     "\n" +
-    " <!-- <br/>\n" +
     "  <h3 class = \"myWork\"> My Work </h3>\n" +
-    "  <hr/> -->\n" +
+    "  <hr/>\n" +
     "\n" +
     "    <div class=\"row projects\">\n" +
     "\n" +
