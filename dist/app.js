@@ -167,7 +167,7 @@ angular.module("../app/templates/nav.html", []).run(["$templateCache", function(
     "          <!--<li><a id=\"homeNav\" ui-sref=\"home\">Home</a></li>-->\n" +
     "          <li><a ui-sref=\"about\" class=\"topNav\">About</a></li>\n" +
     "          <li><a ui-sref=\"resume\" class=\"topNav\">Resume</a></li>\n" +
-    "          <li><a ui-sref=\"contact\" class=\"topNav\">Contact</a></li>\n" +
+    "          <!--<li><a ui-sref=\"contact\" class=\"topNav\">Contact</a></li>-->\n" +
     "          <li class=\"dropdown\">\n" +
     "            <a class=\"dropdown-toggle topNav\" data-toggle=\"dropdown\">Projects<b class=\"caret\"></b></a>\n" +
     "            <ul class=\"dropdown-menu\">\n" +
@@ -196,12 +196,27 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
     "    <!--<link href=\"../Content/accelerate.css\" rel=\"stylesheet\" />-->\n" +
     "  <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
     "  <div class= \"container\">\n" +
-    "    <div class=\"row\">\n" +
+    "    <!--<div class=\"row\">\n" +
     "      <div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-12\"> \n" +
     "        <h1>About Me</h1>\n" +
     "      </div>\n" +
-    "    </div> \n" +
+    "    </div>  -->\n" +
+    "    <br/><br/>\n" +
     "    <div class=\"row\">\n" +
+    "      <div class = \"col col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n" +
+    "        <img src=\"../images/Home/KaitlynSparks.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "      </div>\n" +
+    "      <div class = \"col col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n" +
+    "        <h3>Get to know me professionally</h3>\n" +
+    "        <span class=\"about-text\"> <strong>I am a creative problem solver interested in knowing what motivates people.</strong> I went to Vanderbilt and double majored in psychology and computer science. I was intrigued by understanding complex systems and making them usable for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at Asurion as a program manager and a developer. Then I found Human-Computer Interaction and saw the opportunity to further explore my passions. I am currently at CMU to pursue my Masters in HCI. </span>\n" +
+    "        <br/><br/>\n" +
+    "        <h3>Get to know me personally</h3>\n" +
+    "        <span class=\"about-text\">I am originally from a small town in south Georgia called Vidalia. I moved to Nashville for college and lived there for a few years after graduation. I was a cheerleader and captain for my squad at Vanderbilt University. I enjoy watching sports, especially SEC football and Atlanta Braves baseball! I also really like dogs, sweet tea, diet coke, sitcoms, and outdoor activities. </span>\n" +
+    "      </div>\n" +
+    "    </div>\n" +
+    "\n" +
+    "\n" +
+    "   <!-- <div class=\"row\">\n" +
     "      <div class = \"col col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n" +
     "        <h3>Get to know me professionally</h3>\n" +
     "        <span class=\"about-text\">I went to Vanderbilt and double majored in psychology and computer science. I grew up in a rural community and didn't know much about the job market, but I knew I cared about solving complex problems for people, so I chose these two majors hoping to someday combine them. After I graduated, I worked at Asurion as a program manager and a developer. Then I found Human-Computer Interaction and knew that's what I wanted to study. So, I went to CMU to pursue my Masters in HCI. </span>\n" +
@@ -220,8 +235,8 @@ angular.module("../app/views/about.html", []).run(["$templateCache", function($t
     "      <div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
     "        <img src=\"../images/about-me.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
     "      </div> \n" +
-    "    </div> \n" +
-    "  </div>\n" +
+    "    </div> -->\n" +
+    "  </div> \n" +
     "</html>  \n" +
     "");
 }]);
@@ -414,29 +429,53 @@ angular.module("../app/views/contact.html", []).run(["$templateCache", function(
     "        <div class=\"col-md-8\">\n" +
     "            <div class=\"container\">\n" +
     "              <br/>\n" +
-    "              <div class=\"panel panel-default\">\n" +
-    "                <div class=\"panel-body\">\n" +
-    "                  Thanks for reviewing my site, feel free to contact me at any of my networks below.\n" +
-    "                </div>\n" +
-    "              </div>\n" +
+    "              <br/>\n" +
+    "              <br/>\n" +
     "            </div>\n" +
-    "            <div class=\"col-md-4\">\n" +
-    "              <div class=\"container\">\n" +
-    "                  <div class=\"text-center center-block\">\n" +
     "\n" +
-    "                        <a href=\"https://www.facebook.com/kaitlyn.sparks.98\"><i id=\"social\" class=\"fa fa-facebook-square fa-3x social-fb\"></i></a>\n" +
-    "\n" +
-    "                        <a href=\"https://twitter.com/KaitlynSparks\"><i id=\"social\" class=\"fa fa-twitter-square fa-3x social-tw\"></i></a>\n" +
-    "\n" +
-    "                        <a href=\"https://plus.google.com/u/0/106201679513041750453/posts\"><i id=\"social\" class=\"fa fa-google-plus-square fa-3x social-gp\"></i></a>\n" +
-    "\n" +
-    "                        <a href=\"https://www.linkedin.com/profile/view?id=123380350&authType=NAME_SEARCH&authToken=cGN9&locale=en_US&trk=tyah2&trkInfo=tarId%3A1420257371304%2Ctas%3Akaitlyn%2Cidx%3A1-1-1\"><i id=\"social\" class=\"fa fa-linkedin-square fa-3x social-li\"></i></a>\n" +
-    "                        \n" +
-    "                        <a href=\"mailto:kaitlynesparks@gmail.com\"><i id=\"social\" class=\"fa fa-envelope-square fa-3x social-em\"></i></a>\n" +
-    "\n" +
+    "            <div class=\"container\">\n" +
+    "              <div class=\"row\">\n" +
+    "                <div class=\"col-md-8 col-md-offset-2\">\n" +
+    "                  <div class=\"well well-sm\">\n" +
+    "                  <form class=\"form-horizontal\" action=\"MAILTO:kaitlynesparks@gmail.com\" method=\"post\" enctype=\"text/plain\">\n" +
+    "                    <fieldset>\n" +
+    "                      <legend class=\"text-center\">Contact me</legend>\n" +
+    "                      <!-- Name input-->\n" +
+    "                      <div class=\"form-group\">\n" +
+    "                        <label class=\"col-md-3 control-label\" for=\"name\">Name</label>\n" +
+    "                        <div class=\"col-md-9\">\n" +
+    "                          <input id=\"name\" name=\"name\" type=\"text\" placeholder=\"Your name\" class=\"form-control\">\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "        \n" +
+    "                      <!-- Email input-->\n" +
+    "                      <div class=\"form-group\">\n" +
+    "                        <label class=\"col-md-3 control-label\" for=\"email\">Your E-mail</label>\n" +
+    "                        <div class=\"col-md-9\">\n" +
+    "                          <input id=\"email\" name=\"email\" type=\"text\" placeholder=\"Your email\" class=\"form-control\">\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "        \n" +
+    "                      <!-- Message body -->\n" +
+    "                      <div class=\"form-group\">\n" +
+    "                        <label class=\"col-md-3 control-label\" for=\"message\">Your message</label>\n" +
+    "                        <div class=\"col-md-9\">\n" +
+    "                          <textarea class=\"form-control\" id=\"message\" name=\"message\" placeholder=\"Please enter your message\" rows=\"5\"></textarea>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "    \n" +
+    "                      <!-- Form actions -->\n" +
+    "                      <div class=\"form-group\">\n" +
+    "                        <div class=\"col-md-12 text-right\">\n" +
+    "                          <button type=\"submit\" class=\"btn btn-primary btn-lg\">Submit</button>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </fieldset>\n" +
+    "                    </form>\n" +
     "                  </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "</div>\n" +
@@ -817,31 +856,29 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "<link href=\"../Content/font-awesome-4.2.0/css/font-awesome.css\" rel=\"stylesheet\">\n" +
     "<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
-    "<!-- About me panel  -->\n" +
-    "<div class=\"container\">\n" +
-    "\n" +
-    "  <h3 class = \"myWork\"> My Work </h3>\n" +
-    "  <hr/>\n" +
-    "\n" +
-    "    <div class=\"row projects\">\n" +
-    "\n" +
-    "      <div data-ng-repeat=\"project in projects\">\n" +
-    "\n" +
-    "        <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-4\">\n" +
+    "  <div class=\"container\">\n" +
+    "    <h3 class = \"myWork\"> My Work </h3>\n" +
+    "    <hr/>\n" +
+    "      <div class=\"row projects\">\n" +
+    "        <div data-ng-repeat=\"project in projects\">\n" +
+    "          <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-4\">\n" +
     "            <div class=\"thumbnail\">\n" +
     "              <a ui-sref=\"{{project.Nav}}\">\n" +
-    "                  <div class=\"caption\">\n" +
-    "                      <h3>{{project.Title}}</h3>\n" +
-    "                      <h5>Project Type: {{project.ProjectType}}</h5>\n" +
-    "                      <p>{{project.Description}}</p>\n" +
-    "                  </div>\n" +
+    "                <div class=\"caption\">\n" +
+    "                    <!--<h3>{{project.Title}}</h3>\n" +
+    "                    <h5>Project Type: {{project.ProjectType}}</h5>-->\n" +
+    "                    <p>{{project.Description}}</p>\n" +
+    "                </div>\n" +
     "              </a>\n" +
     "              <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
+    "              <div class=\"below_caption\">\n" +
+    "                <h4 class\"project_title\">{{project.Title}}</h4>\n" +
+    "                <p class-\"project_type\">{{project.ProjectType}}</p>\n" +
+    "              </div>  \n" +
     "            </div>\n" +
+    "          </div>\n" +
     "        </div>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "</div>\n" +
+    "      </div> \n" +
     "</html>\n" +
     "");
 }]);
@@ -1293,7 +1330,7 @@ $scope.projects = [{Title: "Accelerate", Description: "A project to design a mob
          {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", Thumbnail: "../images/Peanuts/peanuts_icon.png", Nav: "peanuts", ProjectType:"Research"},
       /* {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/personalWebsite_icon.png", Nav: "webdesign", ProjectType: "Design"},*/
      {Title: "Wake Up", Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", Thumbnail: "../images/WakeUp/wakeup_icon.png", Nav: "wakeup", ProjectType: "Development"},
-   {Title: "Hackathons and Challenges", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/hackathon_icon.png", Nav: "hackathon", ProjectType: "Development"}];
+   {Title: "Hackathons", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/hackathon_icon.png", Nav: "hackathon", ProjectType: "Development"}];
 
 }]);
 

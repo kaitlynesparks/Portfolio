@@ -1,12 +1,14 @@
 .navbar {
 	background-color: #fff;
+	/*height: 100px;*/
+	/*background-color: rgba(241, 241, 241, .95);*/
 	border-bottom: 1px solid #F1F1F1;
-	height: 100px;
+	/* added from pete*/
+	padding-bottom: 10px;
 }
 
 .navbar-default .navbar-brand {
 	font-family: 'Open Sans', sans-serif;
-	/*font-variant: small-caps;*/
   	font-size: 30px;
   	font-weight: 500; 
 	/*color: #2B5061;*/
@@ -24,6 +26,7 @@
   	-o-transition: all 1s ease;
   	transition: all 1s ease;*/
 }
+
 
 ul.nav a:hover,
 ul.nav a:focus { 
@@ -47,25 +50,30 @@ nav a {
 }
 
 nav .dropdown-menu > li > a {
-	padding-top: 10px !important;
-	padding-bottom: 10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+  	font-size: 12px;
 }
 
 nav.shrink .dropdown-menu > li > a {
-	padding-top: 10px !important;
-	padding-bottom: 10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-size: 12px;
 }
 
 nav .navbar-toggle {
   margin: 13px 15px 13px 0;
 }
 
-
+/*this causes issues*/
+/*
 nav.navbar.shrink {
   max-height: 50px;
   /*background-color: #F1F1F1;*/
-  background-color: rgba(241, 241, 241, .95);
-}
+  /*background-color: rgba(241, 241, 241, .95);
+} */
 
 /*controls the links on the menu on the left*/
 nav.shrink .topNav {
@@ -99,6 +107,33 @@ nav.shrink .navbar-toggle {
   margin: 8px 15px 8px 0;
 }
 
+.navbar-brand {
+	font-size: 35px;
+}
+
+nav.navbar.shrink {
+	min-height: 35px;
+}
+
+/*controls the links on the menu on the left*/
+nav.shrink a {
+	padding-top: 17px !important;
+	padding-bottom: 0px !important;
+	font-size: 15px;
+	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+}
+
+nav.shrink .navbar-brand {
+	font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+	padding: 5px 5px 5px 5px;
+}
+
 @media screen and (max-width: 1000px) {
   .navbar-default .navbar-brand img{
 		max-height: 50px;
@@ -114,8 +149,14 @@ nav.shrink .navbar-toggle {
 }
 
 @media screen and (max-width: 450px) {
-  .navbar-default .navbar-brand img{
+  .navbar-default .navbar-brand img {
 		max-height: 40px;
+	}
+
+	.navbar .topNav {
+		padding-top: 17px !important;
+		padding-bottom: 0px !important;
+		font-size: 12px;
 	}
 }
 
