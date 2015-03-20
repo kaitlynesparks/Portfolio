@@ -487,10 +487,11 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "<!doctype html>\n" +
     "<html>\n" +
     "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
-    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
+    "		<br/>\n" +
     "\n" +
     "		<div class=\"headline\">\n" +
     "			<div class=\"row\">\n" +
@@ -663,7 +664,7 @@ angular.module("../app/views/hackathon.html", []).run(["$templateCache", functio
     "<!doctype html>\n" +
     "<html>\n" +
     "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
-    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
@@ -857,7 +858,7 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "  <div class=\"container\">\n" +
-    "    <h3 class = \"myWork\"> My Work </h3>\n" +
+    "    <h3 class = \"myWork\"> Projects </h3>\n" +
     "    <hr/>\n" +
     "      <div class=\"row projects\">\n" +
     "        <div data-ng-repeat=\"project in projects\">\n" +
@@ -865,16 +866,13 @@ angular.module("../app/views/home.html", []).run(["$templateCache", function($te
     "            <div class=\"thumbnail\">\n" +
     "              <a ui-sref=\"{{project.Nav}}\">\n" +
     "                <div class=\"caption\">\n" +
-    "                    <!--<h3>{{project.Title}}</h3>\n" +
-    "                    <h5>Project Type: {{project.ProjectType}}</h5>-->\n" +
+    "                    <h3>{{project.Title}}</h3>\n" +
+    "                    <h5>{{project.ProjectType}}</h5>\n" +
+    "                    <hr/>\n" +
     "                    <p>{{project.Description}}</p>\n" +
     "                </div>\n" +
     "              </a>\n" +
     "              <img src=\"{{project.Thumbnail}}\" alt=\"...\">\n" +
-    "              <div class=\"below_caption\">\n" +
-    "                <h4 class\"project_title\">{{project.Title}}</h4>\n" +
-    "                <p class-\"project_type\">{{project.ProjectType}}</p>\n" +
-    "              </div>  \n" +
     "            </div>\n" +
     "          </div>\n" +
     "        </div>\n" +
@@ -888,11 +886,10 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "<!doctype html>\n" +
     "<html>\n" +
     "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
-    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
-    "\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
-    "\n" +
+    "		<br/>\n" +
     "		<div class=\"headline\">\n" +
     "			<div class=\"row\">\n" +
     "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
@@ -946,6 +943,7 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "				<h4 class=\"meta-header\">Deliverables</h4>\n" +
     "				<ul>\n" +
     "					<li><a href=\"../images/Peanuts/Final-Presentation.pdf\" target=\"_blank\">Presentation</a></li>\n" +
+    "					<li><a href=\"http://peanuts.meteor.com\" target=\"_blank\">Website</a></li>\n" +
     "				</ul>	\n" +
     "			</div>\n" +
     "		</div> <!-- end Meta-data -->	\n" +
@@ -1044,11 +1042,11 @@ angular.module("../app/views/wakeup.html", []).run(["$templateCache", function($
     "<!doctype html>\n" +
     "<html>\n" +
     "	<link href=\"../Content/projectPage.css\" rel=\"stylesheet\" />\n" +
-    "	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>\n" +
+    "	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>\n" +
     "\n" +
     "	<!--Header-->\n" +
     "	<div class=\"container\">\n" +
-    "		\n" +
+    "		<br/>\n" +
     "		<div class=\"headline\">\n" +
     "			<div class=\"row\">\n" +
     "				<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
@@ -1325,12 +1323,44 @@ app.controller('homeController', ['$scope', function ($scope) {
 
 $scope.projects = [];
 
-$scope.projects = [{Title: "Accelerate", Description: "A project to design a mobile training application for emergency medical personnel", Thumbnail: "../images/Accelerate/Accelerate_icon2.png", Nav: "accelerate", ProjectType:"Design"},
-				   {Title: "Distraction Free Coding", Description: "Research student developer problems using Contextual Design methodology", Thumbnail: "../images/DistractionFreeCoding/distractionfreecoding_icon.png", Nav: "distractionfreecoding", ProjectType:"Research"},
-         {Title: "Peanuts", Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", Thumbnail: "../images/Peanuts/peanuts_icon.png", Nav: "peanuts", ProjectType:"Research"},
+$scope.projects = [
+					{
+						Title: "Accelerate", 
+						Description: "A project to design a mobile training application for emergency medical personnel", 
+						Thumbnail: "../images/Accelerate/Accelerate_icon2.png",
+						Nav: "accelerate", 
+						ProjectType:"Design"
+					},
+				   	{
+				   		Title: "Distraction Free Coding", 
+				   		Description: "Research student developer problems using Contextual Design methodology", 
+				   		Thumbnail: "../images/DistractionFreeCoding/distractionfreecoding_icon.png", 
+				   		Nav: "distractionfreecoding", 
+				   		ProjectType:"Research"
+				   	},
+         			{
+         				Title: "Peanuts", 
+         				Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", 
+         				Thumbnail: "../images/Peanuts/peanuts_icon.png", 
+         				Nav: "peanuts", 
+         				ProjectType:"Research"
+         			},
       /* {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/personalWebsite_icon.png", Nav: "webdesign", ProjectType: "Design"},*/
-     {Title: "Wake Up", Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", Thumbnail: "../images/WakeUp/wakeup_icon.png", Nav: "wakeup", ProjectType: "Development"},
-   {Title: "Hackathons", Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", Thumbnail: "../images/Hackathons/hackathon_icon.png", Nav: "hackathon", ProjectType: "Development"}];
+     				{
+     					Title: "Wake Up", 
+     					Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", 
+     					Thumbnail: "../images/WakeUp/wakeup_icon.png", 
+     					Nav: "wakeup", 
+     					ProjectType: "Development"
+     				},
+   					{
+   						Title: "Hackathons", 
+   						Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", 
+   						Thumbnail: "../images/Hackathons/hackathon_icon.png", 
+   						Nav: "hackathon", 
+   						ProjectType: "Development"
+   					}
+   				];
 
 }]);
 

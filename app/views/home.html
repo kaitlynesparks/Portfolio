@@ -5,7 +5,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
 
   <div class="container">
-    <h3 class = "myWork"> My Work </h3>
+    <h3 class = "myWork"> Projects </h3>
     <hr/>
       <div class="row projects">
         <div data-ng-repeat="project in projects">
@@ -13,16 +13,13 @@
             <div class="thumbnail">
               <a ui-sref="{{project.Nav}}">
                 <div class="caption">
-                    <!--<h3>{{project.Title}}</h3>
-                    <h5>Project Type: {{project.ProjectType}}</h5>-->
+                    <h3>{{project.Title}}</h3>
+                    <h5>{{project.ProjectType}}</h5>
+                    <hr/>
                     <p>{{project.Description}}</p>
                 </div>
               </a>
               <img src="{{project.Thumbnail}}" alt="...">
-              <div class="below_caption">
-                <h4 class"project_title">{{project.Title}}</h4>
-                <p class-"project_type">{{project.ProjectType}}</p>
-              </div>  
             </div>
           </div>
         </div>
