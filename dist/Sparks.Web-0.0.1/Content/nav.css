@@ -1,0 +1,162 @@
+.navbar {
+	background-color: #fff;
+	/*height: 100px;*/
+	/*background-color: rgba(241, 241, 241, .95);*/
+	border-bottom: 1px solid #F1F1F1;
+	/* added from pete*/
+	padding-bottom: 10px;
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'Open Sans', sans-serif;
+  	font-size: 30px;
+  	font-weight: 500; 
+	/*color: #2B5061;*/
+	color:#0D2A36;
+}
+ 
+.navbar .topNav {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	padding-top: 43px !important;
+  	padding-bottom: 43px !important;
+  	font-size: 14px;
+  	/*-webkit-transition: all 1s ease;
+  	-moz-transition: all 1s ease;
+  	-o-transition: all 1s ease;
+  	transition: all 1s ease;*/
+}
+
+
+ul.nav a:hover,
+ul.nav a:focus { 
+	border: none !important;
+	color: #8A3F38 !important; 
+}
+
+
+.navbar-brand:hover {
+	color: #8A3F38 !important; 
+}
+
+body {
+	padding-top: 100px;
+}
+
+nav a {
+	padding-top: 20px !important;
+  	padding-bottom: 20px !important;
+  	font-size: 14px;
+}
+
+nav .dropdown-menu > li > a {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+  	font-size: 12px;
+}
+
+nav.shrink .dropdown-menu > li > a {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-size: 12px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+/*this causes issues*/
+/*
+nav.navbar.shrink {
+  max-height: 50px;
+  /*background-color: #F1F1F1;*/
+  /*background-color: rgba(241, 241, 241, .95);
+} */
+
+/*controls the links on the menu on the left*/
+nav.shrink .topNav {
+  padding-top: 17px !important;
+  padding-bottom: 0px !important;
+  font-size: 12px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+nav.shrink .navbar-brand img {
+	transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Firefox*/
+	-moz-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Microsoft Internet Explorer*/
+	-ms-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Chrome, Safari*/
+	-webkit-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	/*Opera*/
+	-o-transform: translate(-25%, -30%) scale(0.5, 0.5);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 12px 5px 5px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+.navbar-brand {
+	font-size: 35px;
+}
+
+nav.navbar.shrink {
+	min-height: 35px;
+}
+
+/*controls the links on the menu on the left*/
+nav.shrink a {
+	padding-top: 17px !important;
+	padding-bottom: 0px !important;
+	font-size: 15px;
+	-webkit-transition: all 0.5s ease;
+  	-moz-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+}
+
+nav.shrink .navbar-brand {
+	font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+	padding: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-default .navbar-brand img{
+		max-height: 50px;
+	}
+
+	nav.shrink .navbar-brand img {
+		transform: translate(-15%, -30%) scale(0.7);
+		-moz-transform: translate(-15%, -30%) scale(0.7);
+		-ms-transform: translate(-15%, -30%) scale(0.7);
+		-webkit-transform: translate(-15%, -30%) scale(0.7);
+		-o-transform: translate(-15%, -30%) scale(0.7);
+	}
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-default .navbar-brand img {
+		max-height: 40px;
+	}
+
+	.navbar .topNav {
+		padding-top: 17px !important;
+		padding-bottom: 0px !important;
+		font-size: 12px;
+	}
+}
+
