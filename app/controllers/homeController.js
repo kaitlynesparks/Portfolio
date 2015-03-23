@@ -13,36 +13,35 @@ $scope.projects = [
 						Nav: "accelerate", 
 						ProjectType:"Design"
 					},
-				   	{
-				   		Title: "Distraction Free Coding", 
-				   		Description: "Research student developer problems using Contextual Design methodology", 
-				   		Thumbnail: "../images/DistractionFreeCoding/distractionfreecoding_icon.png", 
-				   		Nav: "distractionfreecoding", 
-				   		ProjectType:"Research"
-				   	},
-         			{
-         				Title: "Peanuts", 
-         				Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", 
-         				Thumbnail: "../images/Peanuts/peanuts_icon.png", 
-         				Nav: "peanuts", 
-         				ProjectType:"Research"
-         			},
-      /* {Title: "Personal Website Design", Description: "Design a personal website for mobile and desktop", Thumbnail: "../images/PersonalWebsite/personalWebsite_icon.png", Nav: "webdesign", ProjectType: "Design"},*/
-     				{
-     					Title: "Wake Up", 
-     					Description: "Development of an Android application that gives the weather and bus information when an alarm goes off", 
-     					Thumbnail: "../images/WakeUp/wakeup_icon.png", 
-     					Nav: "wakeup", 
-     					ProjectType: "Development"
-     				},
-   					{
-   						Title: "Hackathons", 
-   						Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", 
-   						Thumbnail: "../images/Hackathons/hackathon_icon.png", 
-   						Nav: "hackathon", 
-   						ProjectType: "Development"
-   					}
-   				];
+			   	{
+			   		Title: "Distraction Free Coding", 
+			   		Description: "Research student developer problems using Contextual Design methodology", 
+			   		Thumbnail: "../images/DistractionFreeCoding/distractionfreecoding_icon.png", 
+			   		Nav: "distractionfreecoding", 
+			   		ProjectType:"Research"
+			   	},
+     			{
+     				Title: "Peanuts", 
+     				Description: "Research to understand how reciprocity and trust can impact microcharitable giving online", 
+     				Thumbnail: "../images/Peanuts/peanuts_icon.png", 
+     				Nav: "peanuts", 
+     				ProjectType:"Research"
+     			},
+   				{
+   					Title: "Wake Up", 
+   					Description: "Design and development of an Android application that gives the weather and bus information when an alarm goes off", 
+   					Thumbnail: "../images/WakeUp/wakeup_icon.png", 
+   					Nav: "wakeup", 
+   					ProjectType: "Design + Development"
+   				},
+ 					{
+ 						Title: "Hackathons", 
+ 						Description: "I competed in a hackathon and a challenge to learn new technologies and practice my existing development skills", 
+ 						Thumbnail: "../images/Hackathons/hackathon_icon.png", 
+ 						Nav: "hackathon", 
+ 						ProjectType: "Development"
+ 					}
+ 				];
 
 }]);
 
