@@ -322,7 +322,7 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "		</div>\n" +
     "		<div class= \"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 project-description\">\n" +
-    "				<p>Accelerate is an application that helps emergency medical service employees cope with their uniquely stressful jobs. For my Interaction Design Fundamentals class at CMU, we designed this application to provide facts and quizzes to encourage EMS works to learn more about topics like mental health, nutrition, and driving skills.</p>\n" +
+    "				<p>Accelerate is an application that helps emergency medical service employees cope with their uniquely stressful jobs. For my Interaction Design Fundamentals class at CMU, we designed this application to provide facts and quizzes to encourage EMS workers to learn more about topics like mental health, nutrition, and driving skills.</p>\n" +
     "			</div> \n" +
     "		</div>	\n" +
     "		<div class=\"row\">\n" +
@@ -341,7 +341,7 @@ angular.module("../app/views/accelerate.html", []).run(["$templateCache", functi
     "		<!--Research -->\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>We learned about life and work circumstances for professional in the emergency medical services field by researching internet blogs, articles, and ride along videos of EMTs on the job. We also conducted an interview with an EMT to further explore the themes we saw in our initial research.</p>	\n" +
+    "				<p>We learned about life and work of professionals in the emergency medical services field by researching internet blogs, articles, and ride along videos of EMTs on the job. We also conducted an interview with an EMT to further explore the themes we saw in our initial research.</p>	\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<br/>\n" +
@@ -558,13 +558,9 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		<hr/>\n" +
     "\n" +
     "		<!--Meta data-->\n" +
+    "\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>Developers struggle to pay attention to their work, especially student developers. It's easy to get distracted on a computer. We also noticed that developers heavily depend on outside resources and spend significant time switching between applications to access those resources. For our User Centered Research and Evaluation class at CMU, we performed the contextual design methodology as described by Karen Holtzblatt on student developers. Synthesizing that research, we discovered that distraction and application switching were two of the biggest problems they faced. We envisioned a solution that will lock down the coding environment to prevent distraction while improving the way that students view outside resources. </p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
     "				<img src=\"../images/DistractionFreeCoding/Contextual-inquiry-stats.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
     "			</div>\n" +
     "		</div> <!-- end icon image -->\n" +
@@ -603,38 +599,89 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "				</ul>	\n" +
     "			</div>\n" +
     "		</div> <!-- end Meta-data -->\n" +
+    "		<hr/>\n" +
     "\n" +
-    "		<!--final idea-->\n" +
+    "				<!--final idea-->\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Application Concept</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">Learning to code is difficult. We researched student developers to create a concept for a development environment that helps manage distractions.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<img id=\"FinalDesigns\" src=\"../images/DistractionFreeCoding/Storyboard.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
-    "				<p class=\"caption\">We created a vision for a new application to help developers based on contextual inquiry research.</p>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>When student developers are working on assignments, there are multiple sources that they have to reference including textbooks, assignment sheets, powerpoints, internet articles, and scratch paper. Application switching presents opportunities for other distractions to catch their attention. For our User Centered Research and Evaluation class at CMU, we performed the contextual design methodology as described by Karen Holtzblatt to envision a solution.</p>\n" +
     "			</div>\n" +
-    "		</div> <!-- end final idea -->\n" +
+    "		</div>\n" +
     "\n" +
-    "		<!--About Project-->\n" +
+    "		<!--<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>Developers struggle to pay attention to their work, especially student developers. It's easy to get distracted on a computer. We also noticed that developers heavily depend on outside resources and spend significant time switching between applications to access those resources. For our User Centered Research and Evaluation class at CMU, we performed the contextual design methodology as described by Karen Holtzblatt on student developers. Synthesizing that research, we discovered that distraction and application switching were two of the biggest problems they faced. We envisioned a solution that will lock down the coding environment to prevent distraction while improving the way that students view outside resources. </p>\n" +
+    "			</div>\n" +
+    "		</div> -->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-2\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/storyboard-1.png\">\n" +
+    "					<div>	\n" +
+    "						To start his homework, Johnny opens his code environment with distraction blocker, notes, and annotation space.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>	\n" +
+    "			<div class=\"col col-xs-12 col-sm-6 col-md-6 col-lg-4\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/storyboard-2.png\">\n" +
+    "					<div>	\n" +
+    "						When Johnny’s friend sends him a text, the message is blocked and saved into a queue for later.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-2\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/storyboard-3.png\">\n" +
+    "					<div>	\n" +
+    "						While doing his work, Johnny can highlight code and add notes associated with those lines of code.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"col col-xs-12 col-sm-6 col-md-6 col-lg-4\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/storyboard-4.png\">\n" +
+    "					<div>	\n" +
+    "						After working for a specified amount of time, Johnny is allowed to take a break and get all of the notifications that had been queued for him.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-2\">\n" +
+    "				<div class=\"thumbnail\">\n" +
+    "					<img src=\"../images/DistractionFreeCoding/storyboard-5.png\">\n" +
+    "					<div>	\n" +
+    "						After the break, Johnny returns to his work and the last line he was coding is highlighted so he knows where to resume working.\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
     "\n" +
     "		<!--Contextual Inquiry-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Contextual Inquiry</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We conducted contextual inquiry interviews to see how developers do their homework.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>We began by performing contextual interviews with student developers. Each team member interviewed one developer for a total of 5 interviews. During interviews, we went to the location where the developers normally worked and observed them working on their own assignments. Because these were contextual interviews, we did not come with specific questions to ask. Instead, we assumed the role of an apprentice learning from a master. By doing this, we got to see the truth about what happens and not just what the interviewee remembered and thought was important. We took notes during the interview to use later during interpretation sessions.</p>\n" +
+    "				<p>We performed 5 contextual inquiry interviewers with student developers. To do this we sat with the developers in the environment they normally work in doing one of their own assignments. From this we saw a few problems that developers encountered including the need to reference a large number of materials and a problem with focus and distractions.</p>\n" +
     "			</div>\n" +
     "		</div> <!-- end contextual inquiry -->\n" +
-    "		\n" +
-    "		<!--Interpretation Sessions-->\n" +
+    "\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Interpretation Sessions</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We met together to review our interviews and create sequence models and flow models for each student we interviewed. </h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
@@ -650,11 +697,13 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		</div> <!-- end interpretation session -->\n" +
     "\n" +
     "		<!--Affinity Diagram and Consolidated Models-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 ccol-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Affinity Diagram and Consolidated Models</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">To see patterns across all students, we created consolidated models and an affinity diagram.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
+    "\n" +
     "		<div class=\"row\">\n" +
     "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
     "				<p>We took the notes we created during the interpretation session and grouped them to create an affinity diagram. When grouping these notes, we creating three layers of headings. The lower two are written from the customer perspective. This allowed us to look back at the affinity diagram later and get an overall idea of what was happening by simply looking at the headings. </p>\n" +
@@ -679,14 +728,15 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		</div> <!-- end affinity diagram -->\n" +
     "\n" +
     "		<!--Visioning-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Visioning</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We brainstormed ideas to come up with multiple options for solutions to the problems we identified from the affinity diagram and models.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
     "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>After consolidating the models, we began visioning. We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we listed the technologies we had available to us to solve the problems. While looking at our models and technologies list, we began visioning by sketching out possible scenarios in an improv-style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
+    "				<p> We revisited our affinitiy diagram and models. For each, we generated design ideas and determined the key problems we needed to address. Then we began visioning by sketching out possible scenarios in an improv-style session with one person being the writer and the other team members speaking their ideas aloud.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
@@ -697,14 +747,15 @@ angular.module("../app/views/distractionfreecoding.html", []).run(["$templateCac
     "		</div>\n" +
     "\n" +
     "		<!--Final Deliverables-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Final Deliverables</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We created a solution concept for a coding application to solve the problems we saw with students and presented it to the rest of our class.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
     "			<div class = \"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>After we did 5 visions, we determined the ones we thought were most promising based on the information we learned about our users while generating our affinity diagram, sequence models, and flow models. We consolidated the visions containing those ideas to create a final concept. As a final deliverable, we presented our findings and our final idea to the class.</p>\n" +
+    "				<p>After we did 5 visions, we determined the ones we thought were most promising based on the information we learned about our users while generating our affinity diagram, sequence models, and flow models. We consolidated the visions containing those ideas to create a final concept. As a final <a href=\"../images/DistractionFreeCoding/Final-Presentation.pdf\">deliverable</a>, we presented our findings and our final idea to the class.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
@@ -955,17 +1006,12 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "		<hr/>\n" +
     "\n" +
     "		<!--Meta Data-->\n" +
+    "\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>There are a multitude of places popping up on the internet for the purpose of eliciting and receiving help. Some of these are stand alone sites and others are communities within social sites, such as Reddit. When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity. We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n" +
     "				<img src=\"../images/Peanuts/peanuts-logo-long.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
     "			</div>\n" +
-    "		</div> <!-- end icon image -->\n" +
-    "\n" +
+    "		</div>	<!--End icon image-->\n" +
     "		<div class=\"row meta-data\">\n" +
     "			<div class=\"meta-data-point col col-xs-12 col-sm-3 col-md-3 col-lg-2 col-lg-offset-2\">\n" +
     "				<h4 class=\"meta-header\">Process</h4>\n" +
@@ -1000,25 +1046,83 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "				</ul>	\n" +
     "			</div>\n" +
     "		</div> <!-- end Meta-data -->	\n" +
+    "		<hr/>\n" +
+    "\n" +
+    "		<!--final idea-->\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">People use online communities to reach out to others for help in times of personal need. People are willing to help, but they struggle with trust.</h3>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class= \"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 project-description\">\n" +
+    "				<p>The peanuts project explored people requesting help online and those stepping up to meet those needs. For our Social Web class at Carnegie Mellon, we researched what motivated people to give and how we could help built trust between those requesting help online and those giving. After doing research, we created a web application to implement the things we discovered. If the project continued, we would use this to perform additional research to test our findings.</p>\n" +
+    "			</div> \n" +
+    "		</div>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "		<!--<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<p>There are a multitude of places popping up on the internet for the purpose of eliciting and receiving help. Some of these are stand alone sites and others are communities within social sites, such as Reddit. When people are requesting monetary help online, many requests state that the requestor has helped others in the past or plans to help others in the future as part of the description. People that are donating frequently seek validation of who the requestor is from their activity on the site. However, there is no provided way for requestors to prove their previous donations or for those planning to give to see that activity. We wanted to research how a website could give requestors the ability to track their reciprocity, which we defined as the relationship between a user's giving and receiving. We also wanted to see if there was an impact on donations if this information was visible. We predicted that showing reciprocity would allow donors to quickly trust requestors which would help them make quicker decisions about donating and influence the amount they gave.</p>\n" +
+    "			</div>\n" +
+    "		</div> -->\n" +
+    "\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/Home_Screen.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/Profile_Screen.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
     "\n" +
     "		<!--About the Project-->\n" +
     "\n" +
     "		<!--Literature Review and Initial Research-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Literature Review and Initial Research</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We read research papers and looked at existing online communities to explore this concept. We found that people were using communities like r/assistance to seek help.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was an in-depth look at the aspects of a request on the subreddit r/RAOP. They showed that certain information would influence the success of the request. We began looking at r/RAOP and noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to common themes. After reviewing a few subreddits and other request websites, we decided to look at how showing reciprocity impacts people’s donations.</p>\n" +
+    "				<p>We were originally inspired by reading a paper regarding which posts on the subreddit r/RAOP (Random Acts of Pizza) were the most successful. We decided to look into other sites online where people were requesting assistance. We explored a few different online communities and noticed some common things:</p>\n" +
+    "				<ul>\n" +
+    "					<li>People are using online sources to request help from strangers.</li>\n" +
+    "					<li>Strangers are willing to fulfill requests.</li>\n" +
+    "					<li>Requesters tend to tell their stories and try to offer some sort of verification that their stories are true.</li>\n" +
+    "					<li>Requesters frequently promise to help someone else in the future or state instances where they have helped in the past.</li>\n" +
+    "					<li>Donors will ask for more details or proof before being willing to give.</li>\n" +
+    "				</ul>\n" +
+    "			</div>\n" +
+    "		</div>	\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
+    "				<img src=\"../images/Peanuts/redditClip.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
+    "				<p class=\"caption\">Example of a post on reddit requesting assistance and trying to provide proof of the situation that the requestor was in by giving a link to baby bump pictures.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "\n" +
-    "		<!--Initial Survey-->\n" +
-    "		<div class=\"row\">\n" +
+    "\n" +
+    "		<!--<div class=\"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Initial Survey</h3>\n" +
+    "				<p>We began by reading research papers on altruism, motivation, and microvoluntering. One of the papers that we read was an in-depth look at the aspects of a request on the subreddit r/RAOP. They showed that certain information would influence the success of the request. We began looking at r/RAOP and noticed that there were other subreddits where people made requests for help. We analysed their requests and how potential donors responded to common themes. After reviewing a few subreddits and other request websites, we decided to look at how showing reciprocity impacts people’s donations.</p>\n" +
+    "			</div>\n" +
+    "		</div>	-->\n" +
+    "\n" +
+    "\n" +
+    "		<!--Initial Survey-->\n" +
+    "		<hr/>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We discovered that people requesting help would attempt to convince others that they had in the past or planned to give to others. We wanted to see if showing reciprocity would help to build trust in those requesting assistance.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
@@ -1033,14 +1137,30 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "		</div>\n" +
     "\n" +
     "		<!--Final Survey-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Final Survey</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">After discovering which statements of reciprocity people said they were most likely to give assistance to, we explored different ways to visualize that information. </h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>After analyzing the results of the first survey and the feedback we received, we decided to use two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p>\n" +
+    "				<!--<p>After analyzing the results of the first survey and the feedback we received, we decided to use two of the top four statements to test further. In the first survey, all of the statements showed more giving than receiving, but we also wanted to test whether a positive reciprocity or a negative reciprocity statement would be more likely to get donations. We created a survey to test this and received 276 responses on Amazon's Mechanical Turk. We randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer. The only statistically significant result we found was those who donated spent longer thinking about their decision and as time increased, dollar amount increased as well. We also saw that people generally gave more to people who had given less than they received. The statement \"Martin has given to 20 people and received donations from 50 people\" (3rd card below) was most likely to receive higher amounts of money.</p> -->\n" +
+    "\n" +
+    "				<p>We used the results from our first survey to create visualizations of different ways of showing reciprocity. We also wanted to test whether people were more likely to give more to someone who had given more than they had received (positive reciprocity) or to someone who had received more than they had given (negative reciprocity). We created a survey and got 276 responses on Amazon's Mechanical Turk. For our survey, we randomly showed each Turk worker the request and then one visualization of reciprocity or a control showing only the request. We asked how much they would donate, and also recorded the amount of time it took them to answer.</p>\n" +
+    "\n" +
+    "				<p>Most of our results were not statistically significant. The statistically significant results were:  \n" +
+    "					<ul>\n" +
+    "						<li>Those who donated spent longer thinking about their decision.</li>\n" +
+    "						<li>The longer people thought about their decision, the more they donated.</li>\n" +
+    "					</ul>\n" +
+    "				</p>\n" +
+    "				<p>Other results include:\n" +
+    "					<ul>\n" +
+    "						<li>People gave more to those who had given less than they had received.</li>\n" +
+    "						<li>The statement \"Martin has given to 20 people and received donations from 50 people\" (third card below) was most likely to receive higher amounts of money. </li>\n" +
+    "					</ul>\n" +
+    "				</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"row\">\n" +
@@ -1050,28 +1170,19 @@ angular.module("../app/views/peanuts.html", []).run(["$templateCache", function(
     "		</div>	\n" +
     "\n" +
     "		<!--Application Development-->\n" +
+    "		<hr/>\n" +
     "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<h3 class=\"phase-header\">Application Development</h3>\n" +
+    "			<div class=\"col col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2\">\n" +
+    "				<h3 class=\"phase-header narrative\">We wanted to take the project further by testing what people would do with real money. We created a website to facilitate this research.</h3>\n" +
     "			</div>\n" +
     "		</div>\n" +
+    "\n" +
     "		<div class=\"row\">\n" +
     "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<p>We wanted to see what it would look like to apply the results of our surveys, so we created a microcharity website showing reciprocity. As a team, we determined the concepts for the website, but the development was done by Jeff and Jim. If this had been a longer project, we wanted to use this website to conduct experiments to test what people do with actual money.</p>\n" +
+    "				<p>We wanted to see what it would look like to apply the results of our surveys, so we created a <a href=\"http://peanuts.meteor.com\" target=\"_blank\">microcharity website</a> showing reciprocity. As a team, we determined the concepts for the website, but the development was done by Jeff and Jim. If this had been a longer project, we wanted to use this website to conduct experiments to test what people do with actual money.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<img src=\"../images/Peanuts/Home_Screen.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
-    "				<p class=\"caption\">On the homescreen of the website, we wanted to show the requestor's name, the request title, and the description of the need. By clicking on his or her name, you are taken to his profile.</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"row\">\n" +
-    "			<div class=\"col col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2\">\n" +
-    "				<img src=\"../images/Peanuts/Profile_Screen.png\" class=\"img-responsive\" alt=\"Responsive image\">\n" +
-    "				<p class=\"caption\">A user's profile page shows his or her requests and how much money he has raised. It also shows his reciprocity in the form of the number of people he has given to and received donations from.</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		\n" +
     "	</div>\n" +
     "</html>");
 }]);
